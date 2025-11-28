@@ -2,74 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Products – Zareen International Trading FZC</title>
-  <link rel="stylesheet" href="style.css" />
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- NAV -->
   <nav class="navbar">
     <div class="container nav-content">
       <div class="nav-logo">Zareen International</div>
-
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="#0">Products</a>
+        <a href="index.html#about">About</a>
         <a href="index.html#activities">Activities</a>
+        <a href="products.html" class="active">Products</a>
         <a href="index.html#contact">Contact</a>
       </div>
     </div>
   </nav>
 
+  <!-- HERO / PAGE HEADER -->
   <header class="inner-hero">
-    <h1>Our Products</h1>
-    <p>General Trading • Import • Export • Wholesale</p>
+    <div class="container">
+      <h1>Our Products</h1>
+      <p class="hero-sub">General Trading • Import • Export • Wholesale</p>
+    </div>
   </header>
 
-  <section class="section container">
-    <div class="grid-3">
+  <main>
+    <section class="section container">
+      <!-- Banner cards: each uses a wide image with a short headline -->
+      <div class="banner-grid">
+        <!-- Building Materials -->
+        <article class="banner-card">
+          <img src="https://images.unsplash.com/photo-1581094278552-2d0f27d0a3b7?auto=format&fit=crop&w=1600&q=80" alt="Building Materials">
+          <div class="banner-body">
+            <h3>Building & Construction Materials</h3>
+            <p>Cement, steel, tiles, pipes, wood, gypsum & bulk construction supplies for projects.</p>
+            <a href="#bm-grid" class="btn-sm">Explore</a>
+          </div>
+        </article>
 
-      <div class="card">
-        <h3>Building Materials</h3>
-        <p>Cement, steel, tiles, pipes, wood, gypsum & more.</p>
+        <!-- Lubricants -->
+        <article class="banner-card">
+          <img src="https://images.unsplash.com/photo-1581579183699-4c6b6d1e5d9b?auto=format&fit=crop&w=1600&q=80" alt="Lubricants">
+          <div class="banner-body">
+            <h3>Lubricants & Grease</h3>
+            <p>Automotive & industrial lubricants, engine oils, hydraulic oils, OEM & private-label packing.</p>
+            <a href="#lub-grid" class="btn-sm">Explore</a>
+          </div>
+        </article>
+
+        <!-- Foodstuff -->
+        <article class="banner-card">
+          <img src="https://images.unsplash.com/photo-1584270354949-7f8f9b4d9a1b?auto=format&fit=crop&w=1600&q=80" alt="Foodstuff">
+          <div class="banner-body">
+            <h3>Foodstuff (FMCG)</h3>
+            <p>Rice, sugar, edible oils, canned & packaged foods — bulk supply for retail & distribution.</p>
+            <a href="#food-grid" class="btn-sm">Explore</a>
+          </div>
+        </article>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Air Conditioners</h3>
-        <p>Split AC, cassette AC, VRF systems, HVAC units.</p>
+    <!-- Grid block: electronics + garments + extras -->
+    <section class="section dark">
+      <div class="container">
+        <h2 class="section-title">Products Grid</h2>
+
+        <div class="grid-3" id="bm-grid">
+          <!-- Building Materials Card (detailed) -->
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1581094278552-2d0f27d0a3b7?auto=format&fit=crop&w=1200&q=80" alt="Building Materials">
+            <h3>Building Materials</h3>
+            <p>Cement, steel, tiles, pipes, wood, plaster, bulk orders for construction projects.</p>
+          </div>
+
+          <!-- Air Conditioners / HVAC -->
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1581091012184-3b4f04f0d6d7?auto=format&fit=crop&w=1200&q=80" alt="Air Conditioners">
+            <h3>Air Conditioners & HVAC</h3>
+            <p>Split systems, cassette ACs, VRF & commercial HVAC units, spare parts and installation spares.</p>
+          </div>
+
+          <!-- Lubricants -->
+          <div class="card" id="lub-grid">
+            <img src="https://images.unsplash.com/photo-1581579183699-4c6b6d1e5d9b?auto=format&fit=crop&w=1200&q=80" alt="Lubricants">
+            <h3>Lubricants & Grease</h3>
+            <p>Engine oil, gear oil, hydraulic fluids — drums, cans and private label solutions for trade.</p>
+          </div>
+
+          <!-- Foodstuff -->
+          <div class="card" id="food-grid">
+            <img src="https://images.unsplash.com/photo-1584270354949-7f8f9b4d9a1b?auto=format&fit=crop&w=1200&q=80" alt="Foodstuff">
+            <h3>Foodstuff & FMCG</h3>
+            <p>Rice, pulses, sugar, edible oil, spices and packaged staples — sourcing and bulk export.</p>
+          </div>
+
+          <!-- Electronics -->
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80" alt="Electronics">
+            <h3>Electronics & IT</h3>
+            <p>Computers, laptops, peripherals, consumer electronics and accessories — wholesale supply.</p>
+          </div>
+
+          <!-- Garments -->
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1200&q=80" alt="Garments">
+            <h3>Garments & Textiles</h3>
+            <p>Wholesale clothing, uniforms, workwear and textiles — export quality bulk orders.</p>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Lubricants</h3>
-        <p>Automotive & industrial grease, engine oil, hydraulic oil.</p>
+    <!-- CTA / Contact -->
+    <section class="section container">
+      <h2>Interested in sourcing?</h2>
+      <p class="lead">Tell us what you need and our sourcing team will provide quotes and shipping options.</p>
+
+      <div class="contact-cta">
+        <a href="mailto:zareeninternationaltrading@gmail.com" class="btn-primary">Request Quote</a>
+        <a href="index.html#contact" class="btn-outline">Contact Office</a>
       </div>
-
-      <div class="card">
-        <h3>Foodstuff</h3>
-        <p>Rice, sugar, spices, dry fruits, packaged food.</p>
-      </div>
-
-      <div class="card">
-        <h3>Electronics</h3>
-        <p>IT equipment, computers, accessories & cables.</p>
-      </div>
-
-      <div class="card">
-        <h3>Garments</h3>
-        <p>Uniforms, wholesale clothing, textile products.</p>
-      </div>
-
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Zareen International Trading FZC</p>
+    <div class="container">
+      <p>© <span id="year"></span> Zareen International Trading FZC</p>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
