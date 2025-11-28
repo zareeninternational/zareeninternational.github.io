@@ -1,66 +1,78 @@
-/* Global Styles */
+/* General Page Style */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f7fa;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #073C60;  /* Your company blue */
+    color: white;
 }
 
 /* Header */
 header {
-    background: #0a2a43;   /* Dark Blue */
-    color: white;
     text-align: center;
     padding: 40px 20px;
 }
 
+.logo {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
 header h1 {
-    margin: 0;
+    margin: 10px 0;
     font-size: 28px;
-    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 header p {
     font-size: 16px;
-    margin-top: 5px;
-    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background: #052E49;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Sections */
 .section {
-    padding: 25px 20px;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .section h2 {
-    color: #0a2a43;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    border-left: 4px solid #0a2a43;
-    padding-left: 10px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 6px;
 }
 
-/* Card Boxes */
-.card {
-    background: white;
-    padding: 18px 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
+.section ul li {
+    margin: 8px 0;
+    font-size: 18px;
 }
 
 /* Footer */
-.footer {
-    background: #0a2a43;
-    color: white;
+footer {
     text-align: center;
-    padding: 25px 15px;
+    padding: 20px;
+    background: #052E49;
     margin-top: 30px;
-}
-
-.footer p {
-    margin: 6px 0;
     font-size: 14px;
 }
