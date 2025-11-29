@@ -1,148 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Products – Zareen International Trading FZC</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zareen International – Products</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Zareen International</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- NAV -->
-  <nav class="navbar">
-    <div class="container nav-content">
-      <div class="nav-logo">Zareen International</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#activities">Activities</a>
-        <a href="products.html" class="active">Products</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
+    <section class="product-section">
+        <h1>Our Products</h1>
 
-  <!-- HERO / PAGE HEADER -->
-  <header class="inner-hero">
-    <div class="container">
-      <h1>Our Products</h1>
-      <p class="hero-sub">General Trading • Import • Export • Wholesale</p>
-    </div>
-  </header>
+        <div class="product-grid">
+            
+            <!-- AC Products -->
+            <div class="product-card">
+                <img src="assets/images/ac.jpg" alt="Air Conditioner">
+                <h3>Air Conditioners</h3>
+                <p>Premium quality AC products for residential and commercial use.</p>
+                <a href="explore-ac.html" class="btn">Explore</a>
+            </div>
 
-  <main>
-    <section class="section container">
-      <div class="banner-grid">
+            <!-- Building Materials -->
+            <div class="product-card">
+                <img src="assets/images/building.jpg" alt="Building Materials">
+                <h3>Building Materials</h3>
+                <p>High-grade building products for construction companies.</p>
+                <a href="explore-building.html" class="btn">Explore</a>
+            </div>
 
-        <!-- Building Materials -->
-        <article class="banner-card">
-          <img src="building.jpg" alt="Building Materials">
-          <div class="banner-body">
-            <h3>Building & Construction Materials</h3>
-            <p>Cement, steel, tiles, pipes, wood, gypsum & bulk construction supplies for projects.</p>
-            <a href="#bm-grid" class="btn-sm">Explore</a>
-          </div>
-        </article>
-
-        <!-- Lubricants -->
-        <article class="banner-card">
-          <img src="lubricants.jpg" alt="Lubricants">
-          <div class="banner-body">
-            <h3>Lubricants & Grease</h3>
-            <p>Automotive & industrial lubricants, engine oils, hydraulic oils, OEM & private-label packing.</p>
-            <a href="#lub-grid" class="btn-sm">Explore</a>
-          </div>
-        </article>
-
-        <!-- Foodstuff -->
-        <article class="banner-card">
-          <img src="food.jpg" alt="Foodstuff">
-          <div class="banner-body">
-            <h3>Foodstuff (FMCG)</h3>
-            <p>Rice, sugar, edible oils, canned & packaged foods — bulk supply for retail & distribution.</p>
-            <a href="#food-grid" class="btn-sm">Explore</a>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- PRODUCT GRID -->
-    <section class="section dark">
-      <div class="container">
-        <h2 class="section-title">Products Grid</h2>
-
-        <div class="grid-3" id="bm-grid">
-
-          <!-- Building Materials -->
-          <div class="card">
-            <img src="building.jpg" alt="Building Materials">
-            <h3>Building Materials</h3>
-            <p>Cement, steel, tiles, pipes, wood, plaster, bulk orders for construction projects.</p>
-          </div>
-
-          <!-- Air Conditioners -->
-          <div class="card">
-            <img src="ac.jpg" alt="Air Conditioners">
-            <h3>Air Conditioners & HVAC</h3>
-            <p>Split systems, cassette ACs, VRF & commercial HVAC units, spare parts and installation spares.</p>
-          </div>
-
-          <!-- Lubricants -->
-          <div class="card" id="lub-grid">
-            <img src="lubricants.jpg" alt="Lubricants">
-            <h3>Lubricants & Grease</h3>
-            <p>Engine oil, gear oil, hydraulic fluids — drums, cans and private label solutions for trade.</p>
-          </div>
-
-          <!-- Foodstuff -->
-          <div class="card" id="food-grid">
-            <img src="food.jpg" alt="Foodstuff">
-            <h3>Foodstuff & FMCG</h3>
-            <p>Rice, pulses, sugar, edible oil, spices and packaged staples — sourcing and bulk export.</p>
-          </div>
-
-          <!-- Electronics -->
-          <div class="card">
-            <img src="electronics.jpg" alt="Electronics">
-            <h3>Electronics & IT</h3>
-            <p>Computers, laptops, peripherals, consumer electronics and accessories — wholesale supply.</p>
-          </div>
-
-          <!-- Garments -->
-          <div class="card">
-            <img src="garments.jpg" alt="Garments">
-            <h3>Garments & Textiles</h3>
-            <p>Wholesale clothing, uniforms, workwear and textiles — export quality bulk orders.</p>
-          </div>
+            <!-- Lubricants -->
+            <div class="product-card">
+                <img src="assets/images/lubricants.jpg" alt="Lubricants">
+                <h3>Lubricants</h3>
+                <p>Industrial and automotive lubricants with superior performance.</p>
+                <a href="explore-lubricants.html" class="btn">Explore</a>
+            </div>
 
         </div>
-
-      </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section container">
-      <h2>Interested in sourcing?</h2>
-      <p class="lead">Tell us what you need and our sourcing team will provide quotes and shipping options.</p>
+    <footer>
+        <p>© 2025 Zareen International. All rights reserved.</p>
+    </footer>
 
-      <div class="contact-cta">
-        <a href="mailto:zareeninternationaltrading@gmail.com" class="btn-primary">Request Quote</a>
-        <a href="index.html#contact" class="btn-outline">Contact Office</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Zareen International Trading FZC</p>
-    </div>
-  </footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
+
 </html>
