@@ -1,93 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zareen International General Trading FZC</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* ------------------------------
+   GLOBAL STYLES
+-------------------------------- */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0d2b45; /* Dark Professional Blue */
+    color: #ffffff;
+}
 
-<body>
+h1, h2, h3, h4 {
+    margin: 0;
+}
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <img src="assets/images/logo.png" class="logo" alt="Logo">
-    <nav>
-        <a href="#">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+/* ------------------------------
+   NAVBAR
+-------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>ZAREEN INTERNATIONAL<br>GENERAL TRADING FZC</h1>
-        <p>Your Trusted Partner for Global Sourcing & Quality Supplies</p>
-        <a href="#products" class="btn">Explore Products</a>
-    </div>
-</section>
+.logo {
+    height: 55px;     /* FIXED SIZE (Not too big) */
+}
 
-<!-- PRODUCTS SECTION -->
-<section id="products" class="section-title">
-    <h2>Our Products</h2>
-</section>
+/* ------------------------------
+   NAV LINKS
+-------------------------------- */
+.navbar nav a {
+    color: #ffffff;
+    margin-left: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-<div class="products">
+.navbar nav a.active {
+    color: #00e1ff;
+    font-weight: 600;
+}
 
-    <!-- AC PRODUCTS -->
-    <div class="product-card">
-        <img src="assets/images/ac.jpg" alt="AC Units">
-        <div class="info">
-            <h3>Air Conditioners</h3>
-            <p>Residential & commercial AC units with premium cooling performance.</p>
-        </div>
-    </div>
+/* ------------------------------
+   HERO SECTION
+-------------------------------- */
+.hero {
+    height: 380px;
+    background: url("assets/images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
 
-    <!-- CEMENT -->
-    <div class="product-card">
-        <img src="assets/images/cement.jpg" alt="Cement">
-        <div class="info">
-            <h3>Cement</h3>
-            <p>High-grade cement suitable for all construction applications.</p>
-        </div>
-    </div>
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
 
-    <!-- PORTLAND CEMENT -->
-    <div class="product-card">
-        <img src="assets/images/portland.jpg" alt="Portland Cement">
-        <div class="info">
-            <h3>Portland Cement</h3>
-            <p>Quality Portland Cement trusted by major construction companies.</p>
-        </div>
-    </div>
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+}
 
-    <!-- BLOCKS -->
-    <div class="product-card">
-        <img src="assets/images/block.jpg" alt="Blocks">
-        <div class="info">
-            <h3>Hollow Blocks</h3>
-            <p>Durable hollow blocks for strong and stable building structures.</p>
-        </div>
-    </div>
+/* ------------------------------
+   INNER PAGES (Contact / About)
+-------------------------------- */
+.inner-page {
+    background: #102c47; /* Slightly lighter professional blue */
+    padding: 60px 40px;
+    margin-top: -40px;
+    border-radius: 20px 20px 0 0;
+}
 
-</div>
+.inner-page h1 {
+    margin-bottom: 25px;
+    font-size: 34px;
+}
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
+/* ------------------------------
+   CONTACT PAGE LAYOUT
+-------------------------------- */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
-    <p><strong>📍 UAE Office:</strong> Zareen International General Trading FZC</p>
-    <p><strong>📞 Phone:</strong> +971 XX XXX XXXX</p>
-    <p><strong>📧 Email:</strong> info@zareeninternational.com</p>
+.contact-card {
+    background: #133557;
+    padding: 30px;
+    border-radius: 12px;
+    width: 45%;
+    color: #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
 
-    <a href="#" class="whatsapp-btn">Chat on WhatsApp</a>
-</section>
+.contact-card strong {
+    color: #00e1ff;
+}
 
-<!-- FOOTER -->
-<footer>
-    © 2025 Zareen International General Trading FZC
-</footer>
+.contact-map {
+    width: 45%;
+}
 
-</body>
-</html>
+.contact-map iframe {
+    border-radius: 12px;
+}
+
+/* ------------------------------
+   FOOTER
+-------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #001e33;
+    margin-top: 60px;
+}
