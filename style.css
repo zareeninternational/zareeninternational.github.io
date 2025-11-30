@@ -1,92 +1,163 @@
-/* Global Layout */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #062536;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    height: 55px;
+}
+
+.navbar nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.navbar nav a.active {
+    color: #0066cc;
+}
+
+.whatsapp-btn {
+    background: #25d366;
     color: white;
-    line-height: 1.6;
-}
-
-/* Centered Page Wrapper */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-/* Header */
-header {
-    text-align: center;
-    padding: 20px 0;
-}
-
-header img {
-    width: 180px;      /* FIX: LOGO TOO BIG */
-    height: auto;
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: white;
-    margin-bottom: 10px;
-}
-
-/* Product / Activity Sections */
-.section {
-    margin: 40px 0;
-    background: #0c3449;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.section img {
-    width: 100%;
-    max-height: 280px;      /* FIX: IMAGES TOO BIG */
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Explore Button */
-.explore-btn {
-    display: inline-block;
-    margin-top: 10px;
-    background: #0096c7;
     padding: 10px 18px;
-    color: white;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
 }
-.explore-btn:hover {
-    background: #0077a3;
+
+/* HERO */
+.hero {
+    display: flex;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #ffffff, #e8f0ff);
 }
 
-/* Contact Section */
-.contact-box {
-    margin-top: 40px;
-    padding: 20px;
-    background: #0c3449;
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.explore-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.hero-image img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+/* PRODUCTS */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
-/* WhatsApp Floating Button */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 55px;       /* FIX: TOO BIG */
-    height: 55px;
-}
-.whatsapp-btn img {
-    width: 100%;
-    height: auto;
+.view-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-/* Footer */
-footer {
+/* INNER PAGES */
+.inner-page {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.inner-page ul {
+    line-height: 1.8;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    background: #f7faff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #dde7f7;
+}
+
+/* FOOTER */
+.footer {
     text-align: center;
+    background: #003366;
+    color: white;
     padding: 20px;
-    background: #05202e;
     margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content, .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
