@@ -1,71 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Zareen International – Building Materials & AC Units</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zareen International</title>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar img {
+            height: 45px;
+        }
+
+        .navbar a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 70vh;
+            background: url('hero.jpg.png') center/cover no-repeat;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #555; /* fallback */
+        }
+
+        .hero-content {
+            max-width: 90%;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            background: #1a73e8;
+            padding: 10px 18px;
+            color: white;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        /* CONTACT SECTION */
+        #contact-section {
+            padding: 40px 20px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .contact-box h2 {
+            margin-bottom: 10px;
+        }
+
+        /* MOBILE FIX */
+        @media (max-width: 600px) {
+            .hero {
+                height: 60vh;
+                padding: 15px;
+            }
+
+            .hero h1 {
+                font-size: 22px;
+            }
+
+            .navbar img {
+                height: 38px;
+            }
+
+            .navbar a {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <img src="assets/logo.png" class="logo">
-    <nav>
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<!-- HERO SECTION -->
-<section class="hero" style="background-image: url('assets/hero.jpg.png');">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h1>Your Trusted Partner in<br>Building Materials & AC Units</h1>
-        <p>Quality products | Fast delivery | UAE & Oman supply</p>
-        <a href="contact.html" class="cta-btn">Contact Us</a>
+    <!-- NAV -->
+    <div class="navbar">
+        <img src="logo.png" alt="Logo">
+        <div>
+            <a href="#">Home</a>
+            <a href="#contact-section">Contact</a>
+        </div>
     </div>
-</section>
 
-<!-- PRODUCT SECTION -->
-<section class="products">
-    <h2>Our Products</h2>
-
-    <div class="product-grid">
-
-        <div class="product-card">
-            <img src="assets/ac.jpg" alt="AC Unit">
-            <h3>AC Units</h3>
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Your Trusted Partner in<br>Building Materials & AC Units</h1>
+            <p>Quality products | Fast delivery | UAE & Oman supply</p>
+            <a href="#contact-section" class="btn">Contact Us</a>
         </div>
-
-        <div class="product-card">
-            <img src="assets/block.jpg" alt="Blocks">
-            <h3>Hollow Blocks</h3>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/cement.jpg" alt="Cement">
-            <h3>Cement</h3>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/portland-cement.jpg" alt="Portland Cement">
-            <h3>Portland Cement</h3>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/plywood.jpg" alt="Plywood">
-            <h3>Plywood</h3>
-        </div>
-
     </div>
-</section>
 
-<!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/971523388786" class="wa-btn">
-    <img src="assets/wa-icon.png">
-</a>
+    <!-- CONTACT SECTION -->
+    <div id="contact-section">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+
+            <strong>Zareen International</strong><br><br>
+
+            <b>📍 Address:</b><br>
+            PO Box: 82848, Muscat, Oman<br>
+            Ghala Industrial Area<br><br>
+
+            <b>📞 Phone:</b><br>
+            +971 523 388 786<br>
+            +968 12345<br><br>
+
+            <b>📧 Email:</b><br>
+            zareeninternational.info@gmail.com
+        </div>
+    </div>
 
 </body>
 </html>
