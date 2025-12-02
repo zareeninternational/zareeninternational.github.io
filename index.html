@@ -26,9 +26,7 @@
             z-index: 999;
         }
 
-        .navbar img {
-            height: 50px;
-        }
+        .navbar img { height: 50px; }
 
         .nav-menu a {
             margin-left: 20px;
@@ -37,16 +35,14 @@
             color: #333;
         }
 
-        /* HERO SECTION */
+        /* HERO */
         .hero {
             width: 100%;
             height: 420px;
-            background-image: url("assets/images/hero.png");
+            background-image: url("assets/images/hero.jpg"); /* FIXED */
             background-size: cover;
             background-position: center;
-            position: relative;
             display: flex;
-            justify-content: flex-start;
             align-items: center;
             padding-left: 40px;
             color: white;
@@ -59,24 +55,59 @@
             border-radius: 8px;
         }
 
-        .hero-text h1 {
-            margin: 0;
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .hero-text p {
-            margin: 10px 0 20px;
-            font-size: 15px;
-        }
-
         .btn-primary {
             background: #007bff;
             padding: 10px 18px;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 15px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .products h2 { margin-bottom: 30px; }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .product-card {
+            padding: 20px;
+            background: #f7f7f7;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        /* WHATSAPP FLOATING BUTTON */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            z-index: 9999;
         }
 
         /* FOOTER */
@@ -87,11 +118,6 @@
             text-align: center;
             margin-top: 40px;
         }
-
-        .footer p {
-            margin: 8px 0;
-            font-size: 14px;
-        }
     </style>
 </head>
 
@@ -99,7 +125,7 @@
 
     <!-- NAVBAR -->
     <div class="navbar">
-        <img src="assets/images/logo.png" alt="Logo" />
+        <img src="assets/images/logo.png" alt="Logo">
         <div class="nav-menu">
             <a href="#">Home</a>
             <a href="#">Contact</a>
@@ -115,12 +141,47 @@
         </div>
     </section>
 
+    <!-- PRODUCTS -->
+    <section class="products">
+        <h2>Our Products</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="assets/images/cement.jpg">
+                <p>Cement</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/images/block.jpg">
+                <p>Blocks</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/images/building.jpg">
+                <p>Building Materials</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/images/ac.jpg">
+                <p>AC Units</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/images/lubricants.jpg">
+                <p>Lubricants</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHATSAPP BUTTON -->
+    <a class="whatsapp-btn" href="https://wa.me/971523388786">💬</a>
+
     <!-- FOOTER -->
     <footer class="footer">
         <p><strong>Zareen International</strong></p>
         <p>Building Materials & Air Conditioning Units Supplier</p>
         <p>Phone: +971523388786</p>
-        <p>Email: info@zareenintl.com (example — change if needed)</p>
+        <p>Email: info@zareenintl.com</p>
         <p>© 2025 Zareen International. All rights reserved.</p>
     </footer>
 
