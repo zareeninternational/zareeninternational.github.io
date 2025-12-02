@@ -1,99 +1,45 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zareen International</title>
-    <link rel="stylesheet" href="explore.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        nav {
-            background: #111;
-            padding: 15px;
-        }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            list-style: none;
-            justify-content: center;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 15px;
-        }
-
-        nav ul li a:hover {
-            color: #ffcc00;
-        }
-
-        .hero {
-            background: url('assets/images/hero.png') no-repeat center center/cover;
-            height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        .hero p {
-            font-size: 20px;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        .btn-primary {
-            margin-top: 20px;
-            padding: 12px 28px;
-            background-color: #ffcc00;
-            color: #111;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        .btn-primary:hover {
-            background: #ffaa00;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation Menu -->
+<header class="header">
+    <img src="logo.png" class="logo" alt="Logo">
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
     </nav>
+</header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <div>
-            <h1>Welcome to Zareen International</h1>
-            <p>Your trusted partner for global import, export, and trading solutions.</p>
-            <a href="products.html" class="btn-primary">Explore Products</a>
-        </div>
+<section class="hero">
+    <img src="assets/images/hero.jpg" class="hero-img" alt="Trading Hero Image">
+    <div class="hero-text">
+        <h1>Zareen International</h1>
+        <p>Your Trusted Partner in Global Trading — Building Materials, AC, Lubricants & More</p>
+        <a href="products.html" class="btn">Explore Products</a>
     </div>
+</section>
+
+<section class="why-us">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+        <div class="feature-box">✔ Premium Quality Products</div>
+        <div class="feature-box">✔ Trusted by Businesses</div>
+        <div class="feature-box">✔ Worldwide Sourcing</div>
+        <div class="feature-box">✔ Guaranteed On-Time Delivery</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Zareen International. All rights reserved.</p>
+</footer>
 
 </body>
-</html>
+</html>            
