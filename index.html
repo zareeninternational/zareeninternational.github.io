@@ -1,190 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zareen International</title>
-
+    <link rel="stylesheet" href="explore.css">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
 
-        /* NAVIGATION */
-        .navbar {
-            width: 100%;
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #ffffff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 999;
+        nav {
+            background: #111;
+            padding: 15px;
         }
 
-        .navbar img { height: 50px; }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 25px;
+        }
 
-        .nav-menu a {
-            margin-left: 20px;
+        nav ul li a {
             text-decoration: none;
-            font-size: 16px;
-            color: #333;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
         }
 
-        /* HERO */
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
         .hero {
-            width: 100%;
-            height: 420px;
-            background-image: url("assets/images/hero.jpg"); /* FIXED */
-            background-size: cover;
-            background-position: center;
+            background: url('assets/images/hero.png') no-repeat center center/cover;
+            height: 85vh;
             display: flex;
             align-items: center;
-            padding-left: 40px;
+            justify-content: center;
+            text-align: center;
             color: white;
+            padding: 20px;
         }
 
-        .hero-text {
-            max-width: 450px;
-            background: rgba(0, 0, 0, 0.35);
-            padding: 20px;
-            border-radius: 8px;
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .hero p {
+            font-size: 20px;
+            text-shadow: 2px 2px 4px black;
         }
 
         .btn-primary {
-            background: #007bff;
-            padding: 10px 18px;
-            color: white;
+            margin-top: 20px;
+            padding: 12px 28px;
+            background-color: #ffcc00;
+            color: #111;
             text-decoration: none;
-            border-radius: 5px;
-        }
-
-        /* PRODUCTS */
-        .products {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .products h2 { margin-bottom: 30px; }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            padding: 0 20px;
-        }
-
-        .product-card {
-            padding: 20px;
-            background: #f7f7f7;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
             border-radius: 6px;
+            font-weight: bold;
         }
 
-        /* WHATSAPP FLOATING BUTTON */
-        .whatsapp-btn {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            width: 60px;
-            height: 60px;
-            background: #25D366;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            color: white;
-            text-decoration: none;
-            z-index: 9999;
-        }
-
-        /* FOOTER */
-        .footer {
-            background: #111;
-            color: #ccc;
-            padding: 40px 20px;
-            text-align: center;
-            margin-top: 40px;
+        .btn-primary:hover {
+            background: #ffaa00;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <img src="assets/images/logo.png" alt="Logo">
-        <div class="nav-menu">
-            <a href="#">Home</a>
-            <a href="#">Contact</a>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Zareen International</h1>
+            <p>Your trusted partner for global import, export, and trading solutions.</p>
+            <a href="products.html" class="btn-primary">Explore Products</a>
         </div>
     </div>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Your Trusted Partner in<br>Building Materials & AC Units</h1>
-            <p>Quality products | Fast delivery | UAE & Oman supply</p>
-            <a href="#" class="btn-primary">Contact Us</a>
-        </div>
-    </section>
-
-    <!-- PRODUCTS -->
-    <section class="products">
-        <h2>Our Products</h2>
-
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="assets/images/cement.jpg">
-                <p>Cement</p>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/images/block.jpg">
-                <p>Blocks</p>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/images/building.jpg">
-                <p>Building Materials</p>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/images/ac.jpg">
-                <p>AC Units</p>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/images/lubricants.jpg">
-                <p>Lubricants</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHATSAPP BUTTON -->
-    <a class="whatsapp-btn" href="https://wa.me/971523388786">💬</a>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p><strong>Zareen International</strong></p>
-        <p>Building Materials & Air Conditioning Units Supplier</p>
-        <p>Phone: +971523388786</p>
-        <p>Email: info@zareenintl.com</p>
-        <p>© 2025 Zareen International. All rights reserved.</p>
-    </footer>
-
 </body>
-
 </html>
