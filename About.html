@@ -1,131 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Zareen International</title>
-    <link rel="stylesheet" href="explore.css" />
-    <style>
-        .about-container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.8;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .ceo-section {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-
-        .ceo-section img {
-            width: 160px;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 3px solid #ddd;
-        }
-
-        .ceo-message {
-            flex: 1;
-        }
-
-        .mission-vision {
-            margin-top: 40px;
-        }
-
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            padding: 20px;
-            background: #111;
-            color: #fff;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <header>
-        <div class="navbar">
-            <a href="index.html" class="logo">
-                <img src="logo.png" alt="Zareen International Logo" height="50">
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="about.html" class="active">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+<header class="header">
+    <img src="logo.png" class="logo" alt="Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <!-- ABOUT CONTENT -->
-    <div class="about-container">
-        <h1 class="section-title">About Zareen International</h1>
+<section class="about-section">
+    <h1>About Us</h1>
+    <p class="about-intro">
+        Zareen International is a leading trading company delivering high-quality 
+        building materials, air conditioners, lubricants, and industrial products 
+        across the Middle East, India, and global markets.
+    </p>
 
-        <p>
-            Zareen International is a trusted importer, exporter, and supplier of premium 
-            building materials and air conditioning units across the UAE and Oman. 
-            With a strong commitment to quality, timely delivery, and exceptional customer service, 
-            we have established ourselves as a reliable partner for construction companies, 
-            contractors, retail traders, and industrial clients.
-        </p>
-
-        <!-- CEO Section -->
-        <div class="ceo-section">
-            <img src="assets/images/ceo.jpg" alt="CEO Image">
-
-            <div class="ceo-message">
-                <h2>CEO's Message</h2>
-                <p>
-                    “At Zareen International, our mission has always been to deliver value, 
-                    trust, and excellence to our clients. We believe in building long-term 
-                    relationships by ensuring quality products, transparent processes, 
-                    and unmatched service standards. Thank you for trusting us as your 
-                    preferred supply partner.”
-                </p>
-                <p><strong>— Humair Akram, CEO</strong></p>
-            </div>
-        </div>
-
-        <!-- Mission & Vision -->
-        <div class="mission-vision">
-            <h2>Our Mission</h2>
+    <div class="ceo-box">
+        <img src="assets/images/ceo.jpg" class="ceo-img" alt="CEO">
+        <div class="ceo-text">
+            <h2>Message from Our CEO</h2>
             <p>
-                To provide high-quality building materials and AC units with exceptional 
-                service, ensuring reliability, affordability, and customer satisfaction.
+                At Zareen International, our mission is simple — to create a trusted 
+                supply chain that delivers premium products with unmatched reliability.  
+                We believe in long-term business relationships built on honesty, quality, 
+                and service excellence.
             </p>
-
-            <h2>Our Vision</h2>
             <p>
-                To become a leading international supplier recognized for quality, 
-                professionalism, and a commitment to supporting sustainable 
-                infrastructure growth across the Middle East.
+                Thank you for choosing us as your business partner. We look forward 
+                to growing together.
             </p>
+            <h3>— Humair Akram<br>CEO, Zareen International</h3>
         </div>
     </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p><strong>Zareen International</strong></p>
-        <p>Building Materials & Air Conditioning Units Supplier</p>
-        <p>Phone: +971523388786</p>
-        <p>Email: info@zareenintl.com</p>
-        <p>© 2025 Zareen International. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>© 2025 Zareen International. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
