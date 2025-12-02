@@ -1,35 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Zareen International</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About - Zareen International</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.png" alt="Zareen Intl" class="logo">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="menu" onclick="document.body.classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-<header class="header">
-    <img src="assets/images/logo.png" class="logo" alt="Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html" class="active">Contact</a>
-    </nav>
-</header>
+  <main class="container">
+    <section class="about-intro">
+      <h1>About Zareen International</h1>
+      <p>We specialize in global import and export of premium products across UAE, Oman and India — focusing on building materials, HVAC systems and industrial supplies. We aim for quality, timely delivery and long-term partnerships.</p>
+    </section>
 
-<section class="contact">
-    <h1 style="color:#f5c542;">Contact Us</h1>
+    <section class="ceo-section">
+      <div class="ceo-box">
+        <img src="assets/images/ceo.jpg" alt="CEO" class="ceo-img">
+        <div class="ceo-text">
+          <h2>Message from Our CEO</h2>
+          <p>At Zareen International, our mission is to deliver reliable products and service, building trust with every client. We value integrity and long-term partnerships across the region.</p>
+          <p><strong>- CEO, Zareen International</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <p>Email: info@zareeninternational.com</p>
-    <p>Phone: +91 9108417969</p>
-    <p>UAE | Oman | India</p>
-</section>
-
-<footer>
-    © 2025 Zareen International. All Rights Reserved.
-</footer>
-
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="logo" class="logo-sm">
+      </div>
+      <div class="footer-right">
+        <p>Phone: +971 52 338 8786</p>
+        <p>Email: info@zareenintl.com</p>
+        <small>© 2025 Zareen International. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
