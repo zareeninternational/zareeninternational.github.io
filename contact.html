@@ -1,63 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact - Zareen International</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Zareen International</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo">
-      </a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="About.html" class="nav-link">About Us</a>
-        <a href="products.html" class="nav-link">Products</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="open menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
-    </div>
-  </header>
+<header class="header">
+    <img src="assets/images/logo.png" class="logo" alt="Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
 
-  <main class="container section">
-    <h1 class="section-title">Contact Us</h1>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>Head Office</h3>
-        <p>Office - C1-1F-SF14106, Ajman Free Zone, Ajman - U.A.E</p>
-        <p><strong>Phone:</strong> +971 52 338 8786</p>
-        <p><strong>Email:</strong> <a href="mailto:info@zareenintl.com">info@zareenintl.com</a></p>
-      </div>
+<section class="contact">
+    <h1 style="color:#f5c542;">Contact Us</h1>
+    <p>Email: info@zareeninternational.com</p>
+    <p>Phone (UAE): +971 52 XXX XXXX</p>
+    <p>Phone (India): +91 91084 17969</p>
+    <p>Location: UAE • India • Oman</p>
+</section>
 
-      <div class="contact-card">
-        <h3>Send Us a Message</h3>
-        <!-- Form: GitHub Pages can't handle server side; mailto fallback -->
-        <form action="mailto:info@zareenintl.com" method="post" enctype="text/plain" class="contact-form">
-          <label>Name<input type="text" name="Name" required></label>
-          <label>Email<input type="email" name="Email" required></label>
-          <label>Message<textarea name="Message" rows="5" required></textarea></label>
-          <div><button class="btn btn-primary" type="submit">Send Message</button></div>
-        </form>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <img src="assets/images/logo.png" class="footer-logo" alt="logo">
-      </div>
-      <div>
-        <p>Phone: +971 52 338 8786 • Email: info@zareenintl.com</p>
-      </div>
-    </div>
-    <div class="copyright">© 2025 Zareen International. All rights reserved.</div>
-  </footer>
+<footer>
+    © 2025 Zareen International. All Rights Reserved.
+</footer>
 
 </body>
 </html>
