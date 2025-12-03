@@ -1,114 +1,90 @@
+/* General */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #000;
-    color: #fff;
+    background: #ffffff;
+    color: #222;
 }
 
+/* Header */
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    background: #111;
+    justify-content: space-between;
+    padding: 15px 0;
 }
 
 .logo {
-    width: 80px;
+    height: 60px;
 }
 
+/* Nav */
 nav a {
-    margin-left: 20px;
-    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
-}
-
-nav a.active {
-    color: #f5c542;
     font-weight: bold;
+    color: #333;
 }
 
+nav a.active,
+nav a:hover {
+    color: #0077B6;
+}
+
+/* Hero */
 .hero {
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
+    height: 420px;
+    background: url("../images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
 }
 
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.35;
+.hero-content {
+    margin-left: 60px;
+    color: white;
+    max-width: 500px;
 }
 
-.hero-text {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-}
-
-.btn {
-    background: #f5c542;
-    padding: 12px 28px;
-    color: #000;
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
     text-decoration: none;
+    background: #0077B6;
+    color: white;
+    margin-right: 10px;
     border-radius: 5px;
     font-weight: bold;
-    display: inline-block;
-    margin-top: 15px;
 }
 
-.why-us, .products, .contact {
-    padding: 40px;
-    text-align: center;
+.btn-secondary {
+    background: #25D366; /* WhatsApp green */
 }
 
-.feature-box {
-    border: 1px solid #f5c542;
-    padding: 12px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 10px;
+/* Pages */
+.page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
-.ceo-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    gap: 20px;
-}
-
-.ceo-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
+/* Product Grid */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-top: 20px;
-}
-
-.product-card {
-    background: #111;
-    padding: 15px;
-    border-radius: 10px;
 }
 
 .product-card img {
     width: 100%;
-    height: 150px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
+/* Footer */
 footer {
     text-align: center;
+    margin-top: 50px;
     padding: 20px;
-    background: #111;
-    margin-top: 30px;
+    background: #f1f1f1;
 }
