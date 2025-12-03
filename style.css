@@ -1,91 +1,183 @@
-* General */
+/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #222;
+    background: #000;
+    color: #fff;
 }
 
-/* Header */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+/* HEADER */
 .header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 15px 0;
+    align-items: center;
+    padding: 18px 40px;
+    background: #0d0d0d;
+    border-bottom: 1px solid #222;
 }
 
 .logo {
-    height: 60px;
+    width: 90px;
+    height: auto;
 }
 
-/* Nav */
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f5c542;
     font-weight: bold;
-    color: #333;
 }
 
-nav a.active,
-nav a:hover {
-    color: #0077B6;
-}
-
-/* Hero */
+/* HERO SECTION */
 .hero {
-    height: 420px;
-    background: url("../images/hero.jpg") center/cover no-repeat;
-    display: flex;
-    align-items: center;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
 }
 
-.hero-content {
-    margin-left: 60px;
-    color: white;
-    max-width: 500px;
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
 }
 
-.btn-primary,
-.btn-secondary {
-    padding: 10px 20px;
-    text-decoration: none;
-    background: #0077B6;
-    color: white;
-    margin-right: 10px;
+.hero-text {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 480px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* BUTTON */
+.btn {
+    background: #f5c542;
+    padding: 12px 25px;
+    color: #000;
     border-radius: 5px;
     font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
 }
 
-.btn-secondary {
-    background: #25D366; /* WhatsApp green */
+.btn:hover {
+    background: #d4a632;
 }
 
-/* Pages */
-.page {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+/* SECTIONS */
+section {
+    padding: 50px 40px;
+    text-align: center;
 }
 
-/* Product Grid */
+/* WHY US */
+.feature-box {
+    border: 1px solid #f5c542;
+    padding: 14px;
+    margin: 12px auto;
+    width: 75%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* ABOUT – CEO BOX */
+.ceo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    gap: 25px;
+}
+
+.ceo-img {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* PRODUCTS GRID */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.product-card {
+    background: #0f0f0f;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #222;
 }
 
 .product-card img {
     width: 100%;
-    height: 220px;
+    height: 160px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    background: #f1f1f1;
+    padding: 25px;
+    background: #0d0d0d;
+    margin-top: 40px;
+    border-top: 1px solid #222;
 }
-    
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text {
+        top: 45%;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ceo-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+
+    .header {
+        padding: 15px 20px;
+    }
+}
