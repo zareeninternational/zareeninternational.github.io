@@ -1,77 +1,55 @@
-   <!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Products - Zareen International</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Zareen International</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo">
-      </a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="About.html" class="nav-link">About Us</a>
-        <a href="products.html" class="nav-link active">Products</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="open menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+<header class="header">
+    <img src="assets/images/logo.png" class="logo" alt="Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="products">
+    <h1 style="color:#f5c542;">Our Products</h1>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="assets/images/cement.jpg" alt="Cement">
+            <h3>UltraTech Cement</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/ac.jpg" alt="Air Conditioners">
+            <h3>Air Conditioners</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/tiles.jpg" alt="Tiles">
+            <h3>Ceramic & Vitrified Tiles</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/bath.jpg" alt="Bath Fittings">
+            <h3>Bath Fittings</h3>
+        </div>
+
     </div>
-  </header>
+</section>
 
-  <main class="container section">
-    <h1 class="section-title">Our Product Range</h1>
-    <p class="section-intro">We supply a variety of building materials, HVAC units and lubricants. Click any product for more details.</p>
-
-    <div class="product-grid-full">
-      <article id="cement" class="product-card-full">
-        <img src="assets/images/cement.jpg" alt="Cement">
-        <h3>Cement Bags</h3>
-        <p>High quality Portland and sulfate resistant cement sourced from regional manufacturers.</p>
-      </article>
-
-      <article id="blocks" class="product-card-full">
-        <img src="assets/images/block.jpg" alt="Hollow Blocks">
-        <h3>Hollow Blocks</h3>
-        <p>Blocks and masonry units for construction projects.</p>
-      </article>
-
-      <article id="building" class="product-card-full">
-        <img src="assets/images/building.jpg" alt="Building Materials">
-        <h3>Building Materials</h3>
-        <p>Plywood, steel rods, aggregates and other construction essentials.</p>
-      </article>
-
-      <article id="ac" class="product-card-full">
-        <img src="assets/images/ac.jpg" alt="AC Units">
-        <h3>Air Conditioners</h3>
-        <p>Split, packaged and commercial HVAC units with warranty options.</p>
-      </article>
-
-      <article id="lubricants" class="product-card-full">
-        <img src="assets/images/lubricants.jpg" alt="Lubricants">
-        <h3>Lubricants</h3>
-        <p>Automotive and industrial lubricants for all applications.</p>
-      </article>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <img src="assets/images/logo.png" class="footer-logo" alt="logo">
-      </div>
-      <div>
-        <p>Phone: +971 52 338 8786 • Email: info@zareenintl.com</p>
-      </div>
-    </div>
-    <div class="copyright">© 2025 Zareen International. All rights reserved.</div>
-  </footer>
+<footer>
+    © 2025 Zareen International. All Rights Reserved.
+</footer>
 
 </body>
-</html>     
+</html>
