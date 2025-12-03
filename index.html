@@ -1,138 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zareen International</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zareen International</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo">
-      </a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="About.html" class="nav-link">About Us</a>
-        <a href="products.html" class="nav-link">Products</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="open menu" onclick="document.body.classList.toggle('nav-open')">
-        ☰
-      </button>
+<header class="header">
+    <img src="assets/images/logo.png" class="logo" alt="Logo">
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="assets/images/hero.jpg" class="hero-img" alt="Hero Image">
+    <div class="hero-text">
+        <h1>We Build Global Trading Connections</h1>
+        <a href="products.html" class="btn">Explore Our Products</a>
     </div>
-  </header>
+</section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner">
-        <h1 class="hero-title">Zareen International Trading FZC</h1>
-        <p class="hero-sub">Your trusted partner in building materials, HVAC systems and international trade</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="products.html">Explore Products</a>
-          <a class="btn btn-ghost" href="contact.html">Get a Quote</a>
-        </div>
-      </div>
-    </section>
+<section class="why-us">
+    <h2 style="color:#f5c542;">Why Choose Us?</h2>
+    <div class="feature-box">Trusted Global Import & Export Partner</div>
+    <div class="feature-box">Quality Assurance & Reliable Delivery</div>
+    <div class="feature-box">Strong Network in UAE, India & Oman</div>
+</section>
 
-    <!-- SERVICES -->
-    <section class="section container services">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-intro">Comprehensive trading solutions across multiple industries — building materials, HVAC, lubricants and more.</p>
-
-      <div class="cards-grid">
-        <article class="card">
-          <img src="assets/images/building.jpg" alt="Building Materials" class="card-image">
-          <h3>Building & Construction Materials</h3>
-          <p>Supply of cement, blocks, steel and plywood for projects large and small.</p>
-        </article>
-
-        <article class="card">
-          <img src="assets/images/ac.jpg" alt="Air Conditioners" class="card-image">
-          <h3>Unit Air-conditioner Trading</h3>
-          <p>Premium HVAC systems and AC units for residential & commercial applications.</p>
-        </article>
-
-        <article class="card">
-          <img src="assets/images/lubricants.jpg" alt="Lubricants" class="card-image">
-          <h3>Grease & Lubricants</h3>
-          <p>Industrial and automotive lubricants, greases and related products.</p>
-        </article>
-
-        <article class="card">
-          <img src="assets/images/portland-cement.jpg" alt="Cement" class="card-image">
-          <h3>E-commerce & Distribution</h3>
-          <p>Online trading and B2B distribution platforms for efficient sourcing.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- PRODUCTS PREVIEW -->
-    <section class="section container products-preview">
-      <h2 class="section-title">Our Products</h2>
-      <div class="product-grid">
-        <a class="product-card" href="products.html#cement">
-          <img src="assets/images/cement.jpg" alt="Cement">
-          <div class="product-name">Cement</div>
-        </a>
-        <a class="product-card" href="products.html#blocks">
-          <img src="assets/images/block.jpg" alt="Blocks">
-          <div class="product-name">Hollow Blocks</div>
-        </a>
-        <a class="product-card" href="products.html#building">
-          <img src="assets/images/building.jpg" alt="Building materials">
-          <div class="product-name">Building Materials</div>
-        </a>
-        <a class="product-card" href="products.html#ac">
-          <img src="assets/images/ac.jpg" alt="AC units">
-          <div class="product-name">AC Units</div>
-        </a>
-      </div>
-    </section>
-
-    <!-- CEO MESSAGE PREVIEW -->
-    <section class="section container about-preview">
-      <div class="about-grid">
-        <div>
-          <h2 class="section-title">About Zareen International</h2>
-          <p>We are an international trading company operating in UAE, Oman and India, delivering quality products with timely logistics and strong local partnerships.</p>
-          <a href="About.html" class="btn btn-outline">Read CEO Message</a>
-        </div>
-        <div class="ceo-card">
-          <img src="assets/images/ceo.jpg" alt="CEO" class="ceo-photo">
-          <div class="ceo-name">- CEO, Zareen International</div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <img src="assets/images/logo.png" alt="logo" class="footer-logo">
-      </div>
-      <div class="footer-center">
-        <p>Zareen International — Building Materials & Air Conditioning Units Supplier</p>
-        <p>Phone: +971 52 338 8786</p>
-        <p>Email: info@zareenintl.com</p>
-      </div>
-      <div class="footer-right">
-        <nav>
-          <a href="index.html">Home</a> •
-          <a href="About.html">About</a> •
-          <a href="products.html">Products</a> •
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </div>
-    <div class="copyright">© 2025 Zareen International. All rights reserved.</div>
-  </footer>
+<footer>
+    © 2025 Zareen International. All Rights Reserved.
+</footer>
 
 </body>
 </html>
