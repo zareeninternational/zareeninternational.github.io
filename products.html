@@ -1,30 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Products — Zareen International Trading FZC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Zareen International</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <header class="site-header"> ... same header ... </header>
 
-  <main class="section container">
-    <h1 class="section-title center">Our Products — Zareen International Trading FZC</h1>
-    <p class="section-intro center">Browse our product range. Contact us for bulk pricing and delivery schedules.</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="assets/images/logo.png" class="logo" alt="Zareen International Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html" class="active">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="product-grid">
-      <div class="product-card"><img src="assets/images/cement.jpg" alt="Cement"><div class="product-name">Cement</div></div>
-      <div class="product-card"><img src="assets/images/block.jpg" alt="Hollow Blocks"><div class="product-name">Hollow Blocks</div></div>
-      <div class="product-card"><img src="assets/images/ac.jpg" alt="AC Units"><div class="product-name">AC Units</div></div>
-      <div class="product-card"><img src="assets/images/lubricants.jpg" alt="Lubricants"><div class="product-name">Lubricants</div></div>
-      <div class="product-card"><img src="assets/images/portland-cement.jpg" alt="Portland Cement"><div class="product-name">Portland Cement</div></div>
-      <div class="product-card"><img src="assets/images/construction.jpg" alt="Construction"><div class="product-name">Construction Materials</div></div>
-    </div>
-  </main>
+    <!-- Banner -->
+    <section class="inner-banner">
+        <h1>Our Products</h1>
+        <p>We deliver the best quality products globally</p>
+    </section>
 
-  <footer class="site-footer"> ... footer with "Zareen International Trading FZC" ... </footer>
-  <script> document.getElementById('year3')?.textContent = new Date().getFullYear(); </script>
+    <!-- Products -->
+    <section class="products container">
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="assets/images/product1.jpg" alt="Product">
+                <h3>Premium Product 1</h3>
+                <p>High-quality export-grade product.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/images/product2.jpg" alt="Product">
+                <h3>Premium Product 2</h3>
+                <p>High-quality export-grade product.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/images/product3.jpg" alt="Product">
+                <h3>Premium Product 3</h3>
+                <p>High-quality export-grade product.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Zareen International. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918000000000" class="whatsapp-btn">
+        <img src="assets/images/whattsapp.jpg" alt="WhatsApp">
+    </a>
+
 </body>
 </html>
