@@ -1,39 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Zareen International Trading FZC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Zareen International</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <header class="site-header"> ... same header ... </header>
 
-  <main class="container section">
-    <h1 class="section-title center">Contact Zareen International Trading FZC</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="assets/images/logo.png" class="logo" alt="Zareen International Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html">Products</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>Head Office</h3>
-        <p>Office – C1 – 1F – SF14106, Ajman Free Zone, Ajman - U.A.E</p>
-        <p><strong>Phone:</strong> +971 52 338 8786</p>
-        <p><strong>Email:</strong> <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
-      </div>
+    <!-- Banner -->
+    <section class="inner-banner">
+        <h1>Contact Us</h1>
+        <p>We’re always here to help you</p>
+    </section>
 
-      <div class="contact-card">
-        <h3>Send a Quick Message</h3>
-        <form action="mailto:zareeninternationaltrading@gmail.com" method="post" enctype="text/plain" class="contact-form">
-          <label>Name<input type="text" name="Name" required></label>
-          <label>Email<input type="email" name="Email" required></label>
-          <label>Message<textarea name="Message" rows="5" required></textarea></label>
-          <div><button class="btn btn-primary" type="submit">Send Message</button></div>
-        </form>
-      </div>
-    </div>
-  </main>
+    <!-- Contact Section -->
+    <section class="contact-section container">
 
-  <footer class="site-footer"> ... footer with "Zareen International Trading FZC" ... </footer>
-  <script> document.getElementById('year4')?.textContent = new Date().getFullYear(); </script>
+        <div class="contact-details">
+            <h2>Get In Touch</h2>
+            <p><strong>Phone:</strong> +91 80000 00000</p>
+            <p><strong>Email:</strong> info@zareenintl.com</p>
+            <p><strong>Address:</strong> Business Bay, Dubai</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Phone Number">
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Zareen International. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918000000000" class="whatsapp-btn">
+        <img src="assets/images/whattsapp.jpg" alt="WhatsApp">
+    </a>
+
 </body>
 </html>
