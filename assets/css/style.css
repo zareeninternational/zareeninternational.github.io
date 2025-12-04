@@ -1,113 +1,190 @@
-:root{
-  --bg:#0b0b0b;
-  --card:#121212;
-  --muted:#a8afb5;
-  --gold:#d4af37;
-  --white:#ffffff;
-  --container:1150px;
-  --radius:12px;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Reset + base */
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background:var(--bg);
-  color:var(--white);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
 }
 
-/* container */
-.container{max-width:var(--container);margin:0 auto;padding:0 18px;}
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
 
 /* Header */
-.site-header{background:transparent;padding:18px 0;position:sticky;top:0;z-index:60}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.brand-logo{height:56px;width:auto;display:block}
-.main-nav{display:flex;gap:22px;align-items:center}
-.nav-link{color:rgba(255,255,255,0.9);text-decoration:none;padding:6px 8px;border-radius:6px;font-weight:600;font-size:14px}
-.nav-link:hover{color:var(--gold)}
-.nav-link.active{color:var(--gold);box-shadow:inset 0 -3px 0 var(--gold)}
+.header {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
 
-/* mobile menu */
-.menu-toggle{display:none;background:transparent;border:0;color:var(--white);font-size:24px;cursor:pointer}
+.header .logo {
+    width: 150px;
+}
 
-/* HERO / ABOUT HERO */
-.about-hero{position:relative;height:58vh;min-height:380px;display:flex;align-items:center;margin-bottom:8px}
-.about-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.45);z-index:0}
-.about-hero-content{position:relative;z-index:2;color:var(--white);max-width:920px}
-.about-hero-content h1{font-size:40px;margin:0 0 8px;line-height:1.02;font-weight:700}
-.about-hero-content .muted{color:var(--muted);font-size:18px;margin-bottom:14px}
-.hero-actions{display:flex;gap:12px;align-items:center}
+.header nav {
+    float: right;
+    margin-top: 10px;
+}
 
-/* Buttons */
-.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
-.btn-primary{background:var(--gold);color:#000}
-.btn-outline{background:transparent;border:2px solid rgba(255,255,255,0.06);color:var(--white)}
+.header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
 
-/* Sections */
-.section{padding:56px 0}
-.lead{color:var(--muted);font-size:18px;line-height:1.6}
-.about-grid{display:grid;grid-template-columns:1fr 360px;gap:36px;align-items:start}
-.ceo-card{background:transparent;padding:12px;border-radius:12px;text-align:center}
-.ceo-photo{width:100%;height:auto;border-radius:8px;border:3px solid rgba(255,255,255,0.03);object-fit:cover}
-.ceo-name{margin-top:12px;font-weight:700}
-.muted{color:var(--muted);font-weight:400}
+.header nav a.active {
+    font-weight: bold;
+    color: #008080;
+}
 
-/* benefits list */
-.benefits{list-style:disc;margin-left:18px;color:var(--muted);line-height:1.6}
+/* Banner */
+.inner-banner {
+    background: url('../images/banner.jpg') center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
 
-/* mission / grid */
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.small-card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
-.small-card h4{margin:0 0 10px}
+.inner-banner h1 {
+    font-size: 3rem;
+}
 
-/* CEO message */
-.ceo-message-wrap{display:flex;gap:28px;align-items:center}
-.ceo-message-text{flex:1;background:transparent}
-.ceo-message-text blockquote{font-size:20px;color:var(--muted);margin:18px 0;padding-left:12px;border-left:3px solid rgba(212,175,55,0.4)}
-.ceo-sign{margin-top:12px;font-weight:700}
+/* CEO Section */
+.ceo-section {
+    display: flex;
+    align-items: center;
+    margin: 60px auto;
+    gap: 40px;
+}
 
-/* timeline */
-.timeline{display:grid;gap:12px;margin-top:18px}
-.timeline-item{display:flex;gap:12px;align-items:flex-start}
-.timeline-item .year{min-width:68px;background:rgba(255,255,255,0.04);padding:8px 12px;border-radius:8px;font-weight:700}
-.timeline-item .desc{color:var(--muted)}
+.ceo-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
 
-.contact-cta .cta-card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:22px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.cta-actions{display:flex;gap:12px;align-items:center}
+.ceo-content h2 {
+    margin-bottom: 10px;
+}
 
-/* footer */
-.site-footer{background:transparent;padding:28px 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:28px}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px}
-.footer-logo{height:52px}
-.footer-center p{margin:6px 0;color:var(--muted)}
-.footer-nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+.ceo-content p {
+    margin-bottom: 15px;
+}
 
-/* whatsapp float */
-.whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:999}
-.whatsapp-float img{width:64px;height:64px;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,0.5);background:linear-gradient(180deg,#ffd36b,#d4af37);padding:6px}
+/* Timeline */
+.timeline-section {
+    background: #f4f4f4;
+    padding: 60px 20px;
+}
 
-/* small helpers */
-.container .section-title{ text-align:left; color:var(--white)}
-.lead, .muted, .timeline-item .desc { color: var(--muted); }
-a{color:inherit}
+.timeline {
+    margin-top: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 25px;
+}
+
+.timeline-item .year {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #008080;
+}
+
+/* Services */
+.services-section {
+    padding: 60px 0;
+}
+
+.service-boxes {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.service-box {
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 10px;
+    width: 33%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Stats */
+.stats-section {
+    background: #008080;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.stats-section .stat {
+    display: inline-block;
+    width: 30%;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+}
+
+/* CTA */
+.cta-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-section .btn {
+    display: inline-block;
+    background: #008080;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn img {
+    width: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
 
 /* Responsive */
-@media (max-width:1000px){
-  .about-grid{grid-template-columns:1fr;gap:20px}
-  .grid-3{grid-template-columns:1fr}
-  .ceo-message-wrap{flex-direction:column}
-  .hero-actions{flex-direction:column;align-items:flex-start}
-}
-@media (max-width:680px){
-  .about-hero-content h1{font-size:30px}
-  .brand-logo{height:48px}
-  .menu-toggle{display:inline-block}
-  .main-nav{display:none}
-  body.nav-open .main-nav{display:flex;position:absolute;top:72px;right:18px;flex-direction:column;background:rgba(0,0,0,0.85);padding:12px;border-radius:8px}
-  .whatsapp-float img{width:56px;height:56px}
+@media (max-width: 768px) {
+
+    .ceo-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-boxes {
+        flex-direction: column;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    .stats-section .stat {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
