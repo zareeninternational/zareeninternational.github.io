@@ -1,73 +1,89 @@
-   /* General */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
-    color: #222;
-}
-
-h2 {
-    text-align: center;
-    margin: 40px 0 20px;
+    background: #f4f4f4;
 }
 
 /* Navbar */
-.navbar {
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 40px;
+.header {
+    background: #00284d;
 }
 
-.navbar .logo img {
-    width: 120px;
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    gap: 30px;
+    list-style: none;
+    gap: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 15px;
 }
 
 .nav-links a.active {
     color: #d4af37;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-    background: url("../images/hero.jpg") center/cover no-repeat;
-    height: 400px;
+    height: 350px;
+    background: url("../images/hero.jpg") center/cover;
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: white;
+    align-items: center;
 }
 
-.hero .btn {
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero-btn {
     background: #d4af37;
-    padding: 12px 25px;
     color: black;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* Products */
-.products-section {
-    padding: 20px 40px;
-}
-
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
 }
 
 .product-card {
@@ -77,13 +93,19 @@ h2 {
     text-align: center;
 }
 
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 /* Contact */
 .contact-box {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
     background: white;
+    padding: 25px;
     border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
     text-align: center;
 }
 
@@ -93,23 +115,21 @@ h2 {
     align-items: center;
     gap: 10px;
     background: #25d366;
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 12px 20px;
     color: white;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .whatsapp-btn img {
-    width: 20px;
-    height: 20px;
+    width: 22px;
 }
 
 /* Footer */
 footer {
-    margin-top: 40px;
-    padding: 15px;
-    background: black;
+    background: #00284d;
     color: white;
     text-align: center;
-} 
+    padding: 15px;
+    margin-top: 30px;
+}
