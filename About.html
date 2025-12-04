@@ -11,7 +11,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo"></a>
-      <nav class="main-nav"><a href="index.html">Home</a><a href="about.html" class="nav-link active">About</a><a href="contact.html">Contact</a></nav>
+      <nav class="main-nav"><a href="index.html">Home</a><a href="about.html" class="nav-link active">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></nav>
       <button class="menu-toggle" aria-label="open menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
     </div>
   </header>
@@ -55,6 +55,9 @@
     <img src="assets/images/whatsapp.png" alt="WhatsApp">
   </a>
 
-  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+    (function(){ var path = window.location.pathname.split('/').pop(); if(!path) path='index.html'; document.querySelectorAll('.main-nav a').forEach(function(a){ if(a.getAttribute('href')===path) a.classList.add('active'); }); })();
+  </script>
 </body>
 </html>
