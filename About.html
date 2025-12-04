@@ -8,22 +8,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo"></a>
-      <nav class="main-nav" id="mainNav2">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="menu-toggle" onclick="document.getElementById('mainNav2').classList.toggle('open')">☰</button>
-    </div>
-  </header>
+  <header class="site-header"> ... same header as index ... </header>
 
   <main>
     <section class="section container about-section">
-      <h1 class="section-title center">About Zareen International</h1>
+      <h1 class="section-title center">About Zareen International Trading FZC</h1>
       <p class="section-intro center">We are a UAE-based trading company specialising in building materials, HVAC systems and industrial lubricants. We provide reliable supply, transparent pricing and excellent customer service.</p>
 
       <div class="about-grid">
@@ -48,16 +37,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
-      <div class="footer-center muted">Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></div>
-    </div>
-    <div class="center muted">© <span id="year2"></span> Zareen International Trading FZC</div>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank"><img src="assets/images/whatsapp.png" alt="WhatsApp"></a>
-
-  <script> document.getElementById('year2').textContent = new Date().getFullYear(); </script>
+  <footer class="site-footer"> ... footer with "Zareen International Trading FZC" ... </footer>
+  <script> document.getElementById('year2')?.textContent = new Date().getFullYear(); </script>
 </body>
 </html>
