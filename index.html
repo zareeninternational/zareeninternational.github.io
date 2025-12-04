@@ -1,113 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zareen International Trading FZC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zareen International - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Zareen International Trading FZC Logo" class="brand-logo">
-      </a>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <button class="menu-toggle" aria-label="Open menu" onclick="toggleNav()">☰</button>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <main>
-    <section class="hero">
-      <div class="hero-bg" style="background-image:url('assets/images/hero.jpg');" role="img" aria-label="Hero background"></div>
-      <div class="hero-overlay"></div>
-
-      <div class="container hero-content">
-        <div class="kicker">Your Trusted Trading Partner</div>
-        <h1 class="hero-title">Zareen International Trading FZC</h1>
-        <p class="hero-sub">Reliable supplier of construction materials, HVAC solutions and industrial lubricants across the Middle East.</p>
-        <div class="hero-cta">
-          <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-          <a href="products.html" class="btn btn-outline">Explore Products</a>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="assets/images/logo.png" class="logo" alt="Zareen International Logo">
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-home">
+        <div class="container">
+            <h1>Your Trusted Global Trading Partner</h1>
+            <p>Delivering premium products worldwide with unmatched quality and reliability.</p>
+            <a href="product.html" class="btn">Explore Products</a>
+        </div>
     </section>
 
-    <!-- PRODUCTS PREVIEW -->
-    <section class="section container">
-      <h2 class="section-title">Our Core Products</h2>
-      <p class="section-intro">Sourced and delivered across UAE — quality, reliability and competitive pricing.</p>
-
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="assets/images/construction.jpg" alt="Construction materials">
-          <div class="product-name">Building Materials</div>
+    <!-- Home About -->
+    <section class="home-about container">
+        <div class="home-about-text">
+            <h2>Who We Are</h2>
+            <p>
+                Zareen International is a leading global exporter of premium goods, known for
+                trusted supply, fast service, and top-notch quality. We work with brands and 
+                distributors worldwide to deliver products that meet international standards.
+            </p>
+            <a href="about.html" class="btn">Read More</a>
         </div>
-
-        <div class="product-card">
-          <img src="assets/images/ac.jpg" alt="AC Units">
-          <div class="product-name">HVAC & AC Units</div>
+        <div class="home-about-img">
+            <img src="assets/images/about.jpg" alt="About Image">
         </div>
-
-        <div class="product-card">
-          <img src="assets/images/lubricants.jpg" alt="Lubricants">
-          <div class="product-name">Lubricants & Oils</div>
-        </div>
-
-        <div class="product-card">
-          <img src="assets/images/portland-cement.jpg" alt="Portland Cement">
-          <div class="product-name">Portland Cement</div>
-        </div>
-      </div>
     </section>
 
-    <!-- GALLERY -->
-    <section id="products" class="section container">
-      <h2 class="section-title">Products Gallery</h2>
-      <div class="product-grid">
-        <a class="product-card" href="products.html"><img src="assets/images/cement.jpg" alt="Cement"><div class="product-name">Cement</div></a>
-        <a class="product-card" href="products.html"><img src="assets/images/block.jpg" alt="Blocks"><div class="product-name">Hollow Blocks</div></a>
-        <a class="product-card" href="products.html"><img src="assets/images/ac.jpg" alt="AC Units"><div class="product-name">AC Units</div></a>
-        <a class="product-card" href="products.html"><img src="assets/images/lubricants.jpg" alt="Lubricants"><div class="product-name">Lubricants</div></a>
-      </div>
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <div class="feature-box">
+                <h3>Premium Quality</h3>
+                <p>We deliver products that match global quality benchmarks.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Worldwide Shipping</h3>
+                <p>Fast & secure delivery to all major international destinations.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Reliable Partnership</h3>
+                <p>Long-term business collaborations with guaranteed trust.</p>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/images/logo.png" class="footer-logo" alt="Zareen International Trading FZC logo">
-      <div class="footer-center">
-        <p>Zareen International Trading FZC — Building Materials & HVAC Supply</p>
-        <p class="muted">Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
-      </div>
-    </div>
-    <div class="center muted" style="padding-top:12px;">© <span id="year"></span> Zareen International Trading FZC</div>
-  </footer>
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>Looking for a Reliable Export Partner?</h2>
+        <a href="contact.html" class="btn">Get In Touch</a>
+    </section>
 
-  <!-- WhatsApp floating -->
-  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="assets/images/whatsapp.png" alt="WhatsApp">
-  </a>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Zareen International. All rights reserved.</p>
+    </footer>
 
-  <script>
-    function toggleNav(){ document.getElementById('mainNav').classList.toggle('open'); }
-    document.getElementById('year').textContent = new Date().getFullYear();
-    (function(){
-      var path = location.pathname.split('/').pop() || 'index.html';
-      document.querySelectorAll('.main-nav a').forEach(a => { if(a.getAttribute('href') === path) a.classList.add('active'); });
-    })();
-  </script>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918000000000" class="whatsapp-btn">
+        <img src="assets/images/whattsapp.jpg" alt="WhatsApp">
+    </a>
+
 </body>
 </html>
