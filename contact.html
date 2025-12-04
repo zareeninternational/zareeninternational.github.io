@@ -8,21 +8,21 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo"></a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
+      <nav class="main-nav" id="mainNav4">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
-      <button class="menu-toggle" aria-label="open menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+      <button class="menu-toggle" onclick="document.getElementById('mainNav4').classList.toggle('open')">☰</button>
     </div>
   </header>
 
   <main class="container section">
-    <h1 class="section-title">Contact Us</h1>
+    <h1 class="section-title center">Contact Us</h1>
 
     <div class="contact-grid">
       <div class="contact-card">
@@ -36,9 +36,15 @@
         <h3>Send a Quick Message</h3>
         <!-- mailto fallback for GitHub Pages -->
         <form action="mailto:zareeninternationaltrading@gmail.com" method="post" enctype="text/plain" class="contact-form">
-          <label>Name<input type="text" name="Name" required></label>
-          <label>Email<input type="email" name="Email" required></label>
-          <label>Message<textarea name="Message" rows="5" required></textarea></label>
+          <label>Name
+            <input type="text" name="Name" required>
+          </label>
+          <label>Email
+            <input type="email" name="Email" required>
+          </label>
+          <label>Message
+            <textarea name="Message" rows="5" required></textarea>
+          </label>
           <div><button class="btn btn-primary" type="submit">Send Message</button></div>
         </form>
       </div>
@@ -47,20 +53,14 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        <img src="assets/images/logo.png" class="footer-logo" alt="logo">
-      </div>
-      <div>
-        <p>Phone: +971 52 338 8786 • Email: zareeninternationaltrading@gmail.com</p>
-      </div>
+      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
+      <div class="footer-center muted">Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></div>
     </div>
-    <div class="copyright">© <span id="year3"></span> Zareen International Trading FZC</div>
+    <div class="center muted">© <span id="year4"></span> Zareen International Trading FZC</div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="assets/images/whatsapp.png" alt="WhatsApp">
-  </a>
+  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank"><img src="assets/images/whatsapp.png" alt="WhatsApp"></a>
 
-  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <script> document.getElementById('year4').textContent = new Date().getFullYear(); </script>
 </body>
 </html>
