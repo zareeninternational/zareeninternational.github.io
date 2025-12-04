@@ -30,13 +30,19 @@
   <!-- HERO -->
   <main>
     <section class="hero">
-      <div class="hero-bg" role="img" aria-label="Dubai skyline hero" style="background-image:url('assets/images/hero.jpg')"></div>
+      <div class="hero-bg" role="img" aria-label="Hero image" style="background-image:url('assets/images/hero.jpg')"></div>
       <div class="container hero-content">
         <h1 class="hero-title">Zareen International Trading FZC</h1>
         <p class="hero-sub">Leading supplier of building materials, AC units, lubricants & hardware across the Middle East.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="contact.html">Get a Quote</a>
-          <a class="btn btn-outline" href="contact.html">Contact Us</a>
+          <a class="btn btn-outline" href="products.html">Explore Products</a>
+        </div>
+        <div class="hero-quick">
+          <a class="hero-whatsapp" href="https://wa.me/971523388786" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <img src="assets/images/whatsapp.png" alt="WhatsApp">
+            <span>Chat on WhatsApp</span>
+          </a>
         </div>
       </div>
     </section>
@@ -124,6 +130,17 @@
     <img src="assets/images/whatsapp.png" alt="WhatsApp">
   </a>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    // update year and highlight current nav link
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // small nav active detection (works without server)
+    (function(){
+      var path = window.location.pathname.split('/').pop();
+      if(!path) path = 'index.html';
+      document.querySelectorAll('.main-nav .nav-link').forEach(function(a){
+        if(a.getAttribute('href') === path) a.classList.add('active');
+      });
+    })();
+  </script>
 </body>
-</html>          
+</html>
