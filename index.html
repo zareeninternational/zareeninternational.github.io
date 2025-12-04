@@ -1,66 +1,118 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zareen International Trading FZC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo">
-    </a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo">
+      </a>
 
-    <nav class="main-nav" id="navMenu">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  </div>
-</header>
+      <button class="menu-toggle" aria-label="Open menu" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
 
-<script>
-function toggleMenu(){
-  document.getElementById("navMenu").classList.toggle("open");
-}
-</script>
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="hero-bg" style="background-image:url('assets/images/hero.jpg');" role="img" aria-label="Hero background"></div>
+      <div class="hero-overlay"></div>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Premium Quality Trading Solutions</h1>
-    <p>We deliver excellence in exports, imports, and global supply solutions.</p>
-    <a href="contact.html" class="btn-primary">Get in Touch</a>
-  </div>
-</section>
+      <div class="container hero-content">
+        <div class="kicker">Your Trusted Trading Partner</div>
+        <h1 class="hero-title">Premium Quality Trading Solutions</h1>
+        <p class="hero-sub">Reliable supplier of construction materials, HVAC solutions and industrial lubricants across the Middle East.</p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          <a href="products.html" class="btn btn-outline">Explore Products</a>
+        </div>
+      </div>
+    </section>
 
-<section class="products-section">
-  <h2>Our Products</h2>
+    <!-- PRODUCTS PREVIEW -->
+    <section class="section container">
+      <h2 class="section-title">Our Core Products</h2>
+      <p class="section-intro">Sourced and delivered across UAE — quality, reliability and competitive pricing.</p>
 
-  <div class="product-grid">
-    <div class="product-box">Product 1</div>
-    <div class="product-box">Product 2</div>
-    <div class="product-box">Product 3</div>
-  </div>
-</section>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="assets/images/construction.jpg" alt="Construction materials">
+          <div class="product-name">Building Materials</div>
+        </div>
 
-<footer class="site-footer">
-  <p>Email: zareeninternationaltrading@gmail.com</p>
-  <p>Location: Dubai, UAE</p>
-  <div class="copyright">
-    © 2025 Zareen International Trading FZC
-  </div>
-</footer>
+        <div class="product-card">
+          <img src="assets/images/ac.jpg" alt="AC Units">
+          <div class="product-name">HVAC & AC Units</div>
+        </div>
 
-<a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank">
-  <img src="assets/images/whatsapp.png" alt="WhatsApp">
-</a>
+        <div class="product-card">
+          <img src="assets/images/lubricants.jpg" alt="Lubricants">
+          <div class="product-name">Lubricants & Oils</div>
+        </div>
 
+        <div class="product-card">
+          <img src="assets/images/portland-cement.jpg" alt="Portland Cement">
+          <div class="product-name">Portland Cement</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="products" class="section container">
+      <h2 class="section-title">Products Gallery</h2>
+      <div class="product-grid">
+        <a class="product-card" href="products.html"><img src="assets/images/cement.jpg" alt="Cement"><div class="product-name">Cement</div></a>
+        <a class="product-card" href="products.html"><img src="assets/images/block.jpg" alt="Blocks"><div class="product-name">Hollow Blocks</div></a>
+        <a class="product-card" href="products.html"><img src="assets/images/ac.jpg" alt="AC Units"><div class="product-name">AC Units</div></a>
+        <a class="product-card" href="products.html"><img src="assets/images/lubricants.jpg" alt="Lubricants"><div class="product-name">Lubricants</div></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
+      <div class="footer-center">
+        <p>Zareen International Trading FZC — Building Materials & HVAC Supply</p>
+        <p class="muted">Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="center muted" style="padding-top:12px;">© <span id="year"></span> Zareen International Trading FZC</div>
+  </footer>
+
+  <!-- WhatsApp floating -->
+  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="assets/images/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <script>
+    function toggleNav(){
+      document.getElementById('mainNav').classList.toggle('open');
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // highlight nav link based on filename
+    (function(){
+      var path = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.main-nav a').forEach(a => {
+        if(a.getAttribute('href') === path) a.classList.add('active');
+      });
+    })();
+  </script>
 </body>
 </html>
