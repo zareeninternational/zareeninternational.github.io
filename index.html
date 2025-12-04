@@ -1,75 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zareen International Trading FZC</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zareen International Trading FZC</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header class="header">
-    <nav class="navbar">
-        <img src="assets/images/logo.png" class="logo">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo">
+    </a>
 
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="main-nav" id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
     </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
 </header>
 
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("open");
+}
+</script>
+
 <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h1>Premium Quality Trading Solutions</h1>
-        <p>Reliable import–export, global supply chain, and distribution services from UAE.</p>
-        <a href="#contact" class="hero-btn">Get in Touch</a>
-    </div>
+  <div class="hero-content">
+    <h1>Premium Quality Trading Solutions</h1>
+    <p>We deliver excellence in exports, imports, and global supply solutions.</p>
+    <a href="contact.html" class="btn-primary">Get in Touch</a>
+  </div>
 </section>
 
-<section id="products" class="section">
-    <h2 class="section-title">Our Products</h2>
+<section class="products-section">
+  <h2>Our Products</h2>
 
-    <div class="product-grid">
-
-        <div class="product-card">
-            <img src="assets/images/p1.jpg">
-            <h3>Product 1</h3>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/images/p2.jpg">
-            <h3>Product 2</h3>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/images/p3.jpg">
-            <h3>Product 3</h3>
-        </div>
-
-    </div>
+  <div class="product-grid">
+    <div class="product-box">Product 1</div>
+    <div class="product-box">Product 2</div>
+    <div class="product-box">Product 3</div>
+  </div>
 </section>
 
-<section id="contact" class="section">
-    <h2 class="section-title">Contact Us</h2>
-
-    <div class="contact-box">
-        <p><strong>Email:</strong> zareeninternationaltrading@gmail.com</p>
-        <p><strong>Location:</strong> Dubai, UAE</p>
-
-        <a href="https://wa.me/97100000000" class="whatsapp-btn">
-            <img src="assets/images/whatsapp.png"> WhatsApp Chat
-        </a>
-    </div>
-</section>
-
-<footer>
+<footer class="site-footer">
+  <p>Email: zareeninternationaltrading@gmail.com</p>
+  <p>Location: Dubai, UAE</p>
+  <div class="copyright">
     © 2025 Zareen International Trading FZC
+  </div>
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank">
+  <img src="assets/images/whatsapp.png" alt="WhatsApp">
+</a>
 
 </body>
 </html>
