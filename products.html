@@ -1,68 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India Market App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Zareen International Trading FZC</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header>
-    <img src="assets/images/logo.png" class="logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<!-- HERO SECTION -->
-<section class="hero">
-    <img src="assets/images/hero.jpg" class="hero-img">
-    <div class="hero-text">
-        <h1>India Market App</h1>
-        <p>Your trusted marketplace for all building materials, AC units, lubricants & more.</p>
-        <a href="https://wa.me/919108417969" class="whatsapp-btn">
-            <img src="assets/images/whatsapp.jpg"> Chat on WhatsApp
-        </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo"></a>
+      <nav class="main-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html" class="nav-link active">Products</a><a href="contact.html">Contact</a></nav>
+      <button class="menu-toggle" aria-label="open menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
     </div>
-</section>
+  </header>
 
-<!-- CATEGORIES -->
-<section class="categories">
-    <h2>Our Main Categories</h2>
+  <main class="section container">
+    <h1 class="section-title">Our Products</h1>
+    <p class="section-intro">Browse our product range. Contact us for bulk pricing and delivery schedules.</p>
 
-    <div class="cat-grid">
-        <div class="cat-card">
-            <img src="assets/images/construction.jpg">
-            <p>Construction Materials</p>
-        </div>
-
-        <div class="cat-card">
-            <img src="assets/images/ac.jpg">
-            <p>Air Conditioners</p>
-        </div>
-
-        <div class="cat-card">
-            <img src="assets/images/lubricants.jpg">
-            <p>Lubricants & Oils</p>
-        </div>
-
-        <div class="cat-card">
-            <img src="assets/images/portland-cement.jpg">
-            <p>Portland Cement</p>
-        </div>
+    <div class="product-grid">
+      <div class="product-card"><img src="assets/images/cement.jpg" alt="Cement"><div class="product-name">Cement</div></div>
+      <div class="product-card"><img src="assets/images/block.jpg" alt="Blocks"><div class="product-name">Hollow Blocks</div></div>
+      <div class="product-card"><img src="assets/images/ac.jpg" alt="AC"><div class="product-name">AC Units</div></div>
+      <div class="product-card"><img src="assets/images/lubricants.jpg" alt="Lubricants"><div class="product-name">Lubricants</div></div>
+      <div class="product-card"><img src="assets/images/portland-cement.jpg" alt="Portland Cement"><div class="product-name">Portland Cement</div></div>
+      <div class="product-card"><img src="assets/images/construction.jpg" alt="Construction"><div class="product-name">Construction Materials</div></div>
     </div>
-</section>
+  </main>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 India Market App | All Rights Reserved</p>
-</footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
+      <p>Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
+    </div>
+    <div class="copyright">© <span id="year3"></span> Zareen International Trading FZC</div>
+  </footer>
 
+  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" aria-label="Chat on WhatsApp"><img src="assets/images/whatsapp.png" alt="WhatsApp"></a>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
 </body>
 </html>
