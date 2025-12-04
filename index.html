@@ -19,12 +19,11 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html" class="nav-link active">Home</a>
         <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">
-        ☰
-      </button>
+      <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
     </div>
   </header>
 
@@ -42,7 +41,7 @@
       </div>
     </section>
 
-    <!-- SERVICES / PRODUCTS PREVIEW -->
+    <!-- PRODUCTS PREVIEW -->
     <section class="section container services">
       <h2 class="section-title">Our Core Products</h2>
       <p class="section-intro">Sourced and delivered across UAE — quality, reliability and competitive pricing.</p>
@@ -74,23 +73,23 @@
       </div>
     </section>
 
-    <!-- PRODUCTS GRID -->
+    <!-- GALLERY -->
     <section id="products" class="section container products-preview">
       <h2 class="section-title">Products Gallery</h2>
       <div class="product-grid">
-        <a class="product-card" href="contact.html#enquire">
+        <a class="product-card" href="products.html">
           <img src="assets/images/cement.jpg" alt="Cement">
           <div class="product-name">Cement</div>
         </a>
-        <a class="product-card" href="contact.html#enquire">
+        <a class="product-card" href="products.html">
           <img src="assets/images/block.jpg" alt="Blocks">
           <div class="product-name">Hollow Blocks</div>
         </a>
-        <a class="product-card" href="contact.html#enquire">
+        <a class="product-card" href="products.html">
           <img src="assets/images/ac.jpg" alt="AC units">
           <div class="product-name">AC Units</div>
         </a>
-        <a class="product-card" href="contact.html#enquire">
+        <a class="product-card" href="products.html">
           <img src="assets/images/lubricants.jpg" alt="Lubricants">
           <div class="product-name">Lubricants</div>
         </a>
@@ -107,7 +106,7 @@
       </div>
       <div class="footer-center">
         <p>Zareen International Trading FZC — Building Materials & HVAC Supply</p>
-        <p>Phone: +971 52 338 8786 • Email: zareeninternationaltrading@gmail.com</p>
+        <p>Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
       </div>
       <div class="footer-right">
         <nav class="footer-nav">
@@ -125,8 +124,6 @@
     <img src="assets/images/whatsapp.png" alt="WhatsApp">
   </a>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-</html>
+</html>          
