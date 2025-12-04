@@ -1,67 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zareen International Trading FZC</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zareen International</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/logo.png" />
 </head>
+
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo">
-      </a>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <img src="./assets/images/logo.png" class="logo" alt="Zareen International Logo" />
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      <nav class="main-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <button class="menu-toggle" onclick="document.body.classList.toggle('nav-open')">☰</button>
-    </div>
-  </header>
-
-  <main>
-
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1>Your Trusted Trading Partner in the UAE</h1>
-        <p>Leading suppliers of construction materials, HVAC solutions, industrial lubricants, and more.</p>
-        <a href="products.html" class="btn-primary">Explore Products</a>
-      </div>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Zareen International</h1>
+            <p>Your trusted supplier for construction materials and industrial products.</p>
+            <a href="#products" class="btn-primary">Explore Products</a>
+        </div>
     </section>
 
-  </main>
+    <!-- PRODUCTS SECTION -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Our Products</h2>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/images/logo.png" class="footer-logo">
-      <p>Phone: +971 52 338 8786 • Email: 
-        <a href="mailto:zareeninternationaltrading@gmail.com">
-          zareeninternationaltrading@gmail.com
-        </a>
-      </p>
-    </div>
-    <div class="copyright">
-      © <span id="year"></span> Zareen International Trading FZC
-    </div>
-  </footer>
+            <div class="product-grid">
 
-  <!-- FIXED: WhatsApp icon -->
-  <a class="whatsapp-float" 
-     href="https://wa.me/971523388786" 
-     target="_blank"
-     aria-label="Chat on WhatsApp">
-    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
-  </a>
+                <div class="product-card">
+                    <img src="./assets/images/block.jpg" alt="Blocks" />
+                    <h3>Blocks</h3>
+                </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+                <div class="product-card">
+                    <img src="./assets/images/cement.jpg" alt="Cement" />
+                    <h3>Cement</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="./assets/images/construction.jpg" alt="Construction Material" />
+                    <h3>Construction Materials</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="./assets/images/lubricants.jpg" alt="Lubricants" />
+                    <h3>Industrial Lubricants</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="./assets/images/ac.jpg" alt="AC Units" />
+                    <h3>AC Units</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Zareen International is a trusted name delivering high-quality construction
+                and industrial products with guaranteed service and reliability.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <p><strong>Phone:</strong> +971 58 802 478 / +971 54 508 158</p>
+            <p><strong>Email:</strong> info@zareeninternational.com</p>
+            <p><strong>Location:</strong> UAE</p>
+
+        </div>
+    </section>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/97158802478" class="whatsapp-float" target="_blank">
+        <img src="./assets/images/whatsapp.jpg" alt="WhatsApp" />
+    </a>
 
 </body>
 </html>
