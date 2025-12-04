@@ -1,38 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us – Zareen International Trading</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Zareen International Trading FZC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header>
-    <img src="assets/images/logo.png" class="logo" alt="Zareen Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo"></a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="open menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    </div>
+  </header>
 
-<section class="about-section">
-    <h1>About Zareen International Trading</h1>
-    <p>
-        Zareen International Trading is a trusted supplier of high-quality building,
-        construction, and industrial materials across the UAE.
-        We focus on delivering excellent service, reliable products, and strong business value.
-    </p>
-</section>
+  <main>
+    <section class="section container about-section">
+      <h1 class="section-title">About Zareen International Trading FZC</h1>
+      <p class="section-intro">We are a UAE-based trading company specialising in the supply of building materials, HVAC systems and industrial lubricants. Our goal is to provide reliable supply, transparent pricing and excellent customer service.</p>
 
-<footer>
-    <p>© 2025 Zareen International Trading – UAE</p>
-</footer>
+      <div class="about-grid">
+        <aside class="ceo-card">
+          <img src="assets/images/ceo.jpg" alt="CEO" class="ceo-photo">
+          <div class="ceo-name">Humair Akram<br><span class="muted">Founder & CEO</span></div>
+        </aside>
 
-<a href="https://wa.me/97152802478" class="whatsapp-btn">
+        <div class="about-text">
+          <h3>Our Mission</h3>
+          <p>To be the trusted supply partner of choice in the UAE for construction and HVAC projects by delivering quality products and timely service.</p>
+
+          <h3>What We Offer</h3>
+          <ul>
+            <li>Bulk supply of cement, blocks, and construction goods</li>
+            <li>Wholesale HVAC units and spare parts</li>
+            <li>Industrial lubricants and private-label packaging</li>
+            <li>Fast logistics and local distribution</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
+      <p>Phone: +971 52 338 8786 • Email: zareeninternationaltrading@gmail.com</p>
+    </div>
+    <div class="copyright">© <span id="year2"></span> Zareen International Trading FZC</div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" aria-label="Chat on WhatsApp">
     <img src="assets/images/whatsapp.png" alt="WhatsApp">
-</a>
+  </a>
 
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
 </body>
 </html>
