@@ -1,0 +1,314 @@
+/* ------------------------------
+   Global
+------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+/* ------------------------------
+   Header
+------------------------------- */
+.site-header {
+  background: #000;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  width: 130px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #c9a254;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+/* ------------------------------
+   Hero
+------------------------------- */
+.hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.45);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-sub {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto 25px;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #c9a254;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #b89240;
+}
+
+.btn-outline {
+  border: 2px solid #c9a254;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #c9a254;
+  color: #000;
+}
+
+/* ------------------------------
+   Cards
+------------------------------- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.card-image {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 8px;
+  font-size: 20px;
+  color: #000;
+}
+
+.card p {
+  padding: 0 15px;
+  color: #555;
+}
+
+/* ------------------------------
+   Products Grid
+------------------------------- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 0;
+}
+
+/* ------------------------------
+   Footer
+------------------------------- */
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  color: #c9a254;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: #777;
+}
+
+/* ------------------------------
+   WhatsApp Floating Button
+------------------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------
+   Responsive
+------------------------------- */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  body.nav-open .main-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: #000;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+}
