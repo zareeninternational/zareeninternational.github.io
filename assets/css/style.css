@@ -1,143 +1,116 @@
-/* -------------------
-   Global Styles
-------------------- */
+ /* GENERAL */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
-  background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
 }
 
-/* -------------------
-   Header
-------------------- */
-.site-header {
-  background: #ffffff;
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand-logo {
-  height: 55px;
-}
-
-/* Navigation */
-.main-nav a {
-  text-decoration: none;
-  color: #222;
-  margin-left: 18px;
-  font-weight: 600;
-}
-
-.main-nav a.active {
-  color: #d89f34;
-}
-
-.menu-toggle {
-  font-size: 26px;
-  background: none;
-  border: none;
-  display: none;
-}
-
-/* Mobile Nav */
-@media (max-width: 768px) {
-  .main-nav {
-    display: none;
-    flex-direction: column;
+/* HEADER */
+.header {
     background: #fff;
-    text-align: center;
-    width: 100%;
     padding: 10px 0;
-  }
-  body.nav-open .main-nav {
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 160px;
+}
+
+.nav-links {
+    list-style: none;
     display: flex;
-  }
-  .menu-toggle {
-    display: block;
-  }
+    gap: 20px;
 }
 
-/* -------------------
-   Hero Section
-------------------- */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* HERO */
 .hero {
-  background: url('../images/hero.jpg') center/cover no-repeat;
-  padding: 120px 0;
-  text-align: center;
-  color: white;
+    height: 75vh;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 600px;
-  margin: 10px auto 20px;
+.hero-content {
+    margin-left: 40px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .btn-primary {
-  background: #d89f34;
-  padding: 14px 28px;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+    padding: 10px 20px;
+    background: #0077ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-/* -------------------
-   Footer
-------------------- */
-.site-footer {
-  background: #111;
-  color: #fff;
-  padding: 30px 0 10px;
+/* PRODUCTS */
+.products h2,
+.about h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.footer-logo {
-  height: 50px;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.footer-inner {
-  text-align: center;
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.site-footer a {
-  color: #d89f34;
-  text-decoration: none;
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-/* -------------------
-   WhatsApp Float
-------------------- */
+.product-card h3 {
+    margin-top: 10px;
+}
+
+/* ABOUT + CONTACT */
+.about, .contact {
+    padding: 40px 0;
+}
+
+/* WHATSAPP FLOAT */
 .whatsapp-float {
-  position: fixed;
-  bottom: 18px;
-  right: 18px;
-  z-index: 999;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
 }
 
 .whatsapp-float img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}   
