@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo">
+        <img src="assets/images/logo.png" alt="Zareen International Trading FZC Logo" class="brand-logo">
       </a>
 
       <nav class="main-nav" id="mainNav">
@@ -35,7 +35,7 @@
 
       <div class="container hero-content">
         <div class="kicker">Your Trusted Trading Partner</div>
-        <h1 class="hero-title">Premium Quality Trading Solutions</h1>
+        <h1 class="hero-title">Zareen International Trading FZC</h1>
         <p class="hero-sub">Reliable supplier of construction materials, HVAC solutions and industrial lubricants across the Middle East.</p>
         <div class="hero-cta">
           <a href="contact.html" class="btn btn-primary">Get a Quote</a>
@@ -87,7 +87,7 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
+      <img src="assets/images/logo.png" class="footer-logo" alt="Zareen International Trading FZC logo">
       <div class="footer-center">
         <p>Zareen International Trading FZC — Building Materials & HVAC Supply</p>
         <p class="muted">Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
@@ -102,16 +102,11 @@
   </a>
 
   <script>
-    function toggleNav(){
-      document.getElementById('mainNav').classList.toggle('open');
-    }
+    function toggleNav(){ document.getElementById('mainNav').classList.toggle('open'); }
     document.getElementById('year').textContent = new Date().getFullYear();
-    // highlight nav link based on filename
     (function(){
       var path = location.pathname.split('/').pop() || 'index.html';
-      document.querySelectorAll('.main-nav a').forEach(a => {
-        if(a.getAttribute('href') === path) a.classList.add('active');
-      });
+      document.querySelectorAll('.main-nav a').forEach(a => { if(a.getAttribute('href') === path) a.classList.add('active'); });
     })();
   </script>
 </body>
