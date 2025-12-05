@@ -3,39 +3,66 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Products — Zareen International Trading FZC</title>
+  <title>Products — Zareen International</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo"></a>
-      <nav class="main-nav">
+      <nav class="main-nav" id="navMenu">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="products.html" class="nav-link active">Products</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+      <button class="menu-toggle" aria-label="open menu" onclick="toggleMenu()">☰</button>
     </div>
   </header>
 
-  <main class="section container">
-    <h1 class="section-title">Our Products</h1>
-    <p class="section-intro">Browse our core product range. Contact us for bulk orders, specification sheets and delivery timelines.</p>
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Our Products</h1>
+      <p class="muted">Browse our core product range. Contact us for bulk orders, specification sheets and delivery schedules.</p>
 
-    <div class="product-grid">
-      <div id="cement" class="product-card"><img src="assets/images/cement.jpg" alt="Cement"><div class="product-name">Cement</div><p class="product-desc">High strength cement for all construction needs — bulk supply.</p></div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="assets/images/cement.jpg" alt="Cement">
+          <h4>Cement</h4>
+          <p class="muted">Bulk and bagged cement varieties.</p>
+        </article>
 
-      <div id="blocks" class="product-card"><img src="assets/images/block.jpg" alt="Hollow Blocks"><div class="product-name">Hollow Blocks</div><p class="product-desc">Quality blocks in multiple sizes for masonry & walls.</p></div>
+        <article class="product-card">
+          <img src="assets/images/block.jpg" alt="Hollow Blocks">
+          <h4>Hollow Blocks</h4>
+          <p class="muted">Quality masonry & hollow blocks.</p>
+        </article>
 
-      <div id="ac" class="product-card"><img src="assets/images/ac.jpg" alt="AC Units"><div class="product-name">AC Units</div><p class="product-desc">Commercial HVAC units and spare parts — supply & installation partners available.</p></div>
+        <article class="product-card">
+          <img src="assets/images/ac.jpg" alt="AC Units">
+          <h4>AC Units</h4>
+          <p class="muted">Commercial HVAC and spares.</p>
+        </article>
 
-      <div id="lubricants" class="product-card"><img src="assets/images/lubricants.jpg" alt="Lubricants"><div class="product-name">Lubricants</div><p class="product-desc">Industrial lubricants & oils for heavy equipment and factories.</p></div>
+        <article class="product-card">
+          <img src="assets/images/lubricants.jpg" alt="Lubricants">
+          <h4>Lubricants</h4>
+          <p class="muted">Engine oils, industrial greases.</p>
+        </article>
 
-      <div id="portland" class="product-card"><img src="assets/images/portland-cement.jpg" alt="Portland Cement"><div class="product-name">Portland Cement</div><p class="product-desc">Speciality portland varieties for durable structures.</p></div>
+        <article class="product-card">
+          <img src="assets/images/portland-cement.jpg" alt="Portland Cement">
+          <h4>Portland Cement</h4>
+          <p class="muted">Specialty cement types.</p>
+        </article>
 
-      <div id="construction" class="product-card"><img src="assets/images/construction.jpg" alt="Construction Materials"><div class="product-name">Construction Materials</div><p class="product-desc">Bricks, aggregates, adhesives and site materials.</p></div>
+        <article class="product-card">
+          <img src="assets/images/construction.jpg" alt="Construction materials">
+          <h4>Construction Materials</h4>
+          <p class="muted">Aggregates, adhesives and more.</p>
+        </article>
+      </div>
     </div>
   </main>
 
@@ -44,11 +71,13 @@
       <img src="assets/images/logo.png" class="footer-logo" alt="logo">
       <p>Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
     </div>
-    <div class="copyright">© <span id="yr-products"></span> Zareen International Trading FZC</div>
+    <div class="copyright">© <span id="year3"></span> Zareen International Trading FZC</div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank"><img src="assets/images/whatsapp.jpg" alt="WhatsApp"></a>
+  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" aria-label="WhatsApp">
+    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
+  </a>
 
-<script>document.getElementById('yr-products').textContent = new Date().getFullYear();</script>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear(); function toggleMenu(){ document.getElementById('navMenu').classList.toggle('open'); }</script>
 </body>
 </html>
