@@ -3,50 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Zareen International Trading FZC</title>
+    <title>Contact - Zareen International</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <div class="container">
-        <span class="logo">Zareen International</span>
-        <span class="mobile-menu-btn" onclick="toggleMenu()">☰</span>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
+    <div class="logo">
+        <img src="assets/images/logo.png">
+        <h2>Zareen International</h2>
     </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a class="active" href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<div id="mobileMenu" class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-</div>
+<section class="section">
+    <h2 class="section-title">Get in Touch</h2>
 
-<h2 class="section-title">Contact Us</h2>
+    <p class="section-text">
+        Email: info@zareeninternational.com<br>
+        Phone: +971 00 000 000<br>
+        Location: UAE
+    </p>
+</section>
 
-<div class="container contact-box">
+<a href="https://wa.me/971000000000" class="whatsapp">
+    <img src="assets/images/whatsapp.jpg">
+</a>
 
-    <div class="contact-details">
-        <p><strong>Company:</strong> Zareen International Trading FZC</p>
-        <p><strong>Email:</strong> info@zareeninternational.com</p>
-        <p><strong>Phone:</strong> +971 50 000 0000</p>
-        <p><strong>Location:</strong> Sharjah, United Arab Emirates</p>
-    </div>
-
-</div>
-
-<footer>
-    © 2025 Zareen International Trading FZC. All Rights Reserved.
-</footer>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
