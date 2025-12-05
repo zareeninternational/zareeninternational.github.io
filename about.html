@@ -1,78 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us – Zareen International Trading FZC</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Zareen International Trading FZC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo"></a>
+      <nav class="main-nav" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="open menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
 
-<header class="header">
+  <section class="inner-banner about-banner">
     <div class="container">
-        <a href="index.html">
-            <img src="assets/images/logo.png" class="logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a class="active" href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <h1>About Zareen International Trading FZC</h1>
+      <p>Delivering premium products with transparency, quality and reliable logistics.</p>
     </div>
-</header>
+  </section>
 
-<section class="inner-banner">
-    <h1>About Us</h1>
-</section>
+  <main class="section">
+    <div class="container">
+      <div class="ceo-section">
+        <img src="assets/images/ceo.jpg" alt="Humar Akram - CEO" class="ceo-photo">
+        <div class="ceo-content">
+          <h2>Message from our CEO</h2>
+          <h4>Humar Akram — Chief Executive Officer</h4>
+          <p class="ceo-message">“At Zareen International, our commitment is to deliver trusted, high-quality products across global markets with integrity and professionalism. We believe in long-term partnerships, transparent service and excellence in every shipment.”</p>
+        </div>
+      </div>
 
-<section class="ceo-section container">
-    <div class="ceo-image">
-        <img src="assets/images/ceo.png" alt="CEO">
+      <section class="company-story">
+        <h3>Who We Are</h3>
+        <p>Zareen International Trading FZC is a UAE-based trading company specializing in construction materials, HVAC equipment, industrial lubricants and general trading supplies. We serve contractors, distributors and project teams across the Middle East.</p>
+
+        <h3>Our Mission</h3>
+        <p>To provide premium products and seamless trading solutions that support the growth of construction, manufacturing, and industrial sectors — delivered on time and with full transparency.</p>
+
+        <h3>Core Values</h3>
+        <ul>
+          <li>Quality & Reliability</li>
+          <li>Customer-first service</li>
+          <li>Integrity & Transparency</li>
+          <li>Long-term partnerships</li>
+        </ul>
+      </section>
+
+      <section class="timeline-section">
+        <h3>Our Journey</h3>
+        <div class="timeline">
+          <div class="timeline-item"><strong>2015</strong> — Company founded with a vision to serve regional projects.</div>
+          <div class="timeline-item"><strong>2017</strong> — Expanded product portfolio and distribution.</div>
+          <div class="timeline-item"><strong>2020</strong> — Entered wider regional markets across GCC.</div>
+          <div class="timeline-item"><strong>2024</strong> — Strengthened supply chain and logistics partnerships.</div>
+        </div>
+      </section>
     </div>
-    <div class="ceo-content">
-        <h2>CEO Message – Humar Akram</h2>
-        <p>
-            “At Zareen International Trading FZC, our commitment is to deliver trusted, high-quality 
-            products across global markets with integrity and professionalism.  
-            We believe in long-term partnerships, transparent service, and excellence in every shipment.”
-        </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
+      <div>
+        <p>Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
+      </div>
     </div>
-</section>
+    <div class="copyright">© <span id="year2"></span> Zareen International Trading FZC</div>
+  </footer>
 
-<section class="container">
-    <h2>Who We Are</h2>
-    <p>
-        Zareen International Trading FZC is a UAE-based trading company specializing in construction 
-        materials, HVAC equipment, industrial lubricants, and general trading supplies.  
-        With a strong distribution network across the Middle East, we ensure timely delivery, 
-        reliable quality, and competitive pricing.
-    </p>
+  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" aria-label="WhatsApp">
+    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
+  </a>
 
-    <h2>Our Mission</h2>
-    <p>
-        To provide premium products and seamless trading solutions that support the growth 
-        of construction, manufacturing, and industrial sectors.
-    </p>
-
-    <h2>Our Vision</h2>
-    <p>
-        To become the most reliable and innovative trading partner across the UAE and global markets.
-    </p>
-
-    <h2>Core Values</h2>
-    <ul>
-        <li>Quality & Reliability</li>
-        <li>Customer-First Service</li>
-        <li>Integrity & Transparency</li>
-        <li>Long-Term Partnerships</li>
-    </ul>
-</section>
-
-<footer>
-    © 2025 Zareen International Trading FZC
-</footer>
-
+  <script>document.getElementById('year2').textContent = new Date().getFullYear(); function toggleMenu(){ document.getElementById('navMenu').classList.toggle('open'); }</script>
 </body>
 </html>
