@@ -1,75 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About — Zareen International Trading FZC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – Zareen International Trading FZC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="logo" class="brand-logo"></a>
-      <nav class="main-nav">
+
+<header>
+    <div class="logo"><img src="assets/images/logo.png"></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="mobileMenu">
         <a href="index.html">Home</a>
-        <a href="about.html" class="nav-link active">About</a>
+        <a href="about.html">About</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-    </div>
-  </header>
+    </nav>
+</header>
 
-  <section class="page-header inner-hero-about" style="background-image:url('assets/images/hero.jpg')">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <h1>About Zareen International Trading FZC</h1>
-      <p class="lead">Supply solutions for building materials, HVAC and industrial lubricants — trusted across the Middle East.</p>
-    </div>
-  </section>
+<section class="about-hero">
+    <h1>About Us</h1>
+    <p>Zareen International Trading FZC is a UAE-based trading company supplying construction materials, HVAC solutions, electrical items and industrial lubricants across global markets.</p>
+</section>
 
-  <main class="section about-main container">
-    <div class="ceo-block">
-      <div class="ceo-photo">
-        <img src="assets/images/ceo.jpg" alt="Humar Akram — CEO">
-      </div>
-      <div class="ceo-text">
-        <h2>Message from our CEO</h2>
-        <h4>Humar Akram — Chief Executive Officer</h4>
-        <blockquote>
-          “At Zareen International, our commitment is to deliver trusted, high-quality products across markets with integrity and professionalism. We build long-term partnerships and stand by reliable service in every shipment.”
-        </blockquote>
-      </div>
-    </div>
+<section class="container ceo-section">
+    <img src="assets/images/ceo.jpg" class="ceo-image">
 
-    <section class="company-info">
-      <h3>Who We Are</h3>
-      <p>Zareen International Trading FZC is a UAE-based trading company specializing in construction materials, HVAC equipment, and industrial lubricants. We partner with manufacturers and logistics providers to deliver timely and cost-effective supply solutions across the Middle East.</p>
+    <h2>Mr. Humar Akram – CEO</h2>
+    <p>
+        With strong trading experience and leadership, Mr. Humar Akram has built Zareen International into a reliable and fast-growing trading company serving clients in the UAE, GCC and Asia. His vision is to expand international operations and maintain the highest standards of quality and trust.
+    </p>
+</section>
 
-      <h3>Our Mission</h3>
-      <p>To deliver premium products and reliable trading services that support construction, industry and infrastructure development.</p>
+<footer>
+    © 2025 Zareen International Trading FZC. All rights reserved.
+</footer>
 
-      <h3>Core Values</h3>
-      <ul>
-        <li>Quality & Reliability</li>
-        <li>Customer-focused Service</li>
-        <li>Integrity & Transparency</li>
-        <li>Long-term Partnerships</li>
-      </ul>
-    </section>
-  </main>
+<a class="whatsapp-float" href="https://wa.me/971500000000">
+    <img src="assets/images/whatsapp.png">
+</a>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
-      <p>Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
-    </div>
-    <div class="copyright">© <span id="year2"></span> Zareen International Trading FZC</div>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank"><img src="assets/images/whatsapp.png" alt="chat"></a>
-
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
