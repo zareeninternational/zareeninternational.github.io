@@ -1,4 +1,4 @@
-// simple nav toggle
+// nav toggle + footer years + small mobile behavior
 (function(){
   const toggle = document.getElementById('navToggle');
   const nav = document.getElementById('siteNav');
@@ -17,16 +17,15 @@
     });
   }
 
-  // close nav on link click (mobile)
+  // close nav when clicking a link on mobile
   document.addEventListener('click', (e)=>{
     if(e.target.matches('.site-nav a')){
       if(window.innerWidth <= 900 && nav) { nav.style.display = 'none'; }
     }
   });
 
-  // set current year in footer
-  const years = [ 'year','year2','year3','year4' ];
-  years.forEach(id => {
+  // set footer years
+  ['year','year2','year3','year4'].forEach(id=>{
     const el = document.getElementById(id);
     if(el) el.textContent = new Date().getFullYear();
   });
