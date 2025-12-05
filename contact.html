@@ -3,40 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Zareen International Trading FZC</title>
+    <title>Contact - Zareen International Trading FZC</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <div class="logo"><img src="assets/images/logo.png"></div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="mobileMenu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container">
+        <span class="logo">Zareen International</span>
+        <span class="mobile-menu-btn" onclick="toggleMenu()">☰</span>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section class="container contact-box">
-    <h2>Contact Us</h2>
+<div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+</div>
 
-    <p><b>Company:</b> Zareen International Trading FZC</p>
-    <p><b>Email:</b> info@zareentrading.com</p>
-    <p><b>Phone:</b> +971 50 000 0000</p>
-    <p><b>Location:</b> UAE – Sharjah / Dubai</p>
-</section>
+<h2 class="section-title">Contact Us</h2>
+
+<div class="container contact-box">
+
+    <div class="contact-details">
+        <p><strong>Company:</strong> Zareen International Trading FZC</p>
+        <p><strong>Email:</strong> info@zareeninternational.com</p>
+        <p><strong>Phone:</strong> +971 50 000 0000</p>
+        <p><strong>Location:</strong> Sharjah, United Arab Emirates</p>
+    </div>
+
+</div>
 
 <footer>
-    © 2025 Zareen International Trading FZC. All rights reserved.
+    © 2025 Zareen International Trading FZC. All Rights Reserved.
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/971500000000">
-    <img src="assets/images/whatsapp.png">
-</a>
-
-<script src="assets/js/main.js"></script>
 </body>
 </html>
