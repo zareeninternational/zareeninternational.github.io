@@ -1,79 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Products — Zareen International</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Terasync Tech</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="logo" class="brand-logo"></a>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html" class="active">Products</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button id="menuToggle3" class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.png">
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="menu-btn">☰</div>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <main class="section container">
-    <h1 class="section-title">Our Products</h1>
-    <p class="section-sub">Browse our core product range. Contact us for bulk pricing and delivery schedules.</p>
+<section class="page-header">
+    <h1>Our Products</h1>
+</section>
 
-    <div class="product-grid full">
-      <div class="product-card">
-        <img src="assets/images/cement.jpg" alt="Cement">
-        <h3>Cement</h3>
-        <p>High strength cement for all construction needs — bulk supply.</p>
-      </div>
+<section class="container reveal product-list">
+    <div class="product-box">TeraHotel ERP</div>
+    <div class="product-box">TeraTrade ERP</div>
+    <div class="product-box">TeraCampus ERP</div>
+    <div class="product-box">TeraEstate ERP</div>
+    <div class="product-box">TeraHealth (Radiology + Clinic)</div>
+</section>
 
-      <div class="product-card">
-        <img src="assets/images/block.jpg" alt="Hollow Blocks">
-        <h3>Hollow Blocks</h3>
-        <p>Quality blocks for masonry and walls.</p>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/ac.jpg" alt="AC Units">
-        <h3>AC Units</h3>
-        <p>Commercial HVAC units, spare parts & installation partners.</p>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/lubricants.jpg" alt="Lubricants">
-        <h3>Lubricants</h3>
-        <p>Industrial oils & greases for heavy equipment.</p>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/portland-cement.jpg" alt="Portland Cement">
-        <h3>Portland Cement</h3>
-        <p>Speciality portland cement varieties for durability.</p>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/construction.jpg" alt="Construction Materials">
-        <h3>Construction Materials</h3>
-        <p>Bricks, aggregates, adhesives and site materials for projects.</p>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
-      <p>Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
-    </div>
-    <div class="copyright">© <span id="year3"></span> Zareen International Trading FZC</div>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank"><img src="assets/images/whatsapp.png" alt="chat"></a>
-
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
