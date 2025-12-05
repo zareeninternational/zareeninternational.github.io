@@ -3,48 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Zareen International Trading FZC</title>
+    <title>Products - Zareen International</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <div class="container">
-        <span class="logo">Zareen International</span>
-        <span class="mobile-menu-btn" onclick="toggleMenu()">☰</span>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html" class="active">Products</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <div class="logo">
+        <img src="assets/images/logo.png">
+        <h2>Zareen International</h2>
     </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<div id="mobileMenu" class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-</div>
+<section class="section">
+    <h2 class="section-title">Our Product Range</h2>
 
-<h2 class="section-title">Our Product Categories</h2>
+    <div class="products-grid">
 
-<div class="container products-grid">
-    <div class="product-box"><h3>Food & Beverages</h3></div>
-    <div class="product-box"><h3>Garments & Textiles</h3></div>
-    <div class="product-box"><h3>Kitchen & Household</h3></div>
-    <div class="product-box"><h3>Industrial Tools</h3></div>
-    <div class="product-box"><h3>Building Materials</h3></div>
-    <div class="product-box"><h3>Electronics & Accessories</h3></div>
-</div>
+        <div class="product-card">
+            <img src="assets/images/cement.jpg">
+            <p>Cement</p>
+        </div>
 
-<footer>
-    © 2025 Zareen International Trading FZC. All Rights Reserved.
-</footer>
+        <div class="product-card">
+            <img src="assets/images/portland-cement.jpg">
+            <p>Portland Cement</p>
+        </div>
 
+        <div class="product-card">
+            <img src="assets/images/block.jpg">
+            <p>Concrete Blocks</p>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/lubricants.jpg">
+            <p>Industrial Lubricants</p>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/ac.jpg">
+            <p>HVAC Equipment</p>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/construction.jpg">
+            <p>Construction Materials</p>
+        </div>
+
+    </div>
+</section>
+
+<a href="https://wa.me/971000000000" class="whatsapp">
+    <img src="assets/images/whatsapp.jpg">
+</a>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
