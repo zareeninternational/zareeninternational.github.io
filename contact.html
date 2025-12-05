@@ -3,41 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Zareen International Trading FZC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Contact — Zareen International</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Zareen Logo" class="brand-logo"></a>
-      <nav class="main-nav" id="navMenu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="products.html" class="nav-link">Products</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="logo" class="brand-logo"></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
-      <button class="menu-toggle" aria-label="open menu" onclick="toggleMenu()">☰</button>
+      <button id="menuToggle4" class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container contact-grid">
-      <div class="contact-card">
+  <main class="section container">
+    <h1 class="section-title">Contact Us</h1>
+
+    <div class="contact-grid">
+      <div class="contact-card contact-info">
         <h3>Head Office</h3>
         <p>Office – C1 – 1F – SF14106, Ajman Free Zone, Ajman - U.A.E</p>
         <p><strong>Phone:</strong> +971 52 338 8786</p>
         <p><strong>Email:</strong> <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
       </div>
 
-      <div class="contact-card">
-        <h3>Send a quick message</h3>
+      <div class="contact-card contact-form">
+        <h3>Send a Quick Message</h3>
         <!-- mailto fallback -->
         <form action="mailto:zareeninternationaltrading@gmail.com" method="post" enctype="text/plain">
           <label>Name<input type="text" name="Name" required></label>
           <label>Email<input type="email" name="Email" required></label>
           <label>Message<textarea name="Message" rows="6" required></textarea></label>
-          <button class="btn btn-primary" type="submit">Send Message</button>
+          <div><button class="btn btn-gold" type="submit">Send Message</button></div>
         </form>
       </div>
     </div>
@@ -51,10 +53,8 @@
     <div class="copyright">© <span id="year4"></span> Zareen International Trading FZC</div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" aria-label="WhatsApp">
-    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
-  </a>
+  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank"><img src="assets/images/whatsapp.png" alt="chat"></a>
 
-  <script>document.getElementById('year4').textContent = new Date().getFullYear(); function toggleMenu(){ document.getElementById('navMenu').classList.toggle('open'); }</script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
