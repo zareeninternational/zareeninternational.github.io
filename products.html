@@ -1,79 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Products — Zareen International</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products – Zareen International Trading FZC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="logo" class="brand-logo"></a>
-      <nav class="main-nav">
+
+<header>
+    <div class="logo"><img src="assets/images/logo.png"></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="mobileMenu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="products.html" class="nav-link active">Products</a>
+        <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+</header>
+
+<section class="container">
+    <h1>Our Products</h1>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <h3>Construction Materials</h3>
+            <p>Cement, sand, steel bars, pipes, fittings, waterproofing items.</p>
+        </div>
+
+        <div class="product-card">
+            <h3>HVAC Materials</h3>
+            <p>AC units, ventilation systems, copper coils, insulation materials.</p>
+        </div>
+
+        <div class="product-card">
+            <h3>Electrical Items</h3>
+            <p>Cables, breakers, distribution boards, panel components.</p>
+        </div>
+
+        <div class="product-card">
+            <h3>Industrial Lubricants</h3>
+            <p>Engine oils, hydraulic oils, industrial grease, gear oils.</p>
+        </div>
+
     </div>
-  </header>
+</section>
 
-  <main class="section container">
-    <h1 class="section-title">Our Products</h1>
-    <p class="section-sub">Contact us for bulk pricing, stock and delivery schedules.</p>
+<footer>
+    © 2025 Zareen International Trading FZC. All rights reserved.
+</footer>
 
-    <div class="product-grid full">
-      <div class="product-card">
-        <img src="assets/images/cement.jpg" alt="Cement">
-        <h3>Cement</h3>
-        <p>Bulk cement supply for construction projects.</p>
-      </div>
+<a class="whatsapp-float" href="https://wa.me/971500000000">
+    <img src="assets/images/whatsapp.png">
+</a>
 
-      <div class="product-card">
-        <img src="assets/images/block.jpg" alt="Hollow Blocks">
-        <h3>Hollow Blocks</h3>
-        <p>High-quality masonry blocks.</p>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/ac.jpg" alt="AC Units">
-        <h3>AC Units</h3>
-        <p>Split and commercial HVAC units.</p>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/lubricants.jpg" alt="Lubricants">
-        <h3>Lubricants</h3>
-        <p>Industrial & automotive lubricants, drums and cans.</p>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/portland-cement.jpg" alt="Portland Cement">
-        <h3>Portland Cement</h3>
-        <p>Specialty Portland varieties for structural works.</p>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/construction.jpg" alt="Construction">
-        <h3>Construction Materials</h3>
-        <p>Bricks, aggregates, plywood and site supplies.</p>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/images/logo.png" class="footer-logo" alt="logo">
-      <p>Phone: +971 52 338 8786 • Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
-    </div>
-    <div class="copyright">© <span id="year3"></span> Zareen International Trading FZC</div>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank"><img src="assets/images/whatsapp.png" alt="chat"></a>
-
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
