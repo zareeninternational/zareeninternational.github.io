@@ -3,66 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Zareen International Trading FZC</title>
+    <title>About Us - Zareen International</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <div class="container">
-        <span class="logo">Zareen International</span>
-        <span class="mobile-menu-btn" onclick="toggleMenu()">☰</span>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <div class="logo">
+        <img src="assets/images/logo.png">
+        <h2>Zareen International</h2>
     </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<div id="mobileMenu" class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-</div>
+<section class="section">
+    <h2 class="section-title">About Us</h2>
 
-<!-- ABOUT BANNER -->
-<div class="about-banner"></div>
+    <div class="about-wrapper">
+        <img class="ceo-img" src="assets/images/ceo.jpg">
 
-<!-- ABOUT BODY -->
-<div class="container about-content">
-    <h2>About Our Company</h2>
-    <p>
-        Zareen International Trading FZC is a diversified import-export company delivering
-        premium-quality products worldwide. With strong supply chain networks and trusted
-        partnerships, we provide reliable sourcing, competitive pricing, and on-time delivery.
-    </p>
-
-    <p>
-        Our operations span across multiple sectors including food products, clothing,
-        industrial supplies, home essentials, and general trading solutions.
-    </p>
-
-    <!-- CEO SECTION -->
-    <div class="ceo-section">
-        <img src="assets/images/ceo.jpg" alt="CEO Image">
-        <h3>Humair Akram<br>CEO – Zareen International Trading FZC</h3>
-        <p>
-            “Our mission is to build strong global partnerships by consistently delivering quality,
-            trust, and value. Every shipment we handle reflects our commitment to excellence.”
-        </p>
+        <div class="about-text">
+            <h3>Message From CEO</h3>
+            <p>
+                At Zareen International Trading FZC, our mission is to redefine global trade with 
+                reliability, transparency, and excellence. We serve clients across the Middle East, 
+                Africa, and Asia with top-quality building materials, HVAC equipment, electrical items, 
+                and industrial lubricants.
+            </p>
+        </div>
     </div>
+</section>
 
-</div>
+<a href="https://wa.me/971000000000" class="whatsapp">
+    <img src="assets/images/whatsapp.jpg">
+</a>
 
-<footer>
-    © 2025 Zareen International Trading FZC. All Rights Reserved.
-</footer>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
