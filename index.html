@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -19,11 +21,11 @@
         </div>
       </div>
 
-      <button id="navToggle" class="nav-toggle" aria-label="Open menu">
+      <button id="navToggle" class="nav-toggle" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
 
-      <nav id="siteNav" class="site-nav">
+      <nav id="siteNav" class="site-nav" aria-label="Main navigation">
         <a href="index.html" class="nav-link active">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="products.html" class="nav-link">Products</a>
@@ -32,14 +34,15 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO (black overlay + gold glow) -->
   <section class="hero">
+    <img src="assets/images/hero.jpg" alt="Hero background" class="hero-bg">
     <div class="hero-overlay"></div>
-    <img src="assets/images/hero.jpg" class="hero-bg" alt="Hero background">
+
     <div class="container hero-content">
       <small class="eyebrow">YOUR TRUSTED TRADING PARTNER</small>
-      <h1>Zareen International Trading FZC</h1>
-      <p class="lead">Supplier of building materials, HVAC systems and industrial lubricants across the UAE & Middle East.</p>
+      <h1 class="hero-title">Zareen International Trading FZC</h1>
+      <p class="hero-sub">Supplier of building materials, HVAC systems and industrial lubricants across the UAE & Middle East.</p>
       <div class="hero-ctas">
         <a href="contact.html" class="btn btn-gold">Get a Quote</a>
         <a href="products.html" class="btn btn-outline">Explore Products</a>
@@ -47,51 +50,57 @@
     </div>
   </section>
 
-  <!-- Core Products -->
+  <!-- PRODUCTS PREVIEW -->
   <section class="section container products-preview">
     <h2 class="section-title">Our Core Products</h2>
     <p class="section-sub">Contact us for bulk pricing, stock and delivery schedules.</p>
 
-    <div class="grid grid-3">
-      <article class="card">
-        <img src="assets/images/cement.jpg" alt="Cement">
-        <h3>Cement & Clinker</h3>
-        <p>Bulk cement supply for construction projects.</p>
+    <div class="grid grid-3 product-grid">
+      <!-- 1 Building Materials -->
+      <article class="product-card">
+        <img src="assets/images/construction.jpg" alt="Building Materials">
+        <h4>Building Materials</h4>
+        <p>Comprehensive supply of bricks, blocks, aggregates, adhesives & site materials.</p>
       </article>
 
-      <article class="card">
-        <img src="assets/images/portland-cement.jpg" alt="Portland Cement">
-        <h3>Portland Cement</h3>
-        <p>Specialty portland varieties for durable structures.</p>
+      <!-- 2 Hollow Brick -->
+      <article class="product-card">
+        <img src="assets/images/hollow-brick.jpg" alt="Hollow Brick">
+        <h4>Hollow Brick</h4>
+        <p>Quality hollow bricks for walls and masonry.</p>
       </article>
 
-      <article class="card">
+      <!-- 3 Paver Block -->
+      <article class="product-card">
+        <img src="assets/images/paver-block.jpg" alt="Paver Block">
+        <h4>Paver Block</h4>
+        <p>Strong paver blocks for pavements, landscaping and driveways.</p>
+      </article>
+
+      <!-- 4 Plywood -->
+      <article class="product-card">
+        <img src="assets/images/plywood.jpg" alt="Plywood">
+        <h4>Plywood</h4>
+        <p>Commercial plywood and panels for construction and interior works.</p>
+      </article>
+
+      <!-- 5 AC -->
+      <article class="product-card">
+        <img src="assets/images/ac.jpg" alt="AC Units">
+        <h4>HVAC & AC Units</h4>
+        <p>Split ACs, packaged units and commercial HVAC solutions.</p>
+      </article>
+
+      <!-- 6 Lubricants -->
+      <article class="product-card">
         <img src="assets/images/lubricants.jpg" alt="Lubricants">
-        <h3>Industrial Lubricants</h3>
-        <p>High-quality oils for heavy equipment and industry.</p>
-      </article>
-
-      <article class="card">
-        <img src="assets/images/ac.jpg" alt="HVAC">
-        <h3>HVAC Equipment</h3>
-        <p>Commercial HVAC units and spare parts.</p>
-      </article>
-
-      <article class="card">
-        <img src="assets/images/block.jpg" alt="Hollow Blocks">
-        <h3>Hollow Blocks</h3>
-        <p>Quality masonry blocks and accessories.</p>
-      </article>
-
-      <article class="card">
-        <img src="assets/images/construction.jpg" alt="Construction Materials">
-        <h3>Construction Materials</h3>
-        <p>Bricks, aggregates, adhesives and site materials.</p>
+        <h4>Industrial Lubricants</h4>
+        <p>High quality oils & greases for automotive and industrial equipment.</p>
       </article>
     </div>
   </section>
 
-  <!-- CTA Footer -->
+  <!-- CTA -->
   <section class="cta-dark">
     <div class="container">
       <h3>Looking for a reliable export partner?</h3>
@@ -99,7 +108,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
@@ -112,7 +121,7 @@
     </div>
   </footer>
 
-  <!-- WhatsApp floating -->
+  <!-- WHATSAPP FLOAT -->
   <a href="https://wa.me/971523388786" class="whatsapp-fab" target="_blank" rel="noopener">
     <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
   </a>
