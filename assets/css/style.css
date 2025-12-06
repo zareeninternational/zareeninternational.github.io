@@ -520,3 +520,10 @@ body {
   object-fit: cover;
   display: block;
 }
+
+.product-card {
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
