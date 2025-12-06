@@ -301,4 +301,14 @@ footer {
   margin-top: 40px;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateX(0);
+}
 
