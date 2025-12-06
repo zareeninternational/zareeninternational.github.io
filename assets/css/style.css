@@ -508,3 +508,7 @@ body {
   padding: 6px 12px;
   border-radius: 6px;
 }
+
+body {
+  padding-top: 70px;
+}
