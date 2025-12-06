@@ -129,6 +129,53 @@ footer{
   border-top:1px solid var(--gold);
   text-align:center;
   padding:25px
+
+
+  .ceo-section {
+  margin-top: 40px;
+}
+
+.ceo-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #caa24d;
+}
+
+.ceo-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #caa24d;
+}
+
+.ceo-info h3 {
+  color: #caa24d;
+  margin-bottom: 5px;
+}
+
+.ceo-info h4 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.ceo-info p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .ceo-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 }
 
 /* WHATSAPP */
