@@ -309,6 +309,36 @@ footer {
 
 .reveal.active {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0)
+
+  
 }
 
+/* ===== FIX HEADER LOGO SIZE & MOBILE OVERFLOW ===== */
+
+.site-header {
+  position: relative;
+  z-index: 1000;
+}
+
+.site-header .logo img {
+  max-height: 48px;
+  width: auto;
+  display: block;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 10px 15px;
+  }
+
+  .site-header .logo img {
+    max-height: 40px;
+  }
+}
+
+main,
+.main-content {
+  padding-top: 80px;
+}
