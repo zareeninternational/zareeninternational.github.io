@@ -535,3 +535,9 @@ body {
   margin: 0;
   font-size: 18px;
 }
+
+@media (max-width: 768px) {
+  .product-card img {
+    height: 180px;
+  }
+}
