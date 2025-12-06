@@ -481,3 +481,8 @@ body {
     height: 220px;
   }
 }
+
+/* FIX hero overlap */
+.hero {
+  margin-bottom: 50px;
+}
