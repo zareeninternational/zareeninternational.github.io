@@ -188,3 +188,52 @@ footer {
     text-align: center;
   }
 }
+
+/* ===== HERO SECTION ===== */
+.hero-pro {
+  position: relative;
+  min-height: 90vh;
+  background: url('../images/hero.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-pro .hero-inner {
+  position: relative;
+}
+
+.hero-pro h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-pro .sub {
+  font-size: 1.15rem;
+  color: #f0d27a;
+  margin-bottom: 24px;
+  max-width: 700px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-pro h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-pro .sub {
+    font-size: 1rem;
+  }
+}
