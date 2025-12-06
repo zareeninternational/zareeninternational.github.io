@@ -1,85 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Zareen International Trading FZC</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Zareen International Trading FZC</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    .contact-section {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 30px;
+      background: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #d4af37;
+    }
+
+    .contact-section p {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ccc;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      background: #000;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      background: #d4af37;
+      color: #000;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact-form button:hover {
+      opacity: 0.9;
+    }
+
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-fixed img {
+      width: 55px;
+      height: 55px;
+    }
+  </style>
+
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="logo" class="logo">
-        <span class="brand-text">Zareen International Trading FZC</span>
-      </a>
-      <button id="menuToggle4" class="menu-toggle" aria-label="Toggle menu">☰</button>
-      <nav id="mainNav4" class="main-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="products.html" class="nav-link">Products</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
-      </nav>
-    </div>
-  </header>
+<!-- ✅ HEADER (Same as other pages if you have) -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Zareen International</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section class="hero hero-small">
-    <div class="hero-inner wrap">
-      <div class="hero-text small">
-        <h1>Contact Us</h1>
-      </div>
-    </div>
-  </section>
+<!-- ✅ CONTACT FORM -->
+<section class="contact-section">
+  <h1>Contact Us</h1>
+  <p>Send us your enquiry and we’ll get back to you</p>
 
-  <!-- CONTACT SECTION -->
-  <section class="section wrap contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> zareeninternationaltrading@gmail.com</p>
-    <p><strong>Phone (WhatsApp):</strong> <a href="https://wa.me/971523388786">+971 52 338 8786</a></p>
-    <p><strong>Office:</strong> C1-1F SF14106, Ajman Free Zone, Ajman — UAE</p>
+  <form 
+    class="contact-form"
+    action="https://formsubmit.co/terasynctech@gmail.com"
+    method="POST">
 
-    <h3>Send us a quick message</h3>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="phone" placeholder="Phone Number" />
+    <textarea name="message" placeholder="Your Message" required></textarea>
 
-    <!-- ✅ FormSubmit FORM -->
-    <form
-      class="contact-form"
-      action="https://formsubmit.co/zareeninternationaltrading@gmail.com"
-      method="POST">
+    <!-- FormSubmit settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Enquiry from Website">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://zareeninternational.github.io/thank-you.html">
 
-      <!-- IMPORTANT HIDDEN FIELDS -->
-      <input type="hidden" name="_subject" value="New Website Contact - Zareen International Trading">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-      <label>
-        <input type="text" name="name" placeholder="Your Name" required>
-      </label>
+<!-- ✅ FOOTER -->
+<footer class="site-footer">
+  <p>© 2025 Zareen International Trading FZC — Dubai, UAE</p>
+</footer>
 
-      <label>
-        <input type="email" name="email" placeholder="Your Email" required>
-      </label>
+<!-- ✅ WHATSAPP FLOAT -->
+<a 
+  href="https://wa.me/97158802478?text=Hello%20I%20am%20interested%20in%20your%20products" 
+  class="whatsapp-fixed"
+  target="_blank">
+  <img src="assets/images/whatsapp.png" alt="WhatsApp">
+</a>
 
-      <label>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-      </label>
-
-      <button class="btn btn-gold" type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="wrap">© 2025 Zareen International Trading FZC</div>
-  </footer>
-
-  <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/971523388786" class="whatsapp-float" target="_blank" rel="noreferrer">
-    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
-  </a>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
