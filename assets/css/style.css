@@ -237,3 +237,21 @@ footer {
     font-size: 1rem;
   }
 }
+
+/* ===== FIX HEADER OVERLAP ON HERO (MOBILE) ===== */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hero-pro {
+  padding-top: 90px; /* space for fixed header */
+}
+
+@media (max-width: 768px) {
+  .hero-pro {
+    padding-top: 110px;
+  }
+}
