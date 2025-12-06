@@ -512,3 +512,11 @@ body {
 body {
   padding-top: 70px;
 }
+
+/* FIX PRODUCT IMAGE OVERFLOW */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
