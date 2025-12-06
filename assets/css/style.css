@@ -527,3 +527,11 @@ body {
   overflow: hidden;
   margin-bottom: 20px;
 }
+
+.product-card h3 {
+  color: #d6b25e;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+}
