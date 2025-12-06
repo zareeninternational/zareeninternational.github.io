@@ -1,10 +1,2 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
-
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", function () {
-      navLinks.classList.toggle("active");
-    });
-  }
-});
+// Minimal JS (no errors, no sliders)
+console.log("Zareen International Trading FZC Website Loaded");
