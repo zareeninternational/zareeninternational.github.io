@@ -1,39 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Products | Zareen International Trading FZC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Zareen International Trading FZC</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<header class="header">
-    <div class="logo">Zareen International Trading FZC</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html" class="active">Products</a>
-        <a href="contact.html">Contact</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="assets/images/logo.png" alt="logo" class="logo">
+      <div class="brand-text">Zareen International<br><span class="muted">Trading FZC</span></div>
+    </div>
+    <button id="navToggle3" class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <nav id="mainNav3" class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="products.html" class="nav-link active">Products</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </nav>
+  </div>
 </header>
 
-<section class="section">
-    <h2>Our Products</h2>
-
-    <ul class="product-list">
-        <li>Building Materials</li>
-        <li>Hollow Bricks & Blocks</li>
-        <li>Paver Blocks</li>
-        <li>Plywood</li>
-        <li>Air Conditioning Products</li>
-        <li>Industrial Lubricants</li>
-    </ul>
+<section class="page-header">
+  <div class="container"><h1>Our Product Range</h1></div>
 </section>
 
-<footer class="footer">
-    <p>© 2025 Zareen International Trading FZC</p>
+<section class="container product-list">
+  <ul>
+    <li>Building Materials</li>
+    <li>Hollow Bricks & Blocks</li>
+    <li>Paver Blocks</li>
+    <li>Plywood</li>
+    <li>Air Conditioning Products</li>
+    <li>Industrial Lubricants</li>
+  </ul>
+
+  <div class="grid">
+    <!-- You can expand each product to have its own page -->
+    <div class="card">
+      <img src="assets/images/construction.jpg" alt="Building Materials">
+      <h3>Building Materials</h3>
+    </div>
+    <div class="card">
+      <img src="assets/images/block.jpg" alt="Hollow Blocks">
+      <h3>Hollow Bricks & Blocks</h3>
+    </div>
+    <div class="card">
+      <img src="assets/images/paver.jpg" alt="Paver Blocks">
+      <h3>Paver Blocks</h3>
+    </div>
+    <div class="card">
+      <img src="assets/images/plywood.jpg" alt="Plywood">
+      <h3>Plywood</h3>
+    </div>
+    <div class="card">
+      <img src="assets/images/ac.jpg" alt="AC">
+      <h3>Air Conditioning Products</h3>
+    </div>
+    <div class="card">
+      <img src="assets/images/lubricants.jpg" alt="Lubricants">
+      <h3>Industrial Lubricants</h3>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">© 2025 Zareen International Trading FZC</div>
 </footer>
 
+<a href="https://wa.me/971523388786" class="whatsapp-fab">
+  <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
+</a>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
