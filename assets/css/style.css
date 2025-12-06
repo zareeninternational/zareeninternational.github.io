@@ -88,3 +88,103 @@ body{font-family:Inter, 'Helvetica Neue', Arial, sans-serif;background:#050505;c
 /* small helpers */
 .small{font-size:14px;color:#cfcfcf}
 blockquote{color:#ddd;border-left:4px solid #d6b84a;padding-left:12px;margin-top:12px}
+/* ===============================
+   UI POLISH – BLACK & GOLD
+   =============================== */
+
+/* Better body text readability */
+body {
+  line-height: 1.7;
+}
+
+/* Header height refinement */
+header {
+  min-height: 70px;
+}
+
+/* Hero text clarity */
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  max-width: 90%;
+}
+
+.hero p {
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+/* Section spacing */
+.section {
+  padding: 60px 0;
+}
+
+/* About page spacing */
+.about-content {
+  max-width: 900px;
+}
+
+/* CEO IMAGE – smaller & elegant */
+.ceo-img,
+.ceo-img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #d4af37;
+  object-fit: cover;
+}
+
+/* CEO block alignment */
+.ceo-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* Product cards uniform */
+.product,
+.product-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product img {
+  height: 170px;
+  object-fit: cover;
+}
+
+/* Gold hover lift */
+.product:hover {
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
+
+/* Footer spacing */
+footer {
+  padding: 20px 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* WhatsApp icon positioning fix */
+.whatsapp-btn {
+  bottom: 18px;
+  right: 18px;
+}
+
+/* Mobile refinement */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .ceo-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
