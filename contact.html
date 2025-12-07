@@ -1,40 +1,66 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Contact Us</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Zareen International Trading FZC</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Zareen International logo" class="logo">
+        <span class="brand-text">Zareen International Trading FZC</span>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="site-header">
-  <img src="assets/images/logo.png" class="logo">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <section class="hero hero-small" style="background-image:url('assets/images/hero.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner wrap">
+      <div class="hero-text small"><h1>Contact Us</h1></div>
+    </div>
+  </section>
 
-<section class="page">
-  <h2>Contact Us</h2>
+  <section class="section wrap contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> zareeninternationaltrading@gmail.com</p>
+    <p><strong>Phone (WhatsApp):</strong> <a href="https://wa.me/971523388786">+971 52 338 8786</a></p>
+    <p><strong>Office:</strong> C1-1F SF14106, Ajman Free Zone, Ajman — UAE</p>
 
-<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <input type="text" name="phone" placeholder="Phone Number">
-  <textarea name="message" placeholder="Message"></textarea>
+    <h3>Send us a quick message</h3>
 
-  <input type="hidden" name="_captcha" value="false">
+    <!-- FormSubmit ready -->
+    <form action="https://formsubmit.co/zareeninternationaltrading@gmail.com" method="POST" class="contact-form">
+      <label><input type="text" name="name" placeholder="Your name" required></label>
+      <label><input type="email" name="email" placeholder="Email" required></label>
+      <label><textarea name="message" placeholder="Message" rows="5"></textarea></label>
 
-  <button type="submit">Send Message</button>
-</form>
+      <!-- hidden fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Website enquiry — Zareen International">
+      <input type="hidden" name="_next" value="https://zareeninternational.github.io/thank-you.html">
 
-</section>
+      <button class="btn btn-gold" type="submit">Send</button>
+    </form>
+  </section>
 
-<footer class="site-footer">
-  © 2025 Zareen International Trading FZC
-</footer>
+  <footer class="site-footer">
+    <div class="wrap">© 2025 Zareen International Trading FZC — Dubai, UAE</div>
+  </footer>
 
+  <a href="https://wa.me/971523388786" class="whatsapp-float" target="_blank" rel="noreferrer">
+    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
+  </a>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
