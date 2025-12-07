@@ -1,11 +1,24 @@
-// minimal, cross-page menu toggle + set active nav link
-document.querySelectorAll('.menu-toggle').forEach(btn=>{
-  btn.addEventListener('click', ()=> {
-    const nav = btn.nextElementSibling || document.getElementById('mainNav') ;
-    if(nav) nav.classList.toggle('open');
+// menu toggle
+document.addEventListener('DOMContentLoaded',function(){
+  var btn = document.getElementById('menuToggle');
+  var nav = document.getElementById('mainNav');
+  if(btn && nav){
+    btn.addEventListener('click',function(){
+      nav.classList.toggle('open');
+    });
+  }
+
+  // close menu on link click (mobile)
+  var links = document.querySelectorAll('.main-nav .nav-link');
+  links.forEach(function(l){
+    l.addEventListener('click',function(){ nav.classList.remove('open'); });
   });
-});
-// highlight current nav link
-document.querySelectorAll('.main-nav .nav-link').forEach(a=>{
-  if(a.href === location.href || location.pathname.endsWith(a.getAttribute('href'))) a.classList.add('active');
+
+  // smooth scroll for product CTA if present
+  var explore = document.querySelector('.btn-gold[href="products.html"]');
+  if(explore){
+    explore.addEventListener('click', function(e){
+      // allow normal navigation on small devices (it's linking to products page), no preventDefault
+    });
+  }
 });
