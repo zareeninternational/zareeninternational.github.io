@@ -1,67 +1,40 @@
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-
-    .whatsapp-fixed img {
-      width: 55px;
-      height: 55px;
-    }
-  </style>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-<!-- ✅ HEADER (Same as other pages if you have) -->
 <header class="site-header">
-  <div class="container">
-    <div class="logo">Zareen International</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </div>
+  <img src="assets/images/logo.png" class="logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<!-- ✅ CONTACT FORM -->
-<section class="contact-section">
-  <h1>Contact Us</h1>
-  <p>Send us your enquiry and we’ll get back to you</p>
+<section class="page">
+  <h2>Contact Us</h2>
 
-  <form 
-    class="contact-form"
-    action="https://formsubmit.co/terasynctech@gmail.com"
-    method="POST">
+<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="text" name="phone" placeholder="Phone Number">
+  <textarea name="message" placeholder="Message"></textarea>
 
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <input type="text" name="phone" placeholder="Phone Number" />
-    <textarea name="message" placeholder="Your Message" required></textarea>
+  <input type="hidden" name="_captcha" value="false">
 
-    <!-- FormSubmit settings -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Enquiry from Website">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="https://zareeninternational.github.io/thank-you.html">
+  <button type="submit">Send Message</button>
+</form>
 
-    <button type="submit">Send Message</button>
-  </form>
 </section>
 
-<!-- ✅ FOOTER -->
 <footer class="site-footer">
-  <p>© 2025 Zareen International Trading FZC — Dubai, UAE</p>
+  © 2025 Zareen International Trading FZC
 </footer>
-
-<!-- ✅ WHATSAPP FLOAT -->
-<a 
-  href="https://wa.me/97158802478?text=Hello%20I%20am%20interested%20in%20your%20products" 
-  class="whatsapp-fixed"
-  target="_blank">
-  <img src="assets/images/whatsapp.png" alt="WhatsApp">
-</a>
 
 </body>
 </html>
