@@ -1,100 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Zareen International Trading FZC</title>
-
-  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
 <header class="site-header">
-  <div class="container header-flex">
-    <div class="logo">
-      <img src="assets/images/logo.png" alt="Zareen International">
-    </div>
-
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="hamburger">☰</div>
-  </div>
+  <img src="assets/images/logo.png" class="logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="hero-overlay"></div>
+<section class="hero" style="background-image:url('assets/images/hero.jpg')">
   <div class="hero-content">
     <h1>Zareen International Trading FZC</h1>
     <p>Premium Building Materials & Industrial Trading Partner — Dubai</p>
-
-    <div class="hero-buttons">
-      <a href="products.html" class="btn primary">Explore Products</a>
-      <a href="contact.html" class="btn outline">Get a Quote</a>
-    </div>
+    <a href="products.html" class="btn">Explore Products</a>
+    <a href="contact.html" class="btn-outline">Get a Quote</a>
   </div>
 </section>
 
-<!-- ================= PRODUCTS ================= -->
-<section class="products-section">
-  <div class="container">
-    <h2 class="section-title">Our Products</h2>
-
-    <div class="products-grid">
-
-      <div class="product-card">
-        <img src="assets/images/air-conditioning.jpg" alt="Air Conditioning Products">
-        <div class="product-title">Air Conditioning Products</div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/lubricants.jpg" alt="Industrial Lubricants">
-        <div class="product-title">Industrial Lubricants</div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/building-material.jpg" alt="Building Materials">
-        <div class="product-title">Building Materials</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
-  <div class="container footer-content">
-    <p>© 2025 Zareen International Trading FZC — Dubai, UAE</p>
-  </div>
+  © 2025 Zareen International Trading FZC — Dubai, UAE
 </footer>
 
-<!-- ================= WHATSAPP FLOAT ================= -->
-<a
-  href="https://wa.me/971XXXXXXXX"
-  class="whatsapp-float"
-  target="_blank"
-  aria-label="WhatsApp"
->
-  <img src="assets/images/whatsapp.png" alt="WhatsApp">
-</a>
-
-<!-- ================= JS ================= -->
-<script>
-  const hamburger = document.querySelector('.hamburger');
-  const nav = document.querySelector('.main-nav');
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-</script>
+<a class="whatsapp" href="https://wa.me/971XXXXXXXXX">WhatsApp</a>
 
 </body>
 </html>
