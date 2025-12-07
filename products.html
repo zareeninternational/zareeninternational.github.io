@@ -1,38 +1,87 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Products</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Zareen International Trading FZC</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Zareen International logo" class="logo">
+        <span class="brand-text">Zareen International Trading FZC</span>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="site-header">
-  <img src="assets/images/logo.png" class="logo">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <section class="hero hero-small" style="background-image:url('assets/images/hero.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner wrap">
+      <div class="hero-text small"><h1>Our Products</h1></div>
+    </div>
+  </section>
 
-<section class="page">
-  <h2>Our Products</h2>
+  <section class="section wrap products-list">
+    <h2>Our Product Range</h2>
+    <ul class="product-bullets">
+      <li>Building Materials</li>
+      <li>Hollow Bricks & Blocks</li>
+      <li>Paver Blocks</li>
+      <li>Plywood</li>
+      <li>Air Conditioning Products</li>
+      <li>Industrial Lubricants</li>
+    </ul>
 
-  <div class="product">
-    <img src="assets/images/ac.jpg">
-    <h3>Air Conditioning Products</h3>
-  </div>
+    <div class="grid">
+      <article class="card">
+        <img src="assets/images/construction.jpg" alt="Building materials">
+        <h3>Building Materials</h3>
+      </article>
 
-  <div class="product">
-    <img src="assets/images/lubricant.jpg">
-    <h3>Industrial Lubricants</h3>
-  </div>
-</section>
+      <article class="card">
+        <img src="assets/images/hollow-brick.jpg" alt="Hollow bricks">
+        <h3>Hollow Bricks & Blocks</h3>
+      </article>
 
-<footer class="site-footer">
-  © 2025 Zareen International Trading FZC
-</footer>
+      <article class="card">
+        <img src="assets/images/paver-block.jpg" alt="Paver block">
+        <h3>Paver Blocks</h3>
+      </article>
 
+      <article class="card">
+        <img src="assets/images/plywood.jpg" alt="Plywood">
+        <h3>Plywood</h3>
+      </article>
+
+      <article class="card">
+        <img src="assets/images/ac.jpg" alt="Air conditioning">
+        <h3>Air Conditioning Products</h3>
+      </article>
+
+      <article class="card">
+        <img src="assets/images/lubricants.jpg" alt="Lubricants">
+        <h3>Industrial Lubricants</h3>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">© 2025 Zareen International Trading FZC — Dubai, UAE</div>
+  </footer>
+
+  <a href="https://wa.me/971523388786" class="whatsapp-float" target="_blank" rel="noreferrer">
+    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
+  </a>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
