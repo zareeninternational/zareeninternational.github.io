@@ -1,36 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zareen International Trading FZC</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <img src="assets/images/logo.png" class="logo">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Zareen International logo" class="logo">
+        <span class="brand-text">Zareen International Trading FZC</span>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero" style="background-image:url('assets/images/hero.jpg')">
-  <div class="hero-content">
-    <h1>Zareen International Trading FZC</h1>
-    <p>Premium Building Materials & Industrial Trading Partner — Dubai</p>
-    <a href="products.html" class="btn">Explore Products</a>
-    <a href="contact.html" class="btn-outline">Get a Quote</a>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('assets/images/hero.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner wrap">
+      <div class="hero-text">
+        <h1>Zareen International Trading FZC</h1>
+        <p class="sub">Premium Building Materials & Industrial Trading Partner — Dubai</p>
+        <div class="hero-cta">
+          <a href="products.html" class="btn btn-gold">Explore Products</a>
+          <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="site-footer">
-  © 2025 Zareen International Trading FZC — Dubai, UAE
-</footer>
+  <!-- WHO WE ARE -->
+  <section class="section wrap who">
+    <h2>Who We Are</h2>
+    <p>Zareen International Trading FZC is a UAE-based trading company specialising in high-quality building materials, hollow blocks, paver blocks, plywood, HVAC equipment and industrial lubricants. We serve contractors, developers and industrial clients across Dubai and the Middle East with reliable sourcing, competitive pricing and timely logistics.</p>
+  </section>
 
-<a class="whatsapp" href="https://wa.me/971XXXXXXXXX">WhatsApp</a>
+  <!-- CORE PRODUCTS -->
+  <section class="section wrap products-grid">
+    <h2>Our Core Products</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="assets/images/construction.jpg" alt="Building materials">
+        <h3>Building Materials</h3>
+      </article>
 
+      <article class="card">
+        <img src="assets/images/hollow-brick.jpg" alt="Hollow bricks">
+        <h3>Hollow Bricks & Blocks</h3>
+      </article>
+
+      <article class="card">
+        <img src="assets/images/paver-block.jpg" alt="Paver block">
+        <h3>Paver Blocks</h3>
+      </article>
+
+      <article class="card">
+        <img src="assets/images/plywood.jpg" alt="Plywood">
+        <h3>Plywood</h3>
+      </article>
+
+      <article class="card">
+        <img src="assets/images/ac.jpg" alt="Air conditioning">
+        <h3>Air Conditioning Products</h3>
+      </article>
+
+      <article class="card">
+        <img src="assets/images/lubricants.jpg" alt="Lubricants">
+        <h3>Industrial Lubricants</h3>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-left">
+        <p>© 2025 Zareen International Trading FZC — Dubai, UAE</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://wa.me/971523388786" target="_blank" rel="noreferrer" class="wa-link">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/971523388786" class="whatsapp-float" target="_blank" rel="noreferrer">
+    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
+  </a>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
