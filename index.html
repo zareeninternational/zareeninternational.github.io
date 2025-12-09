@@ -3,101 +3,162 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zareen International Trading FZC</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Zareen International Trading FZC — Dubai</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Zareen International logo" class="logo">
-        <span class="brand-text">Zareen International Trading FZC</span>
-      </a>
-      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
-      <nav id="mainNav" class="main-nav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="products.html" class="nav-link">Products</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+  <!-- NAV -->
+  <header class="header">
+    <div class="container nav-row">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Zareen International Logo" class="logo">
+        <span class="brand-text">Zareen International</span>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="toggle menu">☰</button>
+
+      <nav id="nav" class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero" style="background-image:url('assets/images/hero.jpg')">
-    <div class="hero-overlay"></div>
-    <div class="hero-inner wrap">
-      <div class="hero-text">
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
         <h1>Zareen International Trading FZC</h1>
-        <p class="sub">Premium Building Materials & Industrial Trading Partner — Dubai</p>
+        <p class="lead">UAE-based import & export — reliable partners for FMCG, construction, HVAC, electronics and more.</p>
         <div class="hero-cta">
-          <a href="products.html" class="btn btn-gold">Explore Products</a>
-          <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+          <a href="#contact" class="btn primary">Get in Touch</a>
+          <a href="https://wa.me/971XXXXXXXXX" target="_blank" class="btn outline">
+            <img src="assets/images/whatsapp.jpg" alt="whatsapp" class="icon"> WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/hero.jpg" alt="Trading" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Zareen International</h2>
+      <p class="center">
+        Zareen International Trading FZC is a Dubai/UAE registered trading company specialized in global import & export.
+        We provide quality products, timely shipments and transparent business processes to our partners worldwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities" class="section dark">
+    <div class="container">
+      <h2>Activities & Trading Categories</h2>
+
+      <div class="grid">
+        <div class="grid-left">
+          <ul class="activities-list">
+            <li>Building & Construction Materials — Import & Export</li>
+            <li>Wholesale of Unit Air-conditioner Trading</li>
+            <li>E-Commerce, Retail & Wholesale of Fresh Foodstuff</li>
+            <li>Grease & Lubricants — Trading</li>
+            <li>Computer consultancy & facilities management</li>
+            <li>Perfumes & Cosmetics — Import & Export</li>
+            <li>Ready-made Garments — Import & Export</li>
+          </ul>
+        </div>
+
+        <div class="grid-right">
+          <div class="img-grid">
+            <div class="img-card"><img src="assets/images/construction.jpg" alt="construction"></div>
+            <div class="img-card"><img src="assets/images/ac.jpg" alt="ac"></div>
+            <div class="img-card"><img src="assets/images/ecommerce.jpg" alt="ecommerce"></div>
+            <div class="img-card"><img src="assets/images/computer.jpg" alt="computer"></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHO WE ARE -->
-  <section class="section wrap who">
-    <h2>Who We Are</h2>
-    <p>Zareen International Trading FZC is a UAE-based trading company specialising in high-quality building materials, hollow blocks, paver blocks, plywood, HVAC equipment and industrial lubricants. We serve contractors, developers and industrial clients across Dubai and the Middle East with reliable sourcing, competitive pricing and timely logistics.</p>
+  <!-- WHY US -->
+  <section id="why" class="section">
+    <div class="container">
+      <h2>Why Choose Us</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>UAE Registered</h3>
+          <p>Compliant and locally registered for smooth trade operations.</p>
+        </div>
+        <div class="why-card">
+          <h3>Quality Assurance</h3>
+          <p>Products sourced with quality checks and trusted suppliers.</p>
+        </div>
+        <div class="why-card">
+          <h3>Global Network</h3>
+          <p>Partners across top trade markets — timely imports and exports.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- CORE PRODUCTS -->
-  <section class="section wrap products-grid">
-    <h2>Our Core Products</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="assets/images/construction.jpg" alt="Building materials">
-        <h3>Building Materials</h3>
-      </article>
+  <!-- CONTACT -->
+  <section id="contact" class="section dark">
+    <div class="container">
+      <h2>Contact Us</h2>
 
-      <article class="card">
-        <img src="assets/images/hollow-brick.jpg" alt="Hollow bricks">
-        <h3>Hollow Bricks & Blocks</h3>
-      </article>
+      <div class="contact-row">
+        <div class="contact-info">
+          <p><strong>Office:</strong> Office – C1 – 1F – SF14106, Ajman Free Zone, Ajman – U.A.E</p>
+          <p><strong>Email:</strong> <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
+          <p><strong>Phone / WhatsApp:</strong> <a href="tel:+971523388786">+971 52 338 8786</a>, <a href="tel:+971522056200">+971 52 205 6200</a></p>
+          <p class="small">You can also message on WhatsApp for faster reply.</p>
 
-      <article class="card">
-        <img src="assets/images/paver-block.jpg" alt="Paver block">
-        <h3>Paver Blocks</h3>
-      </article>
+          <div class="contact-quick">
+            <a class="btn primary" href="https://wa.me/971523388786" target="_blank">WhatsApp Us</a>
+            <a class="btn outline" href="mailto:zareeninternationaltrading@gmail.com">Email Us</a>
+          </div>
+        </div>
 
-      <article class="card">
-        <img src="assets/images/plywood.jpg" alt="Plywood">
-        <h3>Plywood</h3>
-      </article>
-
-      <article class="card">
-        <img src="assets/images/ac.jpg" alt="Air conditioning">
-        <h3>Air Conditioning Products</h3>
-      </article>
-
-      <article class="card">
-        <img src="assets/images/lubricants.jpg" alt="Lubricants">
-        <h3>Industrial Lubricants</h3>
-      </article>
+        <div class="contact-form">
+          <!-- Formspree integration: replace action with your formspree URL -->
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <input type="email" name="_replyto" placeholder="Your email" required>
+            </label>
+            <label>
+              <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+          <p class="muted">Or contact directly via WhatsApp for instant response.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-left">
-        <p>© 2025 Zareen International Trading FZC — Dubai, UAE</p>
-      </div>
-      <div class="footer-right">
-        <a href="https://wa.me/971523388786" target="_blank" rel="noreferrer" class="wa-link">WhatsApp</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Zareen International Trading FZC</div>
+        <div class="social">
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Facebook</a>
+        </div>
       </div>
     </div>
   </footer>
-
-  <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/971523388786" class="whatsapp-float" target="_blank" rel="noreferrer">
-    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
-  </a>
 
   <script src="assets/js/main.js"></script>
 </body>
