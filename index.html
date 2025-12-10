@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zareen International Trading FZC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zareen International Trading FZC – Trusted construction and industrial material suppliers in UAE.">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
 <!-- ================= HEADER ================= -->
 <header class="header">
   <div class="container header-flex">
-    <img src="assets/images/logo.png" alt="Zareen International Logo" class="logo">
+    <img src="assets/images/logo.png" alt="Zareen Logo" class="logo">
     <nav>
       <a href="#home">Home</a>
       <a href="#products">Products</a>
@@ -30,7 +27,7 @@
 <!-- ================= HERO ================= -->
 <section id="home" class="hero">
   <div class="hero-overlay">
-    <div class="container hero-content">
+    <div class="hero-content">
       <h1>Zareen International Trading FZC</h1>
       <p>Reliable Construction & Industrial Material Trading Company in UAE</p>
       <a href="#contact" class="btn">Get in Touch</a>
@@ -41,51 +38,42 @@
 <!-- ================= PRODUCTS ================= -->
 <section id="products" class="section">
   <div class="container">
-    <h2>Our Products</h2>
-    <div class="product-grid">
+    <h2 class="section-title">Our Products</h2>
 
+    <div class="products-grid">
       <div class="product-card">
         <h3>Cement & Concrete Products</h3>
-        <p>Premium quality cement and concrete materials meeting international standards.</p>
+        <p>Premium quality construction materials meeting international standards.</p>
       </div>
 
       <div class="product-card">
-        <h3>Plywood & Timber</h3>
-        <p>Durable plywood and timber solutions for construction and interiors.</p>
+        <h3>Industrial Materials</h3>
+        <p>Reliable industrial-grade materials for projects of all sizes.</p>
       </div>
 
       <div class="product-card">
-        <h3>Interlock & Paver Blocks</h3>
-        <p>Strong interlock and paver blocks suitable for roads and landscaping projects.</p>
+        <h3>Electrical & Mechanical Supplies</h3>
+        <p>Certified electrical and mechanical trading solutions.</p>
       </div>
-
-      <div class="product-card">
-        <h3>Industrial Supplies</h3>
-        <p>Lubricants, hardware, and general industrial materials for commercial use.</p>
-      </div>
-
     </div>
   </div>
 </section>
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="section light">
-  <div class="container">
-    <h2>About Zareen International</h2>
-    <p class="about-text">
-      Zareen International Trading FZC is committed to delivering reliable, high-quality construction and industrial materials across UAE.
-      Our focus is on trust, timely delivery, and long-term business relationships.
-    </p>
+  <div class="container about-flex">
+    <img src="assets/images/ceo.jpg" alt="CEO" class="ceo-img">
 
-    <div class="ceo-box">
-      <img src="assets/images/ceo.jpg" alt="CEO">
-      <div>
-        <h4>Message from Management</h4>
-        <p>
-          “We believe strong projects start with strong materials.
-          Our promise is quality products, honest pricing, and dependable service.”
-        </p>
-      </div>
+    <div>
+      <h2>About Us</h2>
+      <p>
+        Zareen International Trading FZC is committed to delivering trusted,
+        high-quality construction and industrial materials across the UAE.
+      </p>
+      <p class="ceo-msg">
+        “We believe in honesty, long-term relationships, and consistent quality.
+        Our focus is simple — deliver value and build trust.”
+      </p>
     </div>
   </div>
 </section>
@@ -93,21 +81,36 @@
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="section">
   <div class="container">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p><strong>📍 Address:</strong> Ajman Free Zone, UAE</p>
-      <p><strong>📞 Phone:</strong> +971 52 338 8786</p>
-      <p><strong>✉ Email:</strong> info@zareeninternational.com</p>
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-box">
+      <p><strong>Email:</strong> info@zareeninternational.com</p>
+      <p><strong>Phone:</strong> +971 XX XXX XXXX</p>
+      <p><strong>Location:</strong> UAE</p>
     </div>
   </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
-  <div class="container">
-    <p>© 2025 Zareen International Trading FZC. All Rights Reserved.</p>
-  </div>
+  <p>© 2025 Zareen International Trading FZC. All Rights Reserved.</p>
 </footer>
+
+<!-- ================= HERO SLIDER SCRIPT ================= -->
+<script>
+  const hero = document.querySelector(".hero");
+  const images = [
+    "assets/images/hero.jpg",
+    "assets/images/hero-2.jpg",
+    "assets/images/hero-3.jpg"
+  ];
+
+  let i = 0;
+  setInterval(() => {
+    i = (i + 1) % images.length;
+    hero.style.backgroundImage = `url('${images[i]}')`;
+  }, 4000);
+</script>
 
 </body>
 </html>
