@@ -1,93 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <title>Zareen International Trading FZC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#071a26" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="logo">Zareen International</div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#products">Activities</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <h1>Zareen International Trading FZC</h1>
-  <p class="tagline">
-    Trusted partner for import & export — construction & industrial supplies
-  </p>
-
-  <p class="hero-text">
-    We supply quality materials for construction and industrial projects across the UAE,
-    focusing on trust, transparency and timely delivery.
-  </p>
-
-  <div class="buttons">
-    <a href="#contact" class="btn primary">Get a Quote</a>
-    <a href="#contact" class="btn secondary">Contact Us</a>
-  </div>
-</section>
-
-<!-- ABOUT WITH CEO -->
-<section id="about" class="section">
-  <h2>About Us</h2>
-
-  <div class="about-box">
-    <img src="ceo.jpg" alt="CEO" class="ceo-img">
-
-    <div class="about-text">
-      <p>
-        Zareen International Trading FZC is built on a simple belief —
-        business should be honest, reliable and long-term.
-      </p>
-
-      <p class="ceo-msg">
-        “We focus on quality sourcing, fair pricing and clear communication.
-        Every client relationship matters to us, and we treat each project
-        with commitment and responsibility.”
-      </p>
-
-      <strong>— CEO, Zareen International</strong>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Zareen International" class="logo">
+        <div class="brand-title">Zareen International</div>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- ACTIVITIES / PRODUCTS -->
-<section id="products" class="section dark">
-  <h2>Our Activities</h2>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>Zareen International Trading FZC</h1>
+        <p class="hero-sub">Trusted partner for import &amp; export — construction &amp; industrial supplies</p>
+        <p class="hero-text">
+          We supply quality materials for construction, HVAC, lubricants, garments and FMCG across the UAE.
+          Our focus: transparent pricing, reliable logistics and long-term partnerships.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="https://wa.me/971523388786" target="_blank">Get a Quote</a>
+          <a class="btn outline" href="#contact">Contact Us</a>
+        </div>
+      </div>
 
-  <div class="cards">
-    <div class="card">Building & Construction Materials</div>
-    <div class="card">Wholesale Air-Conditioners & HVAC</div>
-    <div class="card">Fresh Foodstuff Trading</div>
-    <div class="card">Grease & Lubricants</div>
-    <div class="card">E-Commerce / Retail Supply</div>
-  </div>
-</section>
+      <div class="hero-right">
+        <div class="hero-image">
+          <img src="assets/images/hero.jpg" alt="Hero" onerror="this.style.display='none'">
+          <div class="hero-overlay">Premium Construction &amp; Industrial Supplies</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <p><strong>Email:</strong> info@zareeninternational.com</p>
-  <p><strong>Phone:</strong> +971 XX XXX XXXX</p>
-  <p><strong>Location:</strong> UAE</p>
-</section>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
 
-<!-- FOOTER -->
-<footer class="footer">
-  © 2025 Zareen International Trading FZC
-</footer>
+      <div class="about-box">
+        <img src="assets/images/ceo.jpg" alt="CEO" class="ceo">
+        <div class="about-text">
+          <p>
+            Zareen International Trading FZC is built on a simple belief — business should be honest, reliable and long-term.
+            We manage procurement, quality checks and logistics so our customers receive materials on time.
+          </p>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/971XXXXXXXX" target="_blank" class="whatsapp">💬</a>
+          <p class="ceo-quote">
+            “We focus on quality sourcing, fair pricing and clear communication. Every client relationship matters to us,
+            and we treat each project with commitment and responsibility.”
+          </p>
+
+          <p class="ceo-sign">— CEO, Zareen International</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section dark">
+    <div class="container">
+      <h2>Products & Activities</h2>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img"><img src="assets/images/construction.jpg" alt="Construction materials" /></div>
+          <div class="product-title">Building &amp; Construction Materials</div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img"><img src="assets/images/ac.jpg" alt="Air conditioners" /></div>
+          <div class="product-title">Wholesale Air-Conditioners &amp; HVAC</div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img"><img src="assets/images/portland-cement.jpg" alt="Cement" /></div>
+          <div class="product-title">Portland Cement & Aggregates</div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img"><img src="assets/images/lubricants.jpg" alt="Lubricants" /></div>
+          <div class="product-title">Grease &amp; Lubricants</div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img"><img src="assets/images/plywood.jpg" alt="Plywood" /></div>
+          <div class="product-title">Plywood & Timber</div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img"><img src="assets/images/hero.jpg" alt="E-commerce" /></div>
+          <div class="product-title">E-Commerce / Retail Supply</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p><strong>Phone:</strong> +971 52 338 8786</p>
+          <p><strong>Email:</strong> zareeninternationaltrading@gmail.com</p>
+          <p><strong>Office:</strong> C1-1F-SF14106, Ajman Free Zone, Ajman, UAE</p>
+          <p><a class="wa-link" href="https://wa.me/971523388786" target="_blank">Chat on WhatsApp</a></p>
+        </div>
+
+        <div class="contact-card map-card">
+          <h3>Message</h3>
+          <p>Write a short message or use WhatsApp to request a quote — we reply fast.</p>
+          <a class="btn primary" href="https://wa.me/971523388786" target="_blank">Message +971 52 338 8786</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      © 2025 Zareen International Trading FZC — All rights reserved.
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a class="whatsapp" href="https://wa.me/971523388786" target="_blank" aria-label="WhatsApp">💬</a>
 
 </body>
 </html>
