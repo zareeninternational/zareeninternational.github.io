@@ -1,118 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zareen International Trading FZC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <img src="assets/images/logo.png" class="hero-logo" alt="Zareen Logo">
-  <h1>Zareen International Trading FZC</h1>
-  <p>Global Trading Solutions | Import & Export | UAE</p>
+  <!-- NAV (simple anchor nav for quick jumping) -->
+  <nav class="topnav">
+    <a href="#home" class="nav-logo"><img src="assets/images/logo.png" alt="Zareen Logo"></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#ceo">CEO</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <div class="hero-buttons">
-    <a href="https://wa.me/971523388786" target="_blank" class="btn primary">WhatsApp Us</a>
-    <a href="mailto:zareeninternationaltrading@gmail.com" class="btn secondary">Email Us</a>
-  </div>
-</section>
+  <!-- HERO: slider with up to 3 images -->
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <img class="hero-brand" src="assets/images/logo.png" alt="Zareen Logo">
+      <h1 class="hero-title">Zareen International Trading FZC</h1>
+      <p class="hero-sub">Import & Export — Construction • HVAC • Foodstuff • Lubricants • Garments • E-Commerce</p>
 
-<!-- ================= ABOUT ================= -->
-<section class="section">
-  <h2>About Us</h2>
-  <p>
-    Zareen International Trading FZC is a UAE-based trading company registered in
-    Ajman Free Zone. We specialize in import and export of construction materials,
-    foodstuff, HVAC products, lubricants, garments, and e-commerce solutions.
-    Our focus is quality, timely delivery, and long-term business relationships.
-  </p>
-</section>
-
-<!-- ================= PRODUCTS ================= -->
-<section class="section dark">
-  <h2>Our Activities</h2>
-
-  <div class="grid">
-    <div class="card">
-      <img src="assets/images/construction.jpg">
-      <h3>Building & Construction Materials</h3>
+      <div class="hero-cta">
+        <a class="btn btn-green" href="https://wa.me/971523388786" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="btn btn-white" href="mailto:zareeninternationaltrading@gmail.com">Email Us</a>
+      </div>
     </div>
 
-    <div class="card">
-      <img src="assets/images/ac.jpg">
-      <h3>Wholesale Air-Conditioners</h3>
+    <!-- slider -->
+    <div class="hero-slider" aria-hidden="false">
+      <div class="slide active"><img src="assets/images/hero-1.jpg" alt="Construction materials"></div>
+      <div class="slide"><img src="assets/images/hero-2.jpg" alt="Air conditioners and HVAC"></div>
+      <div class="slide"><img src="assets/images/hero-3.jpg" alt="E-commerce and trading"></div>
+      <button class="slider-control prev" aria-label="Previous slide">&lsaquo;</button>
+      <button class="slider-control next" aria-label="Next slide">&rsaquo;</button>
+      <div class="slider-dots"></div>
     </div>
+  </header>
 
-    <div class="card">
-      <img src="assets/images/food.jpg">
-      <h3>Fresh Foodstuff Trading</h3>
+  <!-- ABOUT -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Zareen International Trading FZC is a UAE-based trading company registered in Ajman Free Zone.
+        We specialize in import & export, focusing on quality, timely delivery and long-term business relationships.
+      </p>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="assets/images/lubricants.jpg">
-      <h3>Grease & Lubricants</h3>
+  <!-- ACTIVITIES / PRODUCTS -->
+  <section id="activities" class="section section-dark">
+    <div class="container">
+      <h2>Our Activities</h2>
+
+      <div class="grid">
+        <article class="card">
+          <img src="assets/images/construction.jpg" alt="Building & Construction">
+          <h3>Building & Construction Materials</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/ac.jpg" alt="Wholesale Air-Conditioners">
+          <h3>Wholesale Air-Conditioners</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/food.jpg" alt="Fresh Foodstuff Trading">
+          <h3>Fresh Foodstuff Trading</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/lubricants.jpg" alt="Grease & Lubricants">
+          <h3>Grease & Lubricants</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/ecommerce.jpg" alt="E-Commerce Trading">
+          <h3>E-Commerce Trading</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/garments.jpg" alt="Ready-Made Garments">
+          <h3>Ready-Made Garments</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/perfume.jpg" alt="Perfumes & Cosmetics">
+          <h3>Perfumes & Cosmetics</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/computer.jpg" alt="Computer Consultancy">
+          <h3>Computer Consultancy</h3>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="assets/images/ecommerce.jpg">
-      <h3>E-Commerce Trading</h3>
+  <!-- CEO -->
+  <section id="ceo" class="section section-light">
+    <div class="container ceo-wrap">
+      <div class="ceo-image">
+        <img src="assets/images/ceo.jpg" alt="CEO Humair Akram">
+      </div>
+      <div class="ceo-text">
+        <h2>Message from the CEO</h2>
+        <p>
+          At Zareen International Trading FZC, our vision is to provide reliable, transparent, and efficient trading services across global markets.
+          We believe in integrity, long-term partnerships, and consistent quality.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="assets/images/garments.jpg">
-      <h3>Ready-Made Garments</h3>
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contact Us</h2>
+        <p>Phone: +971 52 338 8786 | +971 52 205 6200</p>
+        <p>Email: <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
+        <p>Office: Office C1-1F-SF14106, Ajman Free Zone, Ajman, UAE</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn btn-green" href="https://wa.me/971523388786" target="_blank" rel="noopener">Message on WhatsApp</a>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="assets/images/perfume.jpg">
-      <h3>Perfumes & Cosmetics</h3>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Zareen International Trading FZC. All Rights Reserved.</p>
     </div>
+  </footer>
 
-    <div class="card">
-      <img src="assets/images/computer.jpg">
-      <h3>Computer Consultancy</h3>
-    </div>
-  </div>
-</section>
+  <!-- Floating WhatsApp button -->
+  <a class="whatsapp-float" href="https://wa.me/971523388786" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="assets/images/whatsapp.png" alt="WhatsApp">
+  </a>
 
-<!-- ================= CEO ================= -->
-<section class="section">
-  <h2>Message from CEO</h2>
-  <div class="ceo-box">
-    <img src="assets/images/ceo.jpg" class="ceo-img">
-    <p>
-      At Zareen International Trading FZC, our vision is to provide reliable,
-      transparent, and efficient trading services across global markets.
-      We believe in integrity, long-term partnerships, and consistent quality.
-    </p>
-  </div>
-</section>
+  <!-- Minimal JS: slider + dots + autoplay -->
+  <script>
+    (function(){
+      const slides = document.querySelectorAll('.hero-slider .slide');
+      const prev = document.querySelector('.hero-slider .prev');
+      const next = document.querySelector('.hero-slider .next');
+      const dotsWrap = document.querySelector('.slider-dots');
+      let idx = 0, autoplayDelay = 4500, autoplay;
 
-<!-- ================= CONTACT ================= -->
-<section class="section dark">
-  <h2>Contact Us</h2>
-  <p>
-    📞 +971 52 338 8786 | +971 52 205 6200<br>
-    ✉️ zareeninternationaltrading@gmail.com<br>
-    📍 Office C1-1F-SF14106, Ajman Free Zone, Ajman, UAE
-  </p>
-</section>
+      // create dots
+      slides.forEach((s, i) => {
+        const d = document.createElement('button');
+        d.className = 'dot' + (i===0 ? ' active' : '');
+        d.setAttribute('data-i', i);
+        d.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(d);
+      });
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  © 2025 Zareen International Trading FZC. All Rights Reserved.
-</footer>
+      function show(i){
+        slides.forEach((s, n) => {
+          s.classList.toggle('active', n === i);
+        });
+        document.querySelectorAll('.slider-dots .dot').forEach((d, n) => {
+          d.classList.toggle('active', n === i);
+        });
+        idx = i;
+      }
 
-<!-- ================= WHATSAPP FLOAT ================= -->
-<a href="https://wa.me/971523388786" class="whatsapp-float" target="_blank">
-  <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
-</a>
+      function goTo(i){ show(i); restartAutoplay(); }
+
+      prev.addEventListener('click', () => {
+        goTo((idx - 1 + slides.length) % slides.length);
+      });
+      next.addEventListener('click', () => {
+        goTo((idx + 1) % slides.length);
+      });
+
+      function startAutoplay(){
+        autoplay = setInterval(() => {
+          goTo((idx + 1) % slides.length);
+        }, autoplayDelay);
+      }
+      function restartAutoplay(){
+        clearInterval(autoplay);
+        startAutoplay();
+      }
+      startAutoplay();
+
+      // Improve accessibility: pause on hover/focus
+      document.querySelector('.hero-slider').addEventListener('mouseover', () => clearInterval(autoplay));
+      document.querySelector('.hero-slider').addEventListener('mouseleave', startAutoplay);
+    })();
+  </script>
 
 </body>
-</html>
+</html>    
