@@ -1,66 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
   <title>Zareen International Trading FZC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#071b26"/>
+  <style>
+    /* ---------- Reset & Base ---------- */
+    :root{
+      --bg:#071b26;
+      --card:#0f2b36;
+      --accent:#e6c98a;
+      --muted:#bfcfd1;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,var(--bg) 0%, #03151b 100%);
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    a{color:var(--accent);text-decoration:none}
+    .container{width:92%;max-width:1100px;margin:0 auto}
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    /* ---------- NAVBAR ---------- */
+    header.site-header{
+      padding:18px 0;
+      border-bottom:1px solid rgba(255,255,255,0.04);
+      background:linear-gradient(180deg, rgba(2,18,24,0.35), rgba(2,18,24,0.12));
+      position:sticky;top:0;z-index:40;
+    }
+    .nav-row{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand .logo-box{width:56px;height:56px;background:#073241;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700}
+    .brand .title{color:var(--white);font-weight:700;letter-spacing:0.6px}
+    nav.top-nav a{color:rgba(255,255,255,0.85);margin-left:18px;font-weight:600;font-size:14px}
+
+    /* ---------- HERO (single full-screen) ---------- */
+    .hero{
+      min-height:72vh;
+      display:flex;
+      align-items:center;
+      padding:48px 0;
+      position:relative;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr 480px;
+      gap:36px;
+      align-items:center;
+      width:100%;
+    }
+
+    /* Left pane (text) */
+    .hero-left{padding:28px 0}
+    .company-name{font-size:34px;color:var(--white);font-weight:800;line-height:1.02}
+    .hero-sub{color:var(--accent);font-size:18px;margin:14px 0 18px;font-weight:600}
+    .hero-desc{color:var(--muted);font-size:15px;max-width:700px;margin-bottom:22px}
+
+    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:12px 18px;border-radius:8px;font-weight:700;font-size:14px;
+      text-decoration:none;
+    }
+    .btn-quote{background:var(--accent);color:#072022}
+    .btn-contact{background:transparent;border:2px solid rgba(255,255,255,0.08);color:var(--white)}
+
+    /* Right pane (visual card) - NO external image required; uses elegant material box */
+    .hero-right{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:14px;align-items:center;
+      box-shadow: 0 18px 40px rgba(2,8,12,0.55);
+    }
+    .visual-box{
+      width:100%;height:320px;border-radius:10px;background:
+        linear-gradient(180deg, rgba(0,0,0,0.45), rgba(2,8,12,0.6));
+      display:flex;align-items:center;justify-content:center;color:var(--muted);
+      font-weight:600;font-size:14px;padding:18px;text-align:center;
+    }
+    .visual-caption{font-size:13px;color:rgba(255,255,255,0.75)}
+
+    /* ---------- CONTENT SECTIONS ---------- */
+    section.section{padding:56px 0}
+    .section h2{color:var(--white);font-size:22px;margin-bottom:14px}
+    .section p{color:var(--muted);max-width:1000px}
+
+    /* Services grid */
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px}
+    .service-card{
+      background:rgba(255,255,255,0.03);
+      padding:20px;border-radius:10px;color:var(--white);font-weight:600;text-align:center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer.site-foot{padding:28px 0;background:transparent;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);text-align:center}
+
+    /* ---------- FLOATING WHATSAPP ---------- */
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:#25d366;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.4);text-decoration:none;font-size:22px;color:#021a15;z-index:60}
+
+    /* ---------- RESPONSIVE ---------- */
+    @media(max-width:980px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero-right{order:-1}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:520px){
+      .company-name{font-size:26px}
+      .visual-box{height:220px}
+      .services-grid{grid-template-columns:1fr}
+      header.site-header{padding:12px 0}
+      .brand .title{font-size:14px}
+      nav.top-nav{display:none}
+    }
+  </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-flex">
-    <div class="logo">ZAREEN INTERNATIONAL TRADING FZC</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Company</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <div class="brand">
+        <div class="logo-box">ZI</div>
+        <div class="title">Zareen International</div>
+      </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-box">
-    <h1>Reliable Trading Partner in the UAE</h1>
-    <div class="line"></div>
-    <p>
-      Supplying construction, industrial, and building materials
-      with reliability, transparency, and professional service.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#" class="btn dark">Request a Quote</a>
-      <a href="#" class="btn light">Contact Us</a>
+      <nav class="top-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- SERVICES -->
-<section class="services">
-  <div class="container">
-    <h2>What We Do</h2>
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-grid">
+        <!-- LEFT: textual emphasis -->
+        <div class="hero-left">
+          <div class="company-name">Zareen International Trading FZC</div>
+          <div class="hero-sub">Trusted partner for import & export — construction & industrial</div>
+          <div class="hero-desc">
+            We supply premium construction, HVAC, lubricants, garments and FMCG products
+            across the UAE and region. Quality sourcing, transparent pricing and reliable logistics are our pillars.
+          </div>
+          <div class="hero-ctas">
+            <a class="btn btn-quote" href="https://wa.me/971523388786" target="_blank">Get a Quote</a>
+            <a class="btn btn-contact" href="#contact">Contact Us</a>
+          </div>
+        </div>
 
-    <div class="service-grid">
-      <div class="card">Construction Materials Supply</div>
-      <div class="card">Industrial Equipment Trading</div>
-      <div class="card">Bulk & Project Support</div>
-      <div class="card">Reliable Logistics & Delivery</div>
-    </div>
-  </div>
-</section>
+        <!-- RIGHT: elegant visual box (no external image required) -->
+        <div class="hero-right" aria-hidden="false">
+          <div class="visual-box">
+            Premium Construction & Industrial Supplies
+          </div>
+          <div class="visual-caption">Import • Export • Wholesale • Logistics</div>
+        </div>
+      </div>
+    </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 Zareen International Trading FZC, UAE</p>
-</footer>
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2>About Us</h2>
+      <p>
+        Zareen International Trading FZC is a UAE-registered company based in Ajman Free Zone.
+        We focus on sourcing and delivering high-standard materials for construction and industrial projects.
+        Our team manages procurement, quality checks and shipping — so customers receive goods on time.
+      </p>
+    </section>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/971XXXXXXXX" class="whatsapp">💬</a>
+    <!-- SERVICES -->
+    <section id="services" class="section container">
+      <h2>Our Activities</h2>
+      <div class="services-grid">
+        <div class="service-card">Building & Construction Materials</div>
+        <div class="service-card">Wholesale Air-Conditioners & HVAC</div>
+        <div class="service-card">Fresh Foodstuff Trading</div>
+        <div class="service-card">Grease & Lubricants</div>
+        <div class="service-card">E-Commerce / Retail Supply</div>
+        <div class="service-card">Ready-Made Garments</div>
+        <div class="service-card">Perfumes & Cosmetics</div>
+        <div class="service-card">Computer Consultancy</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>
+        Office: C1-1F-SF14106, Ajman Free Zone, Ajman, UAE<br>
+        Phone: +971 52 338 8786 — Email: zareeninternationaltrading@gmail.com
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-foot">
+    © 2025 Zareen International Trading FZC — All rights reserved.
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/971523388786" class="whatsapp" target="_blank" aria-label="WhatsApp">💬</a>
 
 </body>
 </html>
