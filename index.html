@@ -1,213 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Zareen International Trading FZC</title>
-<style>
-  /* ===== Reset & base ===== */
-  :root{
-    --bg:#071a26;
-    --card:#0e3044;
-    --accent:#e6c98a;
-    --muted:#c7d6df;
-    --white:#ffffff;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background:linear-gradient(180deg,var(--bg), #03151b);
-    color:var(--muted);
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    line-height:1.5;
-    min-height:100vh;
-  }
-  a{color:var(--accent);text-decoration:none}
-  .container{width:92%;max-width:1100px;margin:0 auto;padding:0 12px;}
-
-  /* ===== Header ===== */
-  header.site-header{
-    background:rgba(0,0,0,0.18);
-    padding:14px 0;
-    position:sticky;top:0;backdrop-filter: blur(4px);z-index:40;
-    border-bottom:1px solid rgba(255,255,255,0.03);
-  }
-  .nav-row{display:flex;align-items:center;justify-content:space-between}
-  .brand{display:flex;align-items:center;gap:12px}
-  .logo-box{width:56px;height:56px;background:#073241;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700}
-  .brand .title{color:var(--white);font-weight:700;letter-spacing:0.6px}
-  nav.top-nav a{color:rgba(255,255,255,0.85);margin-left:18px;font-weight:600;font-size:14px}
-
-  /* ===== HERO ===== */
-  .hero{
-    padding:48px 0;
-  }
-
-  /* Grid: left text + right visual */
-  .hero-grid{
-    display:grid;
-    grid-template-columns: 1fr 420px;
-    gap:32px;
-    align-items:center;
-  }
-
-  /* left text */
-  .company-name{font-size:34px;color:var(--white);font-weight:800;line-height:1.02;margin-bottom:8px}
-  .hero-sub{color:var(--accent);font-size:17px;margin-bottom:16px;font-weight:600}
-  .hero-desc{color:var(--muted);font-size:15px;margin-bottom:22px;max-width:720px}
-
-  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
-  .btn{display:inline-block;padding:12px 18px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none}
-  .btn-quote{background:var(--accent);color:#062226}
-  .btn-contact{background:transparent;border:2px solid rgba(255,255,255,0.08);color:var(--white)}
-
-  /* right visual card (if image exists, it will show; otherwise shows text box) */
-  .hero-right{
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:12px;align-items:center;
-    box-shadow: 0 18px 40px rgba(2,8,12,0.55);
-    min-height:300px;
-  }
-  .visual-image{
-    width:100%;
-    border-radius:8px;
-    overflow:hidden;
-    background:#000; /* fallback dark */
-    display:flex;align-items:center;justify-content:center;
-    min-height:220px;
-  }
-  .visual-image img{width:100%;height:100%;object-fit:cover;display:block}
-  .visual-caption{font-size:13px;color:rgba(255,255,255,0.8)}
-
-  /* ===== Sections ===== */
-  section.section{padding:56px 0}
-  .section h2{color:var(--white);font-size:22px;margin-bottom:14px}
-  .section p{color:var(--muted);max-width:1000px}
-
-  /* services */
-  .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px}
-  .service-card{
-    background:rgba(255,255,255,0.03);
-    padding:20px;border-radius:10px;color:var(--white);font-weight:600;text-align:center;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
-  }
-
-  /* footer */
-  footer.site-foot{padding:28px 0;background:transparent;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);text-align:center}
-
-  /* whatsapp floating */
-  .whatsapp{position:fixed;right:18px;bottom:18px;background:#25d366;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.4);text-decoration:none;font-size:22px;color:#021a15;z-index:60}
-
-  /* Responsive */
-  @media(max-width:980px){
-    .hero-grid{grid-template-columns:1fr}
-    .services-grid{grid-template-columns:repeat(2,1fr)}
-    nav.top-nav{display:none}
-  }
-  @media(max-width:520px){
-    .company-name{font-size:24px}
-    .visual-image{min-height:160px}
-    .services-grid{grid-template-columns:1fr}
-  }
-</style>
+  <meta charset="UTF-8" />
+  <title>Zareen International Trading FZC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- header -->
-  <header class="site-header">
-    <div class="container nav-row">
-      <div class="brand">
-        <!-- logo: if your repo already has assets/images/logo.png this will display; if not, it shows 'ZI' box -->
-        <div class="logo-box" aria-hidden="true">
-          <img src="assets/images/logo.png" alt="logo" style="height:44px;display:block;object-fit:contain">
-        </div>
-        <div class="title">Zareen International</div>
-      </div>
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">Zareen International</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Activities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-      <nav class="top-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Products</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<!-- HERO -->
+<section class="hero">
+  <h1>Zareen International Trading FZC</h1>
+  <p class="tagline">
+    Trusted partner for import & export — construction & industrial supplies
+  </p>
+
+  <p class="hero-text">
+    We supply quality materials for construction and industrial projects across the UAE,
+    focusing on trust, transparency and timely delivery.
+  </p>
+
+  <div class="buttons">
+    <a href="#contact" class="btn primary">Get a Quote</a>
+    <a href="#contact" class="btn secondary">Contact Us</a>
+  </div>
+</section>
+
+<!-- ABOUT WITH CEO -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+
+  <div class="about-box">
+    <img src="ceo.jpg" alt="CEO" class="ceo-img">
+
+    <div class="about-text">
+      <p>
+        Zareen International Trading FZC is built on a simple belief —
+        business should be honest, reliable and long-term.
+      </p>
+
+      <p class="ceo-msg">
+        “We focus on quality sourcing, fair pricing and clear communication.
+        Every client relationship matters to us, and we treat each project
+        with commitment and responsibility.”
+      </p>
+
+      <strong>— CEO, Zareen International</strong>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- hero -->
-  <main>
-    <section id="home" class="hero container">
-      <div class="hero-grid">
-        <div class="hero-left">
-          <div class="company-name">Zareen International Trading FZC</div>
-          <div class="hero-sub">Trusted partner for import & export — construction & industrial</div>
-          <div class="hero-desc">
-            We supply premium construction, HVAC, lubricants, garments and FMCG products across the UAE and region.
-            Quality sourcing, transparent pricing and reliable logistics are our pillars.
-          </div>
-          <div class="hero-ctas">
-            <a class="btn btn-quote" href="https://wa.me/971523388786" target="_blank">Get a Quote</a>
-            <a class="btn btn-contact" href="#contact">Contact Us</a>
-          </div>
-        </div>
+<!-- ACTIVITIES / PRODUCTS -->
+<section id="products" class="section dark">
+  <h2>Our Activities</h2>
 
-        <div class="hero-right" role="img" aria-label="visual">
-          <div class="visual-image">
-            <!-- if you have assets/images/hero.jpg it will show; otherwise the box is dark and the site still looks professional -->
-            <img src="assets/images/hero.jpg" alt="hero image" onerror="this.style.display='none'">
-            <!-- fallback content if image missing -->
-            <div style="position:absolute;color:var(--muted);padding:12px;text-align:center;max-width:220px;">
-              Premium Construction & Industrial Supplies
-            </div>
-          </div>
-          <div class="visual-caption">Import • Export • Wholesale • Logistics</div>
-        </div>
-      </div>
-    </section>
+  <div class="cards">
+    <div class="card">Building & Construction Materials</div>
+    <div class="card">Wholesale Air-Conditioners & HVAC</div>
+    <div class="card">Fresh Foodstuff Trading</div>
+    <div class="card">Grease & Lubricants</div>
+    <div class="card">E-Commerce / Retail Supply</div>
+  </div>
+</section>
 
-    <!-- about -->
-    <section id="about" class="section container">
-      <h2>About Us</h2>
-      <p>
-        Zareen International Trading FZC is a UAE-registered trading company based in Ajman Free Zone.
-        We focus on sourcing and delivering high-standard materials for construction and industrial projects,
-        managing procurement, quality and shipping for timely deliveries.
-      </p>
-    </section>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p><strong>Email:</strong> info@zareeninternational.com</p>
+  <p><strong>Phone:</strong> +971 XX XXX XXXX</p>
+  <p><strong>Location:</strong> UAE</p>
+</section>
 
-    <!-- services -->
-    <section id="services" class="section container">
-      <h2>Our Activities</h2>
-      <div class="services-grid">
-        <div class="service-card">Building & Construction Materials</div>
-        <div class="service-card">Wholesale Air-Conditioners & HVAC</div>
-        <div class="service-card">Fresh Foodstuff Trading</div>
-        <div class="service-card">Grease & Lubricants</div>
-        <div class="service-card">E-Commerce / Retail Supply</div>
-        <div class="service-card">Ready-Made Garments</div>
-        <div class="service-card">Perfumes & Cosmetics</div>
-        <div class="service-card">Computer Consultancy</div>
-      </div>
-    </section>
+<!-- FOOTER -->
+<footer class="footer">
+  © 2025 Zareen International Trading FZC
+</footer>
 
-    <!-- contact -->
-    <section id="contact" class="section container">
-      <h2>Contact</h2>
-      <p>
-        Office: C1-1F-SF14106, Ajman Free Zone, Ajman, UAE<br>
-        Phone: +971 52 338 8786 — Email: zareeninternationaltrading@gmail.com
-      </p>
-    </section>
-  </main>
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/971XXXXXXXX" target="_blank" class="whatsapp">💬</a>
 
-  <!-- footer -->
-  <footer class="site-foot">
-    © 2025 Zareen International Trading FZC — All rights reserved.
-  </footer>
-
-  <!-- whatsapp float -->
-  <a class="whatsapp" href="https://wa.me/971523388786" target="_blank" aria-label="WhatsApp">💬</a>
-
-  <!-- no external scripts needed -->
 </body>
 </html>
