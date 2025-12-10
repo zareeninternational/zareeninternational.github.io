@@ -1,4 +1,4 @@
-  /* ===== GLOBAL RESET ===== */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -9,157 +9,170 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #1a1a1a;
-  background: #f9fafb;
+  background: #f9fbfd;
 }
 
 /* ===== CONTAINER ===== */
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
-  padding: 0 15px;
 }
 
 /* ===== HEADER ===== */
-.site-header {
-  background: #003a7c; /* dark blue */
-  color: #fff;
+.header {
+  background: #0b3c7a;
+  padding: 15px 0;
 }
-.header-container {
+
+.header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0;
 }
-.site-header .logo {
-  font-size: 20px;
-  font-weight: 600;
+
+.logo {
+  height: 45px;
 }
-.site-nav a {
+
+nav a {
   color: #fff;
-  margin-left: 18px;
+  margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
 }
-.site-nav a:hover {
+
+nav a:hover {
   text-decoration: underline;
 }
 
 /* ===== HERO ===== */
 .hero {
-  background: url("../images/hero.jpg") no-repeat center center / cover;
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  min-height: 75vh;
   position: relative;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-.hero-overlay {
-  background: rgba(0, 58, 124, 0.65); /* overlay blue-dark */
-  width: 100%;
-  padding: 60px 0;
-}
-.hero-content {
-  text-align: center;
-}
-.hero-content h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-.hero-content p {
-  font-size: 18px;
-  max-width: 600px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-.btn-primary {
-  background: #ffb600;
-  color: #003a7c;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.btn-primary:hover {
-  background: #e0a000;
 }
 
-/* ===== SECTION ===== */
-.section {
-  padding: 60px 0;
+.hero-overlay {
+  background: rgba(11, 60, 122, 0.75);
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
 }
-.section h3 {
+
+.hero-content {
   text-align: center;
-  font-size: 24px;
-  color: #003a7c;
-  margin-bottom: 30px;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ffb703;
+  color: #0b3c7a;
+  padding: 12px 26px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #e6a600;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 70px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0b3c7a;
+}
+
+.light {
+  background: #ffffff;
 }
 
 /* ===== PRODUCTS ===== */
-.products-section .product-card {
-  background: #fff;
-  padding: 22px;
-  margin: 16px auto;
-  border-radius: 6px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  max-width: 620px;
-}
-.product-card h4 {
-  margin-bottom: 10px;
-  color: #003a7c;
-  font-size: 20px;
-}
-.product-card p {
-  color: #444;
-  font-size: 16px;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
 }
 
-/* ===== ABOUT / CEO ===== */
-.about-section {
-  background: #ffffff;
+.product-card {
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 6px;
 }
+
+.product-card h3 {
+  color: #0b3c7a;
+  margin-bottom: 10px;
+}
+
+/* ===== ABOUT ===== */
+.about-text {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
 .ceo-box {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 24px;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
 }
+
 .ceo-box img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 14px;
-}
-.ceo-message {
-  text-align: center;
-  max-width: 700px;
-}
-.ceo-message strong {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-.ceo-message p {
-  color: #444;
-  font-size: 16px;
 }
 
 /* ===== CONTACT ===== */
-.contact-section p {
-  max-width: 700px;
-  margin: 8px auto;
+.contact-info {
+  text-align: center;
   font-size: 16px;
-  color: #333;
 }
 
 /* ===== FOOTER ===== */
-.site-footer {
-  background: #003a7c;
+.footer {
+  background: #0b3c7a;
   color: #fff;
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  nav a {
+    margin-left: 12px;
+    font-size: 14px;
+  }
+
+  .ceo-box {
+    flex-direction: column;
+    text-align: center;
+  }
 }
