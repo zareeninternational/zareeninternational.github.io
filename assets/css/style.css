@@ -1,8 +1,13 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-  font-family: Arial, sans-serif;
   color: #222;
+  background: #fff;
   line-height: 1.6;
 }
 
@@ -12,127 +17,119 @@ body {
   margin: auto;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .header {
-  background: #0a2a66;
-  color: white;
+  background: #000;
   padding: 15px 0;
 }
 
-.nav {
+.header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav a {
-  color: white;
+.logo {
+  height: 50px;
+}
+
+nav a {
+  color: #fff;
   margin-left: 20px;
-  text-decoration: none;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(rgba(10,42,102,.85), rgba(10,42,102,.85)),
-              url("images/hero.jpg") center/cover no-repeat;
-  padding: 90px 20px;
-  text-align: center;
-  color: white;
-}
-
-.hero h2 { font-size: 36px; margin-bottom: 15px; }
-
-.hero p { font-size: 18px; max-width: 700px; margin: auto; }
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: white;
-  color: #0a2a66;
-  padding: 12px 30px;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* MAIN SECTION */
-.section { padding: 70px 0; }
+/* ================= HERO ================= */
+.hero {
+  background: linear-gradient(to right, #000, #333);
+  color: #fff;
+  padding: 120px 0;
+  text-align: center;
+}
 
-.main-focus h2 {
-  font-size: 32px;
-  color: #0a2a66;
+.hero h1 {
+  font-size: 42px;
   margin-bottom: 15px;
 }
 
-.intro {
+.hero p {
   font-size: 18px;
-  margin-bottom: 40px;
+  max-width: 700px;
+  margin: 0 auto 30px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 25px;
+.btn {
+  background: gold;
+  padding: 12px 30px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
 }
 
-.card {
-  background: white;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+/* ================= ABOUT ================= */
+.about {
+  padding: 80px 0;
+  background: #f9f9f9;
 }
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card h3 {
-  padding: 15px;
-  color: #0a2a66;
-}
-
-.card p { padding: 0 15px 20px; }
-
-.light { background: #f5f7fb; }
-
-.split {
+.about-box {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-/* CEO */
-.ceo {
-  background: white;
-  padding: 25px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,.1);
-}
-
-.ceo img {
-  width: 100px;
-  height: 100px;
+.ceo-photo img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin-bottom: 15px;
+  object-fit: cover;
+  border: 4px solid gold;
 }
 
-/* CONTACT */
-.contact { text-align: center; font-size: 17px; }
-
-.whatsapp {
-  display: inline-block;
-  margin-top: 20px;
-  background: #25d366;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
+.about-text h2 {
+  margin-bottom: 10px;
 }
 
-footer {
-  background: #0a2a66;
-  color: white;
+.about-text p {
+  margin-bottom: 10px;
+}
+
+/* ================= SERVICES ================= */
+.services {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.service-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  background: #111;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #000;
+  color: #aaa;
   text-align: center;
   padding: 15px;
+  font-size: 14px;
 }
