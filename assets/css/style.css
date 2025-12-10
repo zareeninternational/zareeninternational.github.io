@@ -1,125 +1,165 @@
-/* ========= GLOBAL RESET ========= */
+  /* ===== GLOBAL RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ========= BODY ========= */
 body {
-  font-family: 'Inter', Arial, sans-serif;
-  background-color: #ffffff;
-  color: #111111;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
+  color: #1a1a1a;
+  background: #f9fafb;
 }
 
-/* ========= CONTAINER ========= */
+/* ===== CONTAINER ===== */
 .container {
+  width: 90%;
   max-width: 1100px;
   margin: auto;
-  padding: 24px;
+  padding: 0 15px;
 }
 
-/* ========= HEADER ========= */
-header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 40px;
+/* ===== HEADER ===== */
+.site-header {
+  background: #003a7c; /* dark blue */
+  color: #fff;
 }
-
-header h1 {
-  font-size: 34px;
-  font-weight: 700;
-  letter-spacing: -0.8px;
-  margin-bottom: 12px;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
 }
-
-nav a {
-  margin-right: 20px;
+.site-header .logo {
+  font-size: 20px;
   font-weight: 600;
-  color: #000;
-  text-decoration: none;
 }
-
-nav a:hover {
+.site-nav a {
+  color: #fff;
+  margin-left: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.site-nav a:hover {
   text-decoration: underline;
 }
 
-/* ========= HERO ========= */
-.hero h2 {
-  font-size: 42px;
+/* ===== HERO ===== */
+.hero {
+  background: url("../images/hero.jpg") no-repeat center center / cover;
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.hero-overlay {
+  background: rgba(0, 58, 124, 0.65); /* overlay blue-dark */
+  width: 100%;
+  padding: 60px 0;
+}
+.hero-content {
+  text-align: center;
+}
+.hero-content h2 {
+  font-size: 32px;
   font-weight: 700;
-  line-height: 1.25;
   margin-bottom: 16px;
 }
-
-.hero p {
+.hero-content p {
   font-size: 18px;
-  color: #444;
-  max-width: 620px;
-  margin-bottom: 24px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
 }
-
-.hero a {
-  display: inline-block;
+.btn-primary {
+  background: #ffb600;
+  color: #003a7c;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
   font-weight: 600;
-  color: #fff;
-  background: #000;
-  padding: 14px 24px;
-  border-radius: 6px;
   text-decoration: none;
 }
-
-/* ========= SECTION ========= */
-section {
-  margin-bottom: 60px;
+.btn-primary:hover {
+  background: #e0a000;
 }
 
-section h3 {
-  font-size: 28px;
-  margin-bottom: 16px;
+/* ===== SECTION ===== */
+.section {
+  padding: 60px 0;
+}
+.section h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #003a7c;
+  margin-bottom: 30px;
 }
 
-section p {
-  font-size: 16px;
-  color: #333;
-  max-width: 800px;
+/* ===== PRODUCTS ===== */
+.products-section .product-card {
+  background: #fff;
+  padding: 22px;
+  margin: 16px auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  max-width: 620px;
 }
-
-/* ========= PRODUCTS ========= */
-.product {
-  margin-top: 20px;
-}
-
-.product h4 {
+.product-card h4 {
+  margin-bottom: 10px;
+  color: #003a7c;
   font-size: 20px;
-  margin-bottom: 6px;
+}
+.product-card p {
+  color: #444;
+  font-size: 16px;
 }
 
-/* ========= ABOUT ========= */
-.about-box {
-  margin-top: 20px;
+/* ===== ABOUT / CEO ===== */
+.about-section {
+  background: #ffffff;
+}
+.ceo-box {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
   align-items: center;
+  margin-top: 24px;
 }
-
-.about-box img {
-  width: 80px;
-  height: 80px;
+.ceo-box img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 14px;
+}
+.ceo-message {
+  text-align: center;
+  max-width: 700px;
+}
+.ceo-message strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.ceo-message p {
+  color: #444;
+  font-size: 16px;
 }
 
-.about-box p {
-  font-size: 15px;
+/* ===== CONTACT ===== */
+.contact-section p {
+  max-width: 700px;
+  margin: 8px auto;
+  font-size: 16px;
   color: #333;
 }
 
-/* ========= FOOTER ========= */
-footer {
-  border-top: 1px solid #e5e5e5;
-  padding: 20px;
-  font-size: 14px;
-  color: #666;
+/* ===== FOOTER ===== */
+.site-footer {
+  background: #003a7c;
+  color: #fff;
   text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
 }
