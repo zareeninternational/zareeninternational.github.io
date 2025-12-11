@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Zareen International Trading FZC</title>
-  <meta name="description" content="Premium construction & industrial material supplier in UAE. Trusted building materials and commercial supplies." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Reliable construction & industrial material trading company in UAE. Premium building materials delivered with trust." />
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-  <!-- HEADER -->
+  <!-- Header / Nav -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home">
-        <img src="assets/images/logo.png" alt="Zareen Logo" class="logo" />
+        <img src="assets/images/logo.png" alt="Zareen International logo" class="logo">
       </a>
 
       <nav class="main-nav" id="mainNav">
@@ -24,202 +23,258 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <button class="nav-toggle" id="navToggle">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="open menu">☰</button>
     </div>
   </header>
 
-  <!-- HERO SLIDER -->
+  <!-- Hero slider -->
   <section id="home" class="hero">
-    <div class="hero-slider" id="heroSlider">
-
-      <div class="slide" style="background-image:url('assets/images/hero.jpg')">
+    <div class="hero-slider" id="heroSlider" aria-roledescription="carousel">
+      <div class="slide" role="group" aria-label="slide 1 of 3" style="background-image:url('assets/images/hero.jpg')">
         <div class="hero-inner container">
           <h1>Zareen International Trading FZC</h1>
           <p class="tagline">Premium Building Materials Delivered With Trust</p>
-          <a href="#contact" class="btn primary">Get in Touch</a>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Get in Touch</a>
+            <a class="btn whatsapp" href="https://wa.me/971523388786" target="_blank" rel="noopener">
+              <img src="assets/images/whatsapp.jpg" alt="" /> WhatsApp
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="slide" style="background-image:url('assets/images/hero2.jpg')">
+      <div class="slide" role="group" aria-label="slide 2 of 3" style="background-image:url('assets/images/hero2.jpg')">
         <div class="hero-inner container">
-          <h1>UAE’s Trusted Construction Material Partner</h1>
-          <p class="tagline">Quality • Reliability • Timely Delivery</p>
-          <a href="#products" class="btn primary">Explore Products</a>
+          <h1>Zareen International Trading FZC</h1>
+          <p class="tagline">Reliable Construction & Industrial Supplies — UAE</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Request a Quote</a>
+            <a class="btn whatsapp" href="https://wa.me/971523388786" target="_blank" rel="noopener">
+              <img src="assets/images/whatsapp.jpg" alt="" /> WhatsApp
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="slide" style="background-image:url('assets/images/hero3.jpg')">
+      <div class="slide" role="group" aria-label="slide 3 of 3" style="background-image:url('assets/images/hero3.jpg')">
         <div class="hero-inner container">
-          <h1>Large-Scale Supply For All Projects</h1>
-          <p class="tagline">Industrial, Commercial & Residential Solutions</p>
-          <a href="#contact" class="btn primary">Request Quote</a>
+          <h1>Premium Building Materials Delivered With Trust</h1>
+          <p class="tagline">Sourcing • Logistics • Project Support</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">Our Products</a>
+            <a class="btn whatsapp" href="https://wa.me/971523388786" target="_blank" rel="noopener">
+              <img src="assets/images/whatsapp.jpg" alt="" /> WhatsApp
+            </a>
+          </div>
         </div>
       </div>
 
-      <button class="slider-arrow left" id="prevSlide">‹</button>
-      <button class="slider-arrow right" id="nextSlide">›</button>
-
-      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-arrow left" id="prevSlide" aria-label="previous slide">‹</button>
+      <button class="slider-arrow right" id="nextSlide" aria-label="next slide">›</button>
+      <div class="slider-dots" id="sliderDots" aria-hidden="false"></div>
     </div>
   </section>
 
-  <!-- PRODUCTS -->
+  <!-- Products -->
   <section id="products" class="section products-section">
     <div class="container">
       <h2 class="section-title">Our Products</h2>
 
       <div class="products-grid">
-
+        <!-- Construction (priority) -->
         <article class="product-card">
-          <img src="assets/images/construction.jpg" alt="Construction Materials" />
-          <h3>Construction Materials</h3>
-          <p>Cement, blocks, timber & plywood sourced from premium brands.</p>
+          <img src="assets/images/construction.jpg" alt="Construction Materials" loading="lazy">
+          <h3>Construction Material</h3>
+          <p>Cement, concrete blocks, interlock, paver blocks and general building materials for projects of all sizes.</p>
         </article>
 
+        <!-- AC units -->
         <article class="product-card">
-          <img src="assets/images/ac.jpg" alt="Air Conditioning Units" />
-          <h3>Air Conditioning Units</h3>
-          <p>Wholesale AC units & HVAC systems for large-scale projects.</p>
+          <img src="assets/images/ac.jpg" alt="Air Conditioning Units" loading="lazy">
+          <h3>AC Units & HVAC</h3>
+          <p>Wholesale HVAC and unit air-conditioning systems for residential & commercial projects.</p>
         </article>
 
+        <!-- Hollow Blocks -->
         <article class="product-card">
-          <img src="assets/images/hollow-block.jpg" alt="Hollow Blocks" />
+          <img src="assets/images/hollow-block.jpg" alt="Hollow Blocks" loading="lazy">
           <h3>Hollow Blocks & Pavers</h3>
-          <p>High-strength concrete blocks for commercial foundations.</p>
+          <p>Concrete hollow blocks & interlocking pavers for strong foundations and landscaping.</p>
         </article>
 
+        <!-- Interlock -->
         <article class="product-card">
-          <img src="assets/images/interlock.jpg" alt="Interlock Pavers" />
-          <h3>Interlock Pavers</h3>
-          <p>Durable pavers for driveways, walkways & public spaces.</p>
+          <img src="assets/images/interlock.jpg" alt="Interlock Pavers" loading="lazy">
+          <h3>Interlock Tiles</h3>
+          <p>Durable interlock tiles for driveways, walkways and commercial spaces.</p>
         </article>
 
+        <!-- Cement -->
         <article class="product-card">
-          <img src="assets/images/plywood.jpg" alt="Plywood & Timber" />
-          <h3>Plywood & Timber</h3>
-          <p>Quality timber sheets perfect for interiors & construction.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/portland-cement.jpg" alt="Portland Cement" />
-          <h3>Portland Cement</h3>
-          <p>Trusted cement brands for all types of construction work.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/lubricants.jpg" alt="Lubricants" />
-          <h3>Lubricants & Grease</h3>
-          <p>Industrial lubricants for machinery & heavy equipment.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/cement.jpg" alt="Cement Bags" />
+          <img src="assets/images/cement.jpg" alt="Cement Bags" loading="lazy">
           <h3>Cement Bags</h3>
-          <p>High-quality cement bags for multi-purpose usage.</p>
+          <p>Trusted cement brands and packaged cement for various construction needs.</p>
         </article>
 
+        <!-- Portland Cement -->
+        <article class="product-card">
+          <img src="assets/images/portland-cement.jpg" alt="Portland Cement" loading="lazy">
+          <h3>Portland Cement</h3>
+          <p>Premium portland cement grades for structural works and finishing requirements.</p>
+        </article>
+
+        <!-- Plywood -->
+        <article class="product-card">
+          <img src="assets/images/plywood.jpg" alt="Plywood & Timber" loading="lazy">
+          <h3>Plywood & Timber</h3>
+          <p>High-quality plywood and timber for interior works and formwork.</p>
+        </article>
+
+        <!-- Lubricants -->
+        <article class="product-card">
+          <img src="assets/images/lubricants.jpg" alt="Lubricants & Grease" loading="lazy">
+          <h3>Lubricants & Grease</h3>
+          <p>Industrial-grade lubricants for machines, vehicles and mechanical reliability.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- About & Contact -->
   <section id="about" class="section about-section">
     <div class="container about-grid">
-
       <div class="about-card">
-        <img src="assets/images/ceo.jpg" alt="CEO" class="ceo-photo" />
+        <img src="assets/images/ceo.jpg" alt="CEO" class="ceo-photo">
         <h2>About Us</h2>
-        <p>Zareen International Trading FZC is a trusted supplier of construction & industrial materials across the UAE. We focus on transparent pricing, fast delivery, and reliable sourcing.</p>
+        <p>Zareen International Trading FZC is a UAE-based trading company committed to delivering trusted, high-quality construction and industrial materials. We partner with reliable manufacturers and focus on quality sourcing, transparent pricing and timely logistics.</p>
 
-        <blockquote class="ceo-quote">
-          “We believe in quality, honesty, and long-term partnerships.”  
-          <span class="ceo-sign">— Management</span>
-        </blockquote>
+        <blockquote class="ceo-quote">“We believe in honesty, long-term relationships, and consistent quality. Our focus is simple — deliver value and build trust.”<br><span class="ceo-sign">— Management</span></blockquote>
       </div>
 
       <div class="contact-card" id="contact">
-        <h2>Contact Us</h2>
-
+        <h2>Contact</h2>
         <p><strong>Phone:</strong> <a href="tel:+971523388786">+971 52 338 8786</a></p>
         <p><strong>Email:</strong> <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
-        <p><strong>Office:</strong> C1-1F-SF14106, Ajman Free Zone, UAE</p>
+        <p><strong>Office:</strong> C1-1F-SF14106, Ajman Free Zone, Ajman, UAE</p>
 
-        <a class="btn whatsapp" href="https://wa.me/971523388786" target="_blank">
-          <img src="assets/images/whatsapp.jpg" alt="WhatsApp" /> Chat on WhatsApp
+        <a class="btn whatsapp" href="https://wa.me/971523388786" target="_blank" rel="noopener">
+          <img src="assets/images/whatsapp.jpg" alt="WhatsApp"> Chat on WhatsApp
         </a>
 
         <form class="contact-form" action="mailto:zareeninternationaltrading@gmail.com" method="post" enctype="text/plain">
-          <label for="msg">Message</label>
-          <textarea id="msg" name="message" rows="4" placeholder="Write your message"></textarea>
-          <button type="submit">Send Email</button>
+          <label for="msg" class="sr-only">Message</label>
+          <textarea id="msg" name="message" rows="4" placeholder="Write a short message or WhatsApp us to request a quote"></textarea>
+          <button class="btn primary" type="submit">Send Email</button>
         </form>
       </div>
-
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Activities strip (card style) -->
+  <section class="section activities-section">
+    <div class="container">
+      <div class="activities-card">
+        <h3>Activities</h3>
+        <ul>
+          <li>Building & Construction Materials — Trading Import & Export</li>
+          <li>Wholesale of Unit Air-conditioner Trading</li>
+          <li>E-Commerce / Retail Supply</li>
+          <li>Fresh Foodstuff Trading — Import & Export</li>
+          <li>Wholesale of Grease & Lubricants</li>
+          <li>Computer consultancy & facilities management</li>
+          <li>Perfumes & Cosmetics — Import & Export</li>
+          <li>Ready-made Garments Trading — Import & Export</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>© 2025 Zareen International Trading FZC. All rights reserved.</p>
+      <div class="footer-inner">
+        <p>© 2025 Zareen International Trading FZC. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP -->
-  <a class="floating-whatsapp" href="https://wa.me/971523388786" target="_blank">
-    <img src="assets/images/whatsapp.jpg" alt="WhatsApp" />
+  <!-- Floating WhatsApp quick button -->
+  <a class="floating-whatsapp" href="https://wa.me/971523388786" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
   </a>
 
-  <!-- JS: Slider + Mobile Nav -->
+  <!-- JS: slider & nav -->
   <script>
     (function() {
-
-      // Mobile Nav
-      const navToggle = document.getElementById("navToggle");
-      const mainNav = document.getElementById("mainNav");
-      navToggle.addEventListener("click", () => {
-        mainNav.classList.toggle("open");
+      // mobile nav toggle
+      const navToggle = document.getElementById('navToggle');
+      const mainNav = document.getElementById('mainNav');
+      navToggle.addEventListener('click', ()=> {
+        mainNav.classList.toggle('open');
       });
 
-      // Slider
-      const slider = document.getElementById("heroSlider");
-      const slides = slider.querySelectorAll(".slide");
-      const dotsWrap = document.getElementById("sliderDots");
-      const prevBtn = document.getElementById("prevSlide");
-      const nextBtn = document.getElementById("nextSlide");
-
+      // slider elements
+      const slider = document.getElementById('heroSlider');
+      const slides = Array.from(slider.querySelectorAll('.slide'));
+      const prevBtn = document.getElementById('prevSlide');
+      const nextBtn = document.getElementById('nextSlide');
+      const dotsWrap = document.getElementById('sliderDots');
       let current = 0;
+      let timer = null;
 
-      function showSlide(n) {
-        slides.forEach((s, i) => s.classList.toggle("active", i === n));
-        const dots = dotsWrap.querySelectorAll(".dot");
-        dots.forEach((d, i) => d.classList.toggle("active", i === n));
-        current = n;
-      }
-
-      function next() {
-        showSlide((current + 1) % slides.length);
-      }
-
-      function prev() {
-        showSlide((current - 1 + slides.length) % slides.length);
-      }
-
-      slides.forEach((_, i) => {
-        const d = document.createElement("button");
-        d.className = "dot";
-        d.addEventListener("click", () => showSlide(i));
+      // create dots and ensure first visible
+      slides.forEach((_,i)=>{
+        const d = document.createElement('button');
+        d.className = 'dot';
+        d.setAttribute('aria-label','Go to slide ' + (i+1));
+        d.addEventListener('click', ()=> {
+          showSlide(i);
+          resetTimer();
+        });
         dotsWrap.appendChild(d);
       });
 
+      function showSlide(n) {
+        slides.forEach((s,i)=> {
+          s.classList.toggle('active', i === n);
+          s.setAttribute('aria-hidden', i===n ? 'false' : 'true');
+        });
+        const dots = dotsWrap.querySelectorAll('.dot');
+        dots.forEach((d,i)=> d.classList.toggle('active', i===n));
+        current = n;
+      }
+
+      function next() { showSlide((current+1) % slides.length); }
+      function prev() { showSlide((current-1 + slides.length) % slides.length); }
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(next, 4500);
+      }
+
+      // ensure at least one image loaded: if image file missing it still toggles slides
       showSlide(0);
-      setInterval(next, 4500);
+      timer = setInterval(next, 4500);
 
-      prevBtn.addEventListener("click", prev);
-      nextBtn.addEventListener("click", next);
+      slider.addEventListener('mouseenter', ()=> clearInterval(timer));
+      slider.addEventListener('mouseleave', ()=> timer = setInterval(next, 4500));
+      nextBtn.addEventListener('click', ()=>{ next(); resetTimer(); });
+      prevBtn.addEventListener('click', ()=>{ prev(); resetTimer(); });
 
+      // smooth anchor scroll
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', function(e){
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const el = document.querySelector(href);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({behavior:'smooth'});
+            mainNav.classList.remove('open');
+          }
+        });
+      });
     })();
   </script>
-
 </body>
 </html>
