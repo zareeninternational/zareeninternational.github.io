@@ -1,227 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zareen International Trading FZC</title>
-  <meta name="description" content="Reliable construction & industrial material trading company in UAE. Premium building materials delivered with trust." />
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    /* ---------------------------------- Slider ---------------------------------- */
+    .slider {
+      width: 100%;
+      height: 80vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      animation: slide 15s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      30% { transform: translateX(0%); }
+      35% { transform: translateX(-100%); }
+      65% { transform: translateX(-100%); }
+      70% { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
+    /* ---------------------------------- Heading ---------------------------------- */
+    .heading {
+      text-align: center;
+      padding: 40px 20px 10px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* ---------------------------------- CEO Section ---------------------------------- */
+    .about {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* ---------------------------------- Products ---------------------------------- */
+    .products {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .product h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    /* ---------------------------------- Contact ---------------------------------- */
+    .contact {
+      background: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    .contact p {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    /* ---------------------------------- WhatsApp Button ---------------------------------- */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-btn img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header / Nav -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home">
-        <img src="assets/images/logo.png" alt="Zareen International logo" class="logo">
-      </a>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="open menu">☰</button>
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="hero.jpg" alt="Hero Image 1" />
+      <img src="hero2.jpg" alt="Hero Image 2" />
+      <img src="hero3.jpg" alt="Hero Image 3" />
     </div>
-  </header>
+  </div>
 
-  <!-- Hero slider -->
-  <section id="home" class="hero">
-    <div class="hero-slider" id="heroSlider">
-      <div class="slide" style="background-image:url('assets/images/hero.jpg')">
-        <div class="hero-inner container">
-          <h1>Zareen International Trading FZC</h1>
-          <p class="tagline">Premium Building Materials Delivered With Trust</p>
-          <a class="btn primary" href="#contact">Get in Touch</a>
-        </div>
+  <!-- CEO Message -->
+  <div class="heading">Premium Building Materials Delivered With Trust</div>
+
+  <div class="about">
+    <img src="assets/images/ceo.jpg" alt="CEO" />
+    <p>
+      Welcome to <b>Zareen International Trading FZC</b>, your trusted partner for high-quality construction and industrial materials in the UAE.  
+      Our commitment is to deliver durable, premium, and cost-effective products for every project — from homes to large-scale infrastructure.
+    </p>
+  </div>
+
+  <!-- Products Section -->
+  <div class="heading">Our Products</div>
+
+  <div class="products">
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="assets/images/construction.jpg" />
+        <h4>Construction Material</h4>
       </div>
 
-      <div class="slide" style="background-image:url('assets/images/hero2.jpg')">
-        <div class="hero-inner container">
-          <h1>Zareen International Trading FZC</h1>
-          <p class="tagline">Premium Building Materials Delivered With Trust</p>
-          <a class="btn primary" href="#contact">Get in Touch</a>
-        </div>
+      <div class="product">
+        <img src="assets/images/ac.jpg" />
+        <h4>AC Units</h4>
       </div>
 
-      <div class="slide" style="background-image:url('assets/images/hero3.jpg')">
-        <div class="hero-inner container">
-          <h1>Zareen International Trading FZC</h1>
-          <p class="tagline">Premium Building Materials Delivered With Trust</p>
-          <a class="btn primary" href="#contact">Get in Touch</a>
-        </div>
+      <div class="product">
+        <img src="assets/images/hollow-block.jpg" />
+        <h4>Hollow Blocks</h4>
       </div>
 
-      <button class="slider-arrow left" id="prevSlide" aria-label="previous slide">‹</button>
-      <button class="slider-arrow right" id="nextSlide" aria-label="next slide">›</button>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="product">
+        <img src="assets/images/interlock.jpg" />
+        <h4>Interlock Tiles</h4>
+      </div>
+
+      <div class="product">
+        <img src="assets/images/cement.jpg" />
+        <h4>Cement</h4>
+      </div>
+
+      <div class="product">
+        <img src="assets/images/portland-cement.jpg" />
+        <h4>Portland Cement</h4>
+      </div>
+
+      <div class="product">
+        <img src="assets/images/plywood.jpg" />
+        <h4>Plywood</h4>
+      </div>
+
+      <div class="product">
+        <img src="assets/images/lubricants.jpg" />
+        <h4>Lubricants</h4>
+      </div>
+
     </div>
-  </section>
+  </div>
 
-  <!-- Products -->
-  <section id="products" class="section products-section">
-    <div class="container">
-      <h2 class="section-title">Our Products</h2>
+  <!-- Contact -->
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p><b>Zareen International Trading FZC</b></p>
+    <p>UAE | Premium Construction & Industrial Suppliers</p>
+    <p><b>Phone:</b> +971 52 338 8786</p>
+  </div>
 
-      <!-- Grid: focus order — construction first, AC, hollow block, interlock, plywood, portland cement, lubricants -->
-      <div class="products-grid">
-        <article class="product-card">
-          <img src="assets/images/construction.jpg" alt="Construction Materials" loading="lazy">
-          <h3>Construction Materials</h3>
-          <p>Cement, blocks, plywood and general building materials sourced from trusted brands.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/ac.jpg" alt="Air Conditioning Units" loading="lazy">
-          <h3>Air Conditioning Units</h3>
-          <p>Wholesale HVAC and unit air-conditioning systems for residential & commercial projects.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/hollow-block.jpg" alt="Hollow Blocks & Pavers" loading="lazy">
-          <h3>Hollow Blocks & Pavers</h3>
-          <p>Concrete hollow blocks and interlocking pavers for foundations and landscaping.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/interlock.jpg" alt="Interlock Pavers" loading="lazy">
-          <h3>Interlock Pavers</h3>
-          <p>Durable interlocking pavers for driveways, pathways and public spaces.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/plywood.jpg" alt="Plywood & Timber" loading="lazy">
-          <h3>Plywood & Timber</h3>
-          <p>High-quality plywood and timber for construction and interiors.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/portland-cement.jpg" alt="Portland Cement" loading="lazy">
-          <h3>Portland Cement</h3>
-          <p>Premium portland cement grades for structural and finishing needs.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/lubricants.jpg" alt="Lubricants & Grease" loading="lazy">
-          <h3>Lubricants & Grease</h3>
-          <p>Industrial-grade lubricants and greases for mechanical reliability.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/cement.jpg" alt="Cement Bags" loading="lazy">
-          <h3>Cement Bags</h3>
-          <p>Benchmarked cement brands & packaged products for major construction uses.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section about-section">
-    <div class="container about-grid">
-      <div class="about-card">
-        <img src="assets/images/ceo.jpg" alt="CEO" class="ceo-photo">
-        <h2>About Us</h2>
-        <p>Zareen International Trading FZC is committed to delivering trusted, high-quality construction and industrial materials across the UAE. We partner with reliable manufacturers and focus on quality sourcing, transparent pricing and timely logistics.</p>
-
-        <blockquote class="ceo-quote">“We believe in honesty, long-term relationships, and consistent quality. Our focus is simple — deliver value and build trust.”<br><span class="ceo-sign">— Management</span></blockquote>
-      </div>
-
-      <div class="contact-card" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Phone:</strong> <a href="tel:+971523388786">+971 52 338 8786</a></p>
-        <p><strong>Email:</strong> <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
-        <p><strong>Office:</strong> C1-1F-SF14106, Ajman Free Zone, Ajman, UAE</p>
-
-        <a class="btn whatsapp" href="https://wa.me/971523388786" target="_blank" rel="noopener">
-          <img src="assets/images/whatsapp.jpg" alt="WhatsApp"> Chat on WhatsApp
-        </a>
-
-        <form class="contact-form" action="mailto:zareeninternationaltrading@gmail.com" method="post" enctype="text/plain">
-          <label for="msg">Message</label>
-          <textarea id="msg" name="message" rows="4" placeholder="Write a short message or WhatsApp us to request a quote"></textarea>
-          <button class="btn" type="submit">Send Email</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <p>© 2025 Zareen International Trading FZC. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating WhatsApp quick button -->
-  <a class="floating-whatsapp" href="https://wa.me/971523388786" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
+  <!-- WhatsApp Button -->
+  <a class="whatsapp-btn" href="https://wa.me/971523388786" target="_blank">
+    <img src="assets/images/whatsapp.jpg" alt="WhatsApp" />
   </a>
 
-  <!-- Simple JS for slider & mobile nav -->
-  <script>
-    (function() {
-      // mobile nav toggle
-      const navToggle = document.getElementById('navToggle');
-      const mainNav = document.getElementById('mainNav');
-      navToggle.addEventListener('click', ()=> {
-        mainNav.classList.toggle('open');
-      });
-
-      // slider
-      const slider = document.getElementById('heroSlider');
-      const slides = slider.querySelectorAll('.slide');
-      const prevBtn = document.getElementById('prevSlide');
-      const nextBtn = document.getElementById('nextSlide');
-      const dotsWrap = document.getElementById('sliderDots');
-      let current = 0;
-      let timer = null;
-
-      function showSlide(n) {
-        slides.forEach((s,i)=> s.classList.toggle('active', i === n));
-        const dots = dotsWrap.querySelectorAll('.dot');
-        dots.forEach((d,i)=> d.classList.toggle('active', i===n));
-        current = n;
-      }
-
-      function next() { showSlide((current+1) % slides.length); }
-      function prev() { showSlide((current-1 + slides.length) % slides.length); }
-
-      // create dots
-      slides.forEach((_,i)=>{
-        const d = document.createElement('button');
-        d.className = 'dot';
-        d.addEventListener('click', ()=> showSlide(i));
-        dotsWrap.appendChild(d);
-      });
-
-      showSlide(0);
-      timer = setInterval(next, 4500);
-
-      slider.addEventListener('mouseenter', ()=> clearInterval(timer));
-      slider.addEventListener('mouseleave', ()=> timer = setInterval(next, 4500));
-      nextBtn.addEventListener('click', next);
-      prevBtn.addEventListener('click', prev);
-
-      // smooth anchor scroll
-      document.querySelectorAll('a[href^="#"]').forEach(a=>{
-        a.addEventListener('click', function(e){
-          const href = this.getAttribute('href');
-          if (href === '#') return;
-          const el = document.querySelector(href);
-          if (el) {
-            e.preventDefault();
-            el.scrollIntoView({behavior:'smooth'});
-            // close mobile nav on click
-            mainNav.classList.remove('open');
-          }
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
