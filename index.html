@@ -1,225 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zareen International Trading FZC</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description" content="Zareen International Trading FZC — construction & industrial materials supplier in UAE.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zareen International Trading FZC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="brand">
-        <img src="assets/images/logo.png" alt="Zareen logo" class="logo">
-      </div>
-      <nav class="main-nav" id="mainNav">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <!-- Header -->
+    <header class="header">
+        <img src="logo.png" class="logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
-    </div>
-  </header>
+    <!-- HERO SLIDER -->
+    <section id="home" class="hero-slider">
 
-  <!-- HERO / SLIDER -->
-  <section id="home" class="hero">
-    <div class="hero-slider" id="heroSlider">
-      <div class="slide" style="background-image: url('assets/images/hero.jpg')">
-        <div class="hero-inner">
-          <h1>Zareen International Trading FZC</h1>
-          <p class="subtitle">Reliable Construction & Industrial Material Trading Company in UAE</p>
-          <a class="btn" href="#contact">Get in Touch</a>
+        <div class="slide active" style="background-image: url('hero.jpg');">
+            <div class="overlay"></div>
+            <h1>Zareen International Trading FZC</h1>
+            <p>Reliable Construction & Industrial Material Trading Company in UAE</p>
         </div>
-      </div>
 
-      <div class="slide" style="background-image: url('assets/images/hero-2.jpg')">
-        <div class="hero-inner">
-          <h1>Quality Materials, Trusted Supply</h1>
-          <p class="subtitle">Cement, blocks, plywood, HVAC & industrial supplies — sourced responsibly.</p>
-          <a class="btn" href="#products">Our Products</a>
+        <div class="slide" style="background-image: url('hero-2.jpg');">
+            <div class="overlay"></div>
+            <h1>Premium Building Materials</h1>
+            <p>Supplying quality products with trust and commitment</p>
         </div>
-      </div>
 
-      <div class="slide" style="background-image: url('assets/images/hero-3.jpg')">
-        <div class="hero-inner">
-          <h1>Timely Logistics & Professional Service</h1>
-          <p class="subtitle">Transparent pricing and efficient delivery across the UAE.</p>
-          <a class="btn" href="#contact">Request a Quote</a>
+        <div class="slide" style="background-image: url('hero-3.jpg');">
+            <div class="overlay"></div>
+            <h1>Trusted by Leading Contractors</h1>
+            <p>Delivering excellence in every order</p>
         </div>
-      </div>
 
-      <div class="slider-controls">
-        <button id="prevSlide" aria-label="Previous slide">‹</button>
-        <button id="nextSlide" aria-label="Next slide">›</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PRODUCTS -->
-  <section id="products" class="section products">
-    <div class="container">
-      <h2 class="section-title">Our Products</h2>
-
-      <div class="product-grid">
-        <!-- Priority order: construction -> AC -> hollow block -> cement -> portland-cement -> plywood -> interlock -> lubricants -->
-        <article class="product-card">
-          <img src="assets/images/construction.jpg" alt="Construction materials">
-          <h3>Construction Materials</h3>
-          <p>Cement, blocks, aggregates and building materials for residential & commercial projects.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/ac.jpg" alt="Air Conditioning units">
-          <h3>AC Units & HVAC</h3>
-          <p>Wholesale air-conditioners, HVAC components and support services.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/hollow-block.jpg" alt="Hollow blocks">
-          <h3>Hollow Blocks & Pavers</h3>
-          <p>Concrete hollow blocks and pavers for strong foundations and landscaping.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/cement.jpg" alt="Cement products">
-          <h3>Cement & Concrete</h3>
-          <p>Premium grade cement and concrete products from trusted brands.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/portland-cement.jpg" alt="Portland cement">
-          <h3>Portland Cement</h3>
-          <p>Specialised Portland cement grades for different construction needs.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/plywood.jpg" alt="Plywood">
-          <h3>Plywood & Timber</h3>
-          <p>High-quality plywood and timber for interiors, formwork and carpentry.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/interlock.jpg" alt="Interlock pavers">
-          <h3>Interlock Pavers</h3>
-          <p>Durable interlock blocks for driveways, walkways and public spaces.</p>
-        </article>
-
-        <article class="product-card">
-          <img src="assets/images/lubricants.jpg" alt="Lubricants & grease">
-          <h3>Grease & Lubricants</h3>
-          <p>Industrial-grade lubricants and greases for mechanical reliability.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section about">
-    <div class="container about-card">
-      <div class="ceo-wrap">
-        <img src="assets/images/ceo.jpg" alt="CEO" class="ceo-img">
-      </div>
-
-      <div class="about-content">
+    <!-- ABOUT -->
+    <section id="about" class="about">
         <h2>About Us</h2>
-        <p>Zareen International Trading FZC is committed to delivering trusted, high-quality construction and industrial materials across the UAE. We partner with reliable manufacturers and focus on quality sourcing, transparent pricing and timely logistics.</p>
 
-        <blockquote class="ceo-quote">“We believe in honesty, long-term relationships, and consistent quality. Our focus is simple — deliver value and build trust.”</blockquote>
-        <p class="ceo-name">— Management</p>
-      </div>
-    </div>
-  </section>
+        <img src="ceo.jpg" class="ceo-img">
 
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Get in touch</h3>
-          <p><strong>Phone:</strong> <a href="tel:+971523388786">+971 52 338 8786</a></p>
-          <p><strong>Email:</strong> <a href="mailto:zareeninternationaltrading@gmail.com">zareeninternationaltrading@gmail.com</a></p>
-          <p><strong>Office:</strong> C1-1F-SF14106, Ajman Free Zone, Ajman, UAE</p>
+        <p class="about-text">
+            Zareen International Trading FZC is a trusted name in the UAE market, providing high-quality construction,
+            industrial, and building materials with a commitment to excellence.  
+            <br><br>
+            We focus on reliability, fast delivery, and long-term business relationships.
+        </p>
+    </section>
 
-          <p><a class="whatsapp-link" href="https://wa.me/971523388786?text=Hello%20Zareen%20International%20Trading%2C%20I%20would%20like%20a%20quote." target="_blank" rel="noopener">
-            <img src="assets/images/whatsapp.jpg" alt="WhatsApp" class="wa-icon"> Chat on WhatsApp
-          </a></p>
+    <!-- PRODUCTS -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="construction.jpg">
+                <h3>Construction Materials</h3>
+            </div>
+
+            <div class="card">
+                <img src="cement.jpg">
+                <h3>Cement</h3>
+            </div>
+
+            <div class="card">
+                <img src="portland-cement.jpg">
+                <h3>Portland Cement</h3>
+            </div>
+
+            <div class="card">
+                <img src="hollow-block.jpg">
+                <h3>Hollow Blocks</h3>
+            </div>
+
+            <div class="card">
+                <img src="interlock.jpg">
+                <h3>Interlock</h3>
+            </div>
+
+            <div class="card">
+                <img src="plywood.jpg">
+                <h3>Plywood</h3>
+            </div>
+
+            <div class="card">
+                <img src="ac.jpg">
+                <h3>Air Conditioning Units</h3>
+            </div>
+
+            <div class="card">
+                <img src="lubricants.jpg">
+                <h3>Lubricants</h3>
+            </div>
+
         </div>
+    </section>
 
-        <div class="contact-card map-card">
-          <h3>Message</h3>
-          <p>Write a short message or use WhatsApp to request a quote — we reply fast.</p>
-          <a class="btn outline" href="mailto:zareeninternationaltrading@gmail.com">Send an Email</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@zareenintl.com</p>
+        <p>Location: UAE</p>
+    </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© 2025 Zareen International Trading FZC. All rights reserved.</div>
-      <div class="footer-right">Designed for mobile-first viewing</div>
-    </div>
-  </footer>
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/97158802478" class="whatsapp-btn">
+        <img src="whatsapp.jpg">
+    </a>
 
-  <!-- Floating WhatsApp quick button -->
-  <a href="https://wa.me/971523388786?text=Hello%20Zareen%20International%20Trading" target="_blank" class="floating-wa" aria-label="Chat on WhatsApp">
-    <img src="assets/images/whatsapp.jpg" alt="WhatsApp">
-  </a>
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let current = 0;
 
-  <script>
-    // Mobile menu toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const mainNav = document.getElementById('mainNav');
-    menuToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('open');
-    });
+        function changeSlide() {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }
 
-    // Simple slider logic
-    (function() {
-      const slides = document.querySelectorAll('#heroSlider .slide');
-      let idx = 0;
-      const total = slides.length;
-      const nextBtn = document.getElementById('nextSlide');
-      const prevBtn = document.getElementById('prevSlide');
+        setInterval(changeSlide, 3500);
+    </script>
 
-      function show(i) {
-        slides.forEach((s, n) => {
-          s.style.opacity = (n === i) ? '1' : '0';
-          s.style.visibility = (n === i) ? 'visible' : 'hidden';
-        });
-      }
-      function next() { idx = (idx + 1) % total; show(idx); }
-      function prev() { idx = (idx - 1 + total) % total; show(idx); }
-
-      nextBtn.addEventListener('click', next);
-      prevBtn.addEventListener('click', prev);
-
-      // autoplay
-      let autoplay = setInterval(next, 4500);
-      // pause on hover (desktop)
-      const hero = document.getElementById('heroSlider');
-      hero.addEventListener('mouseenter', () => clearInterval(autoplay));
-      hero.addEventListener('mouseleave', () => autoplay = setInterval(next, 4500));
-
-      // initial show
-      show(idx);
-
-      // smooth anchor scroll on links
-      document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', function(e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (!target) return;
-          window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
-          if (mainNav.classList.contains('open')) mainNav.classList.remove('open');
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
